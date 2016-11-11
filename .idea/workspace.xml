@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="057235be-6082-4551-a59a-11a27ee158c3" name="Default" comment="Проверка коммита">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    <list default="true" id="057235be-6082-4551-a59a-11a27ee158c3" name="Default" comment="&#10;">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ExchangePrice.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -60,7 +60,7 @@
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="51">
-              <caret line="3" column="5" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
+              <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -417,7 +417,7 @@
       <workItem from="1478172287727" duration="45395000" />
       <workItem from="1478610416824" duration="21681000" />
       <workItem from="1478759859844" duration="21269000" />
-      <workItem from="1478844823389" duration="7759000" />
+      <workItem from="1478844823389" duration="7790000" />
     </task>
     <task id="LOCAL-00001" summary="Настройка исключений">
       <created>1476342538777</created>
@@ -433,11 +433,18 @@
       <option name="project" value="LOCAL" />
       <updated>1478857017354</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Проверка коммита">
+      <created>1478857048638</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1478857048638</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="446460000" />
+    <option name="totallyTimeSpent" value="446491000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -917,7 +924,7 @@
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
-          <caret line="3" column="5" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
+          <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
           <folding />
         </state>
       </provider>
