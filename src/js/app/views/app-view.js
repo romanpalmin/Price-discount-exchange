@@ -194,7 +194,7 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set'], fu
                 currentTitle.html(pretenderItem.name);
                 //currentDiscount.html(pretenderItem.currentDiscount);
                 currentRest.html(pretenderItem.remainToDiscount);
-                if (colId === 4){
+                if (colId === 4) {
                     currentPercentDiscount.html(pretenderItem.currentDiscountSuperAction);
                 }
             }
