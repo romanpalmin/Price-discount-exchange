@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Верстка</title>
+    <link rel="stylesheet" type="text/css" href="css/style.all.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/less.all.css"/>
+</head>
+<body>
+<div class="pe-main-frame">
+
+    <table class="pe-main-table-2">
+        <tr>
+            <th class="col-1"></th>
+            <th class="col-2"></th>
+            <th class="col-3"></th>
+            <th class="col-4"></th>
+            <th class="col-5"></th>
+            <th class="col-6"></th>
+        </tr>
+        <tr>
+            <td rowspan="3" class="logo">
+                <div class="img-wrapper logo"><img src="images/beerja-white.png"></div>
+            </td>
+            <td colspan="3">
+                <div class="img-wrapper"><img class="actions" src="images/action-now.png"></div>
+
+            </td>
+            <td rowspan="3"></td>
+            <td>
+                <div class="img-wrapper"><img class="super-action" src="images/super-action.png"></div>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <div class="table-border__columns">
+                    <div class="row-border empty"></div>
+                    <div class="row-border left"></div>
+                    <div class="row-border right"></div>
+                    <div class="row-border left"></div>
+                    <div class="row-border right"></div>
+                    <div class="row-border empty"></div>
+                </div>
+            </td>
+
+            <td>
+                <div class="table-border__columns">
+                    <div class="row-border empty"></div>
+                    <div class="row-border left-only"></div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="current-glass col1">
+                    <div class="position-header-wrapper">
+                        <div class="position-circle"><img class="lightblue" src="images/tovar.png"></div>
+                        <span class="position-name upper header"></span>
+
+                    </div>
+                    <div class="glass-img-wrapper">
+
+
+                        <div class="changing-class">
+                            <!--<div class="current-percent lightblue"></div>-->
+                            <div class="rest-title action"><img src="images/before-discount.png"></div>
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="current-glass col2">
+                    <div class="position-header-wrapper">
+
+                        <div class="position-circle"><img class="orange" src="images/tovar.png"></div>
+                        <span class="position-name upper header"></span>
+
+                    </div>
+                    <div class="glass-img-wrapper">
+                        <div class="changing-class">
+                            <!--<div class="current-percent orange"></div>-->
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="current-glass col3">
+
+                    <div class="position-header-wrapper">
+
+                        <div class="position-circle"><img class="green" src="images/tovar.png"></div>
+                        <span class="position-name upper header"></span>
+
+                    </div>
+                    <div class="glass-img-wrapper">
+                        <div class="changing-class">
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="current-glass col4">
+                    <div class="position-header-wrapper">
+
+                        <div class="position-circle"><img class="white" src="images/tovar.png"></div>
+                        <span class="position-name upper header"></span>
+
+                    </div>
+                    <div class="glass-img-wrapper super-action">
+                        <div class="changing-class">
+                            <div class="current-percent lightblue super-action-percent"></div>
+                            <div class="rest-title super-action"><img src="images/before-max-discount.png"> </span>
+                        </div>
+                        <!--<div class="rest-title super-action"><span class="upper header"> До макс. <br/>скидки<br/> осталось</span>-->
+
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><span class="col1 rest upper header"></span></td>
+            <td><span class="col2 rest upper header"></span></td>
+            <td><span class="col3 rest upper header"></span></td>
+            <td></td>
+            <td><span class="col4 rest upper header"></span></td>
+        </tr>
+    </table>
+
+
+</div>
+<!--<div class="mf-footer">
+    <button class="button" id="update">Запрос к серверу...</button>
+    <button class="button" id="stop">Остановить запросы к серверу...</button>
+    <button class="button" id="next">Продолжить запросы к серверу...</button>
+</div>-->
+<script type="text/javascript" src="js/vendor/require.js" data-main="js/config"></script>
+</body>
+</html>

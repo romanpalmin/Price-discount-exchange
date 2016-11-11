@@ -1,0 +1,1202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="057235be-6082-4551-a59a-11a27ee158c3" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/action-now.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/beerja-white.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/before-discount.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/before-max-discount.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/bg-fill.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/bg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/positions/beer.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/positions/cat.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/positions/hamburger.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/positions/hotdog.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/blue/sprite-b-1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/blue/sprite-b-10.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/blue/sprite-b-11.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/blue/sprite-b-12.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/blue/sprite-b-13.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/blue/sprite-b-14.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/blue/sprite-b-15.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/blue/sprite-b-16.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/blue/sprite-b-17.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/blue/sprite-b-18.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/blue/sprite-b-19.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/blue/sprite-b-2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/blue/sprite-b-20.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/blue/sprite-b-3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/blue/sprite-b-4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/blue/sprite-b-5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/blue/sprite-b-6.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/blue/sprite-b-7.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/blue/sprite-b-8.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/blue/sprite-b-9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/green/sprite-g-1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/green/sprite-g-10.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/green/sprite-g-11.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/green/sprite-g-12.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/green/sprite-g-13.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/green/sprite-g-14.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/green/sprite-g-15.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/green/sprite-g-16.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/green/sprite-g-17.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/green/sprite-g-18.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/green/sprite-g-19.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/green/sprite-g-2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/green/sprite-g-20.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/green/sprite-g-3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/green/sprite-g-4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/green/sprite-g-5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/green/sprite-g-6.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/green/sprite-g-7.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/green/sprite-g-8.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/green/sprite-g-9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/red/sprite-r-1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/red/sprite-r-10.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/red/sprite-r-11.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/red/sprite-r-12.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/red/sprite-r-13.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/red/sprite-r-14.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/red/sprite-r-15.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/red/sprite-r-16.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/red/sprite-r-17.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/red/sprite-r-18.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/red/sprite-r-19.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/red/sprite-r-2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/red/sprite-r-20.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/red/sprite-r-3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/red/sprite-r-4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/red/sprite-r-5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/red/sprite-r-6.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/red/sprite-r-7.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/red/sprite-r-8.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/red/sprite-r-9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/yellow/sprite-y-1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/yellow/sprite-y-10.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/yellow/sprite-y-11.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/yellow/sprite-y-12.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/yellow/sprite-y-13.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/yellow/sprite-y-14.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/yellow/sprite-y-15.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/yellow/sprite-y-16.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/yellow/sprite-y-17.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/yellow/sprite-y-18.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/yellow/sprite-y-19.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/yellow/sprite-y-2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/yellow/sprite-y-20.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/yellow/sprite-y-3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/yellow/sprite-y-4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/yellow/sprite-y-5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/yellow/sprite-y-6.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/yellow/sprite-y-7.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/yellow/sprite-y-8.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/yellow/sprite-y-9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/super-action.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/tovar.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/tovar.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/ExchangePrice.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/r_palmin.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/ExchangePrice_node_modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gulp/config.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gulp/tasks/build.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gulp/tasks/clean.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gulp/tasks/copydata.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gulp/tasks/copyindex.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gulp/tasks/css-images.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gulp/tasks/css.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gulp/tasks/gc.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gulp/tasks/images.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gulp/tasks/js.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gulp/tasks/jshinter.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gulp/tasks/less.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gulp/tasks/vendor.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gulp/tasks/watch.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gulpfile.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/less/main.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/less/pe-main-table.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/less/typegraphics.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/less/variables.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-b-1.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-b-10.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-b-11.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-b-12.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-b-13.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-b-14.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-b-15.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-b-16.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-b-17.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-b-18.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-b-19.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-b-2.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-b-20.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-b-3.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-b-4.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-b-5.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-b-6.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-b-7.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-b-8.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-b-9.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-g-1.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-g-10.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-g-11.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-g-12.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-g-13.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-g-14.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-g-15.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-g-16.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-g-17.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-g-18.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-g-19.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-g-2.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-g-20.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-g-3.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-g-4.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-g-5.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-g-6.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-g-7.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-g-8.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-g-9.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-r-1.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-r-10.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-r-11.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-r-12.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-r-13.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-r-14.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-r-15.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-r-16.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-r-17.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-r-18.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-r-19.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-r-2.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-r-20.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-r-3.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-r-4.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-r-5.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-r-6.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-r-7.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-r-8.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-r-9.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-y-1.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-y-10.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-y-11.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-y-12.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-y-13.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-y-14.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-y-15.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-y-16.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-y-17.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-y-18.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-y-19.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-y-2.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-y-20.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-y-3.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-y-4.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-y-5.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-y-6.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-y-7.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-y-8.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-y-9.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/nsws1.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/nsws10.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/nsws11.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/nsws12.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/nsws13.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/nsws14.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/nsws15.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/nsws16.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/nsws17.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/nsws18.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/nsws19.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/nsws2.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/nsws20.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/nsws21.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/nsws22.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/nsws23.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/nsws24.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/nsws25.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/nsws26.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/nsws27.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/nsws28.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/nsws29.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/nsws3.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/nsws30.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/nsws31.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/nsws32.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/nsws33.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/nsws34.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/nsws4.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/nsws5.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/nsws6.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/nsws7.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/nsws8.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/nsws9.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/nws1.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/nws10.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/nws11.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/nws12.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/nws13.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/nws14.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/nws15.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/nws16.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/nws17.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/nws18.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/nws19.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/nws2.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/nws20.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/nws21.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/nws22.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/nws23.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/nws24.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/nws25.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/nws26.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/nws27.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/nws28.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/nws29.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/nws3.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/nws30.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/nws31.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/nws32.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/nws33.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/nws34.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/nws4.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/nws5.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/nws6.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/nws7.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/nws8.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/nws9.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/js/app/app.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/js/app/controllers/data-processing.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/js/app/models/position.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/js/app/settings.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/js/app/utils/utils.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/js/app/views/app-view.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/js/app/views/coin-sets.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/js/config.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/js/vendor/jquery.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/js/vendor/require.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/js/vendor/underscore-min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/script.js" />
+    </list>
+    <ignored path="ExchangePrice.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="ExchangePrice" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="settings.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/js/app/settings.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="21" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pe-main-table.less" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/css/less/pe-main-table.less">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="62">
+              <caret line="134" column="23" selection-start-line="134" selection-start-column="23" selection-end-line="134" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app-view.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/js/app/views/app-view.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1091">
+              <caret line="177" column="0" selection-start-line="177" selection-start-column="0" selection-end-line="177" selection-end-column="0" />
+              <folding>
+                <element signature="e#8143#10120#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="3" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="position.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/js/app/models/position.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="278">
+              <caret line="121" column="21" selection-start-line="121" selection-start-column="21" selection-end-line="121" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="roman.palmin@gmail.com" />
+        <option value="romn.palmin@gmail.com" />
+        <option value="r.palmin" />
+        <option value="romanpalmin" />
+        <option value="Roman Palmin" />
+      </list>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/build/js/app/models/position.js" />
+        <option value="$PROJECT_DIR$/build/js/app/settings.js" />
+        <option value="$PROJECT_DIR$/src/test/script.js" />
+        <option value="$PROJECT_DIR$/src/test/index.html" />
+        <option value="$PROJECT_DIR$/deploy/test/index.html" />
+        <option value="$PROJECT_DIR$/deploy/test/script.js" />
+        <option value="$PROJECT_DIR$/deploy/js/app/views/app-view.js" />
+        <option value="$PROJECT_DIR$/src/data/nws1.json" />
+        <option value="$PROJECT_DIR$/src/data/nws4.json" />
+        <option value="$PROJECT_DIR$/src/data/nws5.json" />
+        <option value="$PROJECT_DIR$/src/data/nws6.json" />
+        <option value="$PROJECT_DIR$/src/data/nws7.json" />
+        <option value="$PROJECT_DIR$/src/data/nws8.json" />
+        <option value="$PROJECT_DIR$/src/data/nws9.json" />
+        <option value="$PROJECT_DIR$/src/data/nws10.json" />
+        <option value="$PROJECT_DIR$/src/data/nws11.json" />
+        <option value="$PROJECT_DIR$/src/data/nws12.json" />
+        <option value="$PROJECT_DIR$/src/data/nws13.json" />
+        <option value="$PROJECT_DIR$/src/data/nws14.json" />
+        <option value="$PROJECT_DIR$/src/data/nws15.json" />
+        <option value="$PROJECT_DIR$/src/data/nws16.json" />
+        <option value="$PROJECT_DIR$/src/data/nws17.json" />
+        <option value="$PROJECT_DIR$/src/data/nws18.json" />
+        <option value="$PROJECT_DIR$/src/data/nws19.json" />
+        <option value="$PROJECT_DIR$/src/data/nws20.json" />
+        <option value="$PROJECT_DIR$/src/data/nws21.json" />
+        <option value="$PROJECT_DIR$/src/data/nws22.json" />
+        <option value="$PROJECT_DIR$/src/data/nws23.json" />
+        <option value="$PROJECT_DIR$/src/data/nws24.json" />
+        <option value="$PROJECT_DIR$/src/data/nws25.json" />
+        <option value="$PROJECT_DIR$/src/data/nws26.json" />
+        <option value="$PROJECT_DIR$/src/data/nws27.json" />
+        <option value="$PROJECT_DIR$/src/data/nws28.json" />
+        <option value="$PROJECT_DIR$/src/data/nws29.json" />
+        <option value="$PROJECT_DIR$/src/data/nws30.json" />
+        <option value="$PROJECT_DIR$/src/data/nws31.json" />
+        <option value="$PROJECT_DIR$/src/data/nws32.json" />
+        <option value="$PROJECT_DIR$/src/data/nws33.json" />
+        <option value="$PROJECT_DIR$/src/data/nws34.json" />
+        <option value="$PROJECT_DIR$/src/data/nws2.json" />
+        <option value="$PROJECT_DIR$/src/data/nws3.json" />
+        <option value="$PROJECT_DIR$/src/css/less/pe-main-table.less" />
+        <option value="$PROJECT_DIR$/src/js/app/settings.js" />
+        <option value="$PROJECT_DIR$/src/css/less/typegraphics.less" />
+        <option value="$PROJECT_DIR$/src/js/app/views/app-view.js" />
+        <option value="$PROJECT_DIR$/deploy/css/less.all.css" />
+        <option value="$PROJECT_DIR$/src/index.html" />
+        <option value="$PROJECT_DIR$/src/js/app/controllers/data-processing.js" />
+        <option value="$PROJECT_DIR$/src/js/app/models/position.js" />
+        <option value="$PROJECT_DIR$/.gitignor" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER">
+    <package-json value="$PROJECT_DIR$/package.json" />
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <gulpfiles>
+      <GulpfileState>
+        <gulpfile-path>$PROJECT_DIR$/gulpfile.js</gulpfile-path>
+        <tasks>
+          <GulpTaskState>
+            <task-name>build</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>clean</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>copydata</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>copyindex</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>css-images</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>css</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>gc</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>images</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>js</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>jshinter</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>less</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>vendor</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>watch</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>release</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>develop</task-name>
+          </GulpTaskState>
+          <GulpTaskState>
+            <task-name>compile</task-name>
+          </GulpTaskState>
+        </tasks>
+      </GulpfileState>
+    </gulpfiles>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ExchangePrice" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ExchangePrice" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ExchangePrice" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="nodejs_interpreter_path" value="C:\Program Files\nodejs\node" />
+    <property name="js.buildTools.gulp.gulp_package_dir" value="C:\palmin\Projects\CM\ExchangePrice\node_modules\gulp" />
+    <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="SearchEverywhereHistoryKey" value="posi&#9;FILE&#9;file://C:/palmin/Projects/CM/ExchangePrice/src/js/app/models/position.js&#10;app&#9;FILE&#9;file://C:/palmin/Projects/CM/ExchangePrice/src/js/app/views/app-view.js&#10;inde&#9;FILE&#9;file://C:/palmin/Projects/CM/ExchangePrice/src/index.html&#10;setti&#9;FILE&#9;file://C:/palmin/Projects/CM/ExchangePrice/src/js/app/settings.js&#10;s&#9;FILE&#9;file://C:/palmin/Projects/CM/ExchangePrice/src/js/app/settings.js&#10;p&#9;FILE&#9;file://C:/palmin/Projects/CM/ExchangePrice/src/js/app/models/position.js&#10;sett&#9;FILE&#9;file://C:/palmin/Projects/CM/ExchangePrice/src/js/app/settings.js&#10;se&#9;FILE&#9;file://C:/palmin/Projects/CM/ExchangePrice/build/js/app/settings.js&#10;positio&#9;FILE&#9;file://C:/palmin/Projects/CM/ExchangePrice/src/js/app/models/position.js&#10;less&#9;FILE&#9;file://C:/palmin/Projects/CM/ExchangePrice/src/css/less/main.less&#10;settin&#9;FILE&#9;file://C:/palmin/Projects/CM/ExchangePrice/src/js/app/settings.js&#10;css.&#9;FILE&#9;file://C:/palmin/Projects/CM/ExchangePrice/gulp/tasks/css.js&#10;index&#9;FILE&#9;file://C:/palmin/Projects/CM/ExchangePrice/src/index.html&#10;setting&#9;FILE&#9;file://C:/palmin/Projects/CM/ExchangePrice/src/js/app/settings.js&#10;con&#9;FILE&#9;file://C:/palmin/Projects/CM/ExchangePrice/src/js/config.js&#10;ima&#9;FILE&#9;file://C:/palmin/Projects/CM/ExchangePrice/src/css/less/images.less&#10;im&#9;FILE&#9;file://C:/palmin/Projects/CM/ExchangePrice/src/css/less/images.less&#10;less.js&#9;FILE&#9;file://C:/palmin/Projects/CM/ExchangePrice/gulp/tasks/less.js&#10;css&#9;FILE&#9;file://C:/palmin/Projects/CM/ExchangePrice/gulp/tasks/css.js&#10;pos&#9;FILE&#9;file://C:/palmin/Projects/CM/ExchangePrice/src/js/app/models/position.js&#10;ap&#9;FILE&#9;file://C:/palmin/Projects/CM/ExchangePrice/src/js/app/views/app-view.js&#10;da&#9;FILE&#9;file://C:/palmin/Projects/CM/ExchangePrice/src/js/app/controllers/data-processing.js&#10;js.&#9;FILE&#9;file://C:/palmin/Projects/CM/ExchangePrice/gulp/tasks/js.js&#10;ma&#9;FILE&#9;file://C:/palmin/Projects/CM/ExchangePrice/src/css/less/main.less&#10;in&#9;FILE&#9;file://C:/palmin/Projects/CM/ExchangePrice/src/index.html&#10;set&#9;FILE&#9;file://C:/palmin/Projects/CM/ExchangePrice/src/js/app/settings.js" />
+    <property name="ToolWindowRun.ShowToolbar" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\palmin\Projects\CM\ExchangePrice\deploy" />
+      <recent name="C:\palmin\Projects\CM\ExchangePrice\src\css" />
+      <recent name="C:\palmin\Projects\CM\ExchangePrice\deploy\images" />
+      <recent name="C:\palmin\Projects\CM\ExchangePrice\src\images" />
+      <recent name="C:\palmin\Projects\CM\ExchangePrice\src\data\new-data" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\palmin\Projects\CM\ExchangePrice\src\js" />
+      <recent name="C:\palmin\Projects\CM\ExchangePrice\src" />
+      <recent name="C:\palmin\Projects\CM\ExchangePrice\src\images\sprites" />
+      <recent name="C:\palmin\Projects\CM\ExchangePrice\src\css\sprites" />
+      <recent name="C:\palmin\Projects\CM\ExchangePrice\src\css" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Gulp.js.compile">
+    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+      <method />
+    </configuration>
+    <configuration default="true" type="DartTestRunConfigurationType" factoryName="Dart Test">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="cucumber.js" factoryName="Cucumber.js">
+      <option name="cucumberJsArguments" value="" />
+      <option name="executablePath" />
+      <option name="filePath" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run-script" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory />
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui>bdd</ui>
+      <extra-mocha-options />
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory />
+      <recursive>false</recursive>
+      <method />
+    </configuration>
+    <configuration default="false" name="compile" type="js.build_tools.gulp" factoryName="Gulp.js" singleton="false">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile>$PROJECT_DIR$/gulpfile.js</gulpfile>
+      <tasks>
+        <task>develop</task>
+      </tasks>
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="Gulp.js.compile" />
+    </list>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="StructuralSearchPlugin">
+    <replaceConfiguration name="user defined" created="1478683237556" text="../../images/" recursive="false" caseInsensitive="true" type="CSS" reformatAccordingToStyle="true" shortenFQN="true" useStaticImport="true" replacement="../images/" history="1">
+      <constraint name="__context__" target="true" within="" contains="" />
+    </replaceConfiguration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="057235be-6082-4551-a59a-11a27ee158c3" name="Default" comment="" />
+      <created>1476275053729</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1476275053729</updated>
+      <workItem from="1476275056063" duration="6939000" />
+      <workItem from="1476338845451" duration="1949000" />
+      <workItem from="1476341161742" duration="480000" />
+      <workItem from="1476341655333" duration="1319000" />
+      <workItem from="1476343383134" duration="7023000" />
+      <workItem from="1476359299987" duration="38808000" />
+      <workItem from="1476684528739" duration="80441000" />
+      <workItem from="1476955732100" duration="39002000" />
+      <workItem from="1477291400950" duration="37834000" />
+      <workItem from="1477471272482" duration="18510000" />
+      <workItem from="1477548938674" duration="41295000" />
+      <workItem from="1477732568140" duration="2803000" />
+      <workItem from="1477738668945" duration="73953000" />
+      <workItem from="1478172287727" duration="45395000" />
+      <workItem from="1478610416824" duration="21681000" />
+      <workItem from="1478759859844" duration="21269000" />
+      <workItem from="1478844823389" duration="7722000" />
+    </task>
+    <task id="LOCAL-00001" summary="Настройка исключений">
+      <created>1476342538777</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1476342538777</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="446423000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29452056" sideWeight="0.5103896" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29452056" sideWeight="0.4896104" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32936078" sideWeight="0.50421494" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29452056" sideWeight="0.5103896" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23510292" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973656" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32936078" sideWeight="0.49578503" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29452056" sideWeight="0.5103896" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39869988" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32719395" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19803064" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18018967" sideWeight="0.5056543" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18133616" sideWeight="0.49434572" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32827735" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973656" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39934355" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Настройка исключений" />
+    <MESSAGE value="Первый коммит" />
+    <MESSAGE value="Проверка коммита" />
+    <option name="LAST_COMMIT_MESSAGE" value="Проверка коммита" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="12" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/deploy/test/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="24" column="26" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/js/app/settings.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="14" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deploy/js/app/views/app-view.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deploy/test/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="7" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deploy/js/app/views/app-view.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="164" column="76" selection-start-line="164" selection-start-column="76" selection-end-line="164" selection-end-column="76" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/nsws1.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/nws1.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="23" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/nws4.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="23" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/nws5.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="23" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/nws6.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="23" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/nws7.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="23" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/nws8.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="23" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/nws9.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="23" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/nws10.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="23" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/nws11.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="23" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/nws12.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="23" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/nws13.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="23" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/nws14.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="24" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/nws15.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="24" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/nws16.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="24" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/nws17.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="24" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/nws18.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="24" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/nws19.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="24" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/nws20.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="24" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/nws21.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="24" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/nws22.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="24" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/nws23.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="24" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/nws24.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="24" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/nws25.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="23" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/nws26.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="23" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/nws27.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="23" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/nws28.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="23" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/nws29.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="23" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/nws30.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="23" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/nws31.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="23" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/nws32.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="23" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/nws33.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="23" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/nws34.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="23" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/nws3.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/nws2.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/images/sprites/blue/sprite-b-3.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deploy/css/style.all.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/app/settings.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="21" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deploy/css/less.all.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="162" column="0" selection-start-line="162" selection-start-column="0" selection-end-line="162" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="278">
+          <caret line="121" column="21" selection-start-line="121" selection-start-column="21" selection-end-line="121" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/app/controllers/data-processing.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1341">
+          <caret line="79" column="0" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css/less/typegraphics.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="3" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css/less/pe-main-table.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="62">
+          <caret line="134" column="23" selection-start-line="134" selection-start-column="23" selection-end-line="134" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/app/models/position.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/app/views/app-view.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1091">
+          <caret line="177" column="0" selection-start-line="177" selection-start-column="0" selection-end-line="177" selection-end-column="0" />
+          <folding>
+            <element signature="e#8143#10120#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="3" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

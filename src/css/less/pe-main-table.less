@@ -1,0 +1,161 @@
+@import "variables";
+
+.pe-main-table-2 {
+  margin: 0 auto;
+  width: 90%;
+  border-collapse: collapse;
+  border-spacing: 7px 11px;
+
+  td, th {
+    padding: 3px; /* Поля вокруг содержимого таблицы */
+    text-align: center;
+    &.logo {
+      vertical-align: top;
+      min-width: 45px;
+    }
+  }
+
+  .actions-title {
+    height: 20px;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .logo {
+    max-height: 100%;
+    width: 30px;
+    margin: 0 auto;
+  }
+  .logo img {
+    width: 100%;
+    min-width: 20px;
+  }
+
+  .row {
+    width: 100%;
+  }
+  .table-border__columns {
+    display: table;
+    width: 100%;
+  }
+
+  .row-border {
+    display: table-cell;
+    border-color: @white;
+    padding: 6px;
+
+    width: 16.6%;
+    &.right {
+      border-top: 2px solid @white;
+      border-right: 2px solid @white;
+    }
+    &.left {
+      border-top: 2px solid @white;
+      border-left: 2px solid @white;
+    }
+    &.empty {
+      border: none;
+    }
+    &.left-only {
+      border-left: 2px solid @white;
+    }
+  }
+
+  .glass-img-wrapper {
+    margin: 0 auto;
+    img {
+      /*  max-height: 100%;
+        max-width: 120px;
+        min-width: 120px;
+      }
+      &.super-action {
+        max-width: 120px;
+        min-width: 120px;
+      }*/
+    }
+  }
+
+  .current-glass {
+    position: relative;
+  }
+
+  .position-header-wrapper {
+    width: 100%;
+    position: absolute;
+    margin: auto;
+  }
+
+  .position-circle {
+    margin: 0 auto;
+    img {
+      width: 100%;
+      border-radius: 100%;
+      max-width: 120px;
+      border: 2px solid;
+
+      &.lightblue {
+        border-color: @lightblue;
+      }
+
+      &.orange {
+        border-color: @orange;
+      }
+
+      &.green {
+        border-color: @green;
+      }
+
+      &.white {
+        border-color: white;
+      }
+    }
+  }
+  .rest-title {
+    position: absolute;
+    bottom: 0;
+    &.action {
+
+      margin-bottom: -60px;
+      margin-left: -60px;
+    }
+    &.super-action {
+      margin-bottom: -55px;
+      margin-left: 140px;
+    }
+  }
+
+  .current-percent {
+    border-radius: 40%;
+    color: #000;
+    font-size: xx-large;
+    font-weight: 800;
+    line-height: 60px;
+    min-height: 40px;
+    min-width: 200px;
+    position: absolute;
+    top: 30%;
+    z-index: -1;
+    opacity: 0.6;
+    &.lightblue {
+      background-color: @lightblue;
+    }
+    &.orange {
+      background-color: @orange;
+    }
+    &.green {
+      background-color: @green;
+    }
+    &.white {
+      background-color: @white;
+    }
+  }
+
+  .changing-class {
+    width: 200px;
+    height: 735px;
+    /* background-color: @lightblue;*/
+    margin: 0 auto;
+  }
+}
+
+

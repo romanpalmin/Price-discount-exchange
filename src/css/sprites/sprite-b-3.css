@@ -1,0 +1,233 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+```html
+<!-- `display: block` sprite -->
+<div class="icon-home"></div>
+
+<!-- `display: inline-block` sprite -->
+<img class="icon-home" />
+```
+*/
+.icon-b_3_0 {
+  background-image: url(../images/sprites/blue/sprite-b-3.png);
+  background-position: -200px 0px;
+  width: 200px;
+  height: 735px;
+}
+.icon-b_3_1 {
+  background-image: url(../images/sprites/blue/sprite-b-3.png);
+  background-position: -1800px 0px;
+  width: 200px;
+  height: 735px;
+}
+.icon-b_3_10 {
+  background-image: url(../images/sprites/blue/sprite-b-3.png);
+  background-position: -400px 0px;
+  width: 200px;
+  height: 735px;
+}
+.icon-b_3_11 {
+  background-image: url(../images/sprites/blue/sprite-b-3.png);
+  background-position: -600px 0px;
+  width: 200px;
+  height: 735px;
+}
+.icon-b_3_12 {
+  background-image: url(../images/sprites/blue/sprite-b-3.png);
+  background-position: -800px 0px;
+  width: 200px;
+  height: 735px;
+}
+.icon-b_3_13 {
+  background-image: url(../images/sprites/blue/sprite-b-3.png);
+  background-position: -1000px 0px;
+  width: 200px;
+  height: 735px;
+}
+.icon-b_3_14 {
+  background-image: url(../images/sprites/blue/sprite-b-3.png);
+  background-position: -1200px 0px;
+  width: 200px;
+  height: 735px;
+}
+.icon-b_3_15 {
+  background-image: url(../images/sprites/blue/sprite-b-3.png);
+  background-position: -1400px 0px;
+  width: 200px;
+  height: 735px;
+}
+.icon-b_3_16 {
+  background-image: url(../images/sprites/blue/sprite-b-3.png);
+  background-position: 0px -735px;
+  width: 200px;
+  height: 735px;
+}
+.icon-b_3_17 {
+  background-image: url(../images/sprites/blue/sprite-b-3.png);
+  background-position: -200px -735px;
+  width: 200px;
+  height: 735px;
+}
+.icon-b_3_18 {
+  background-image: url(../images/sprites/blue/sprite-b-3.png);
+  background-position: -400px -735px;
+  width: 200px;
+  height: 735px;
+}
+.icon-b_3_19 {
+  background-image: url(../images/sprites/blue/sprite-b-3.png);
+  background-position: -600px -735px;
+  width: 200px;
+  height: 735px;
+}
+.icon-b_3_2 {
+  background-image: url(../images/sprites/blue/sprite-b-3.png);
+  background-position: -800px -735px;
+  width: 200px;
+  height: 735px;
+}
+.icon-b_3_20 {
+  background-image: url(../images/sprites/blue/sprite-b-3.png);
+  background-position: -1000px -735px;
+  width: 200px;
+  height: 735px;
+}
+.icon-b_3_21 {
+  background-image: url(../images/sprites/blue/sprite-b-3.png);
+  background-position: -1200px -735px;
+  width: 200px;
+  height: 735px;
+}
+.icon-b_3_22 {
+  background-image: url(../images/sprites/blue/sprite-b-3.png);
+  background-position: -1400px -735px;
+  width: 200px;
+  height: 735px;
+}
+.icon-b_3_23 {
+  background-image: url(../images/sprites/blue/sprite-b-3.png);
+  background-position: -1600px 0px;
+  width: 200px;
+  height: 735px;
+}
+.icon-b_3_24 {
+  background-image: url(../images/sprites/blue/sprite-b-3.png);
+  background-position: -1600px -735px;
+  width: 200px;
+  height: 735px;
+}
+.icon-b_3_25 {
+  background-image: url(../images/sprites/blue/sprite-b-3.png);
+  background-position: 0px 0px;
+  width: 200px;
+  height: 735px;
+}
+.icon-b_3_26 {
+  background-image: url(../images/sprites/blue/sprite-b-3.png);
+  background-position: -1800px -735px;
+  width: 200px;
+  height: 735px;
+}
+.icon-b_3_27 {
+  background-image: url(../images/sprites/blue/sprite-b-3.png);
+  background-position: -2000px 0px;
+  width: 200px;
+  height: 735px;
+}
+.icon-b_3_28 {
+  background-image: url(../images/sprites/blue/sprite-b-3.png);
+  background-position: -2000px -735px;
+  width: 200px;
+  height: 735px;
+}
+.icon-b_3_29 {
+  background-image: url(../images/sprites/blue/sprite-b-3.png);
+  background-position: -2200px 0px;
+  width: 200px;
+  height: 735px;
+}
+.icon-b_3_3 {
+  background-image: url(../images/sprites/blue/sprite-b-3.png);
+  background-position: -2200px -735px;
+  width: 200px;
+  height: 735px;
+}
+.icon-b_3_30 {
+  background-image: url(../images/sprites/blue/sprite-b-3.png);
+  background-position: 0px -1470px;
+  width: 200px;
+  height: 735px;
+}
+.icon-b_3_31 {
+  background-image: url(../images/sprites/blue/sprite-b-3.png);
+  background-position: -200px -1470px;
+  width: 200px;
+  height: 735px;
+}
+.icon-b_3_32 {
+  background-image: url(../images/sprites/blue/sprite-b-3.png);
+  background-position: -400px -1470px;
+  width: 200px;
+  height: 735px;
+}
+.icon-b_3_33 {
+  background-image: url(../images/sprites/blue/sprite-b-3.png);
+  background-position: -600px -1470px;
+  width: 200px;
+  height: 735px;
+}
+.icon-b_3_34 {
+  background-image: url(../images/sprites/blue/sprite-b-3.png);
+  background-position: -800px -1470px;
+  width: 200px;
+  height: 735px;
+}
+.icon-b_3_35 {
+  background-image: url(../images/sprites/blue/sprite-b-3.png);
+  background-position: -1000px -1470px;
+  width: 200px;
+  height: 735px;
+}
+.icon-b_3_36 {
+  background-image: url(../images/sprites/blue/sprite-b-3.png);
+  background-position: -1200px -1470px;
+  width: 200px;
+  height: 735px;
+}
+.icon-b_3_4 {
+  background-image: url(../images/sprites/blue/sprite-b-3.png);
+  background-position: -1400px -1470px;
+  width: 200px;
+  height: 735px;
+}
+.icon-b_3_5 {
+  background-image: url(../images/sprites/blue/sprite-b-3.png);
+  background-position: -1600px -1470px;
+  width: 200px;
+  height: 735px;
+}
+.icon-b_3_6 {
+  background-image: url(../images/sprites/blue/sprite-b-3.png);
+  background-position: -1800px -1470px;
+  width: 200px;
+  height: 735px;
+}
+.icon-b_3_7 {
+  background-image: url(../images/sprites/blue/sprite-b-3.png);
+  background-position: -2000px -1470px;
+  width: 200px;
+  height: 735px;
+}
+.icon-b_3_8 {
+  background-image: url(../images/sprites/blue/sprite-b-3.png);
+  background-position: -2200px -1470px;
+  width: 200px;
+  height: 735px;
+}
+.icon-b_3_9 {
+  background-image: url(../images/sprites/blue/sprite-b-3.png);
+  background-position: -2400px 0px;
+  width: 200px;
+  height: 735px;
+}
