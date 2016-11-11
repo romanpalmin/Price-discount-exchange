@@ -1,5 +1,5 @@
 // jshint maxparams:9
-define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set',], function ($, app, settings, process, utils, cset) {
+define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set'], function ($, app, settings, process, utils, cset) {
     var appView;
     appView = {
         classes: {
