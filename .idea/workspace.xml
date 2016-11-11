@@ -1,292 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="057235be-6082-4551-a59a-11a27ee158c3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/action-now.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/beerja-white.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/before-discount.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/before-max-discount.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/bg-fill.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/positions/beer.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/positions/cat.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/positions/hamburger.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/positions/hotdog.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/blue/sprite-b-1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/blue/sprite-b-10.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/blue/sprite-b-11.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/blue/sprite-b-12.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/blue/sprite-b-13.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/blue/sprite-b-14.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/blue/sprite-b-15.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/blue/sprite-b-16.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/blue/sprite-b-17.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/blue/sprite-b-18.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/blue/sprite-b-19.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/blue/sprite-b-2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/blue/sprite-b-20.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/blue/sprite-b-3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/blue/sprite-b-4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/blue/sprite-b-5.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/blue/sprite-b-6.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/blue/sprite-b-7.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/blue/sprite-b-8.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/blue/sprite-b-9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/green/sprite-g-1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/green/sprite-g-10.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/green/sprite-g-11.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/green/sprite-g-12.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/green/sprite-g-13.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/green/sprite-g-14.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/green/sprite-g-15.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/green/sprite-g-16.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/green/sprite-g-17.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/green/sprite-g-18.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/green/sprite-g-19.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/green/sprite-g-2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/green/sprite-g-20.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/green/sprite-g-3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/green/sprite-g-4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/green/sprite-g-5.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/green/sprite-g-6.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/green/sprite-g-7.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/green/sprite-g-8.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/green/sprite-g-9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/red/sprite-r-1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/red/sprite-r-10.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/red/sprite-r-11.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/red/sprite-r-12.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/red/sprite-r-13.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/red/sprite-r-14.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/red/sprite-r-15.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/red/sprite-r-16.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/red/sprite-r-17.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/red/sprite-r-18.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/red/sprite-r-19.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/red/sprite-r-2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/red/sprite-r-20.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/red/sprite-r-3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/red/sprite-r-4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/red/sprite-r-5.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/red/sprite-r-6.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/red/sprite-r-7.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/red/sprite-r-8.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/red/sprite-r-9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/yellow/sprite-y-1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/yellow/sprite-y-10.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/yellow/sprite-y-11.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/yellow/sprite-y-12.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/yellow/sprite-y-13.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/yellow/sprite-y-14.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/yellow/sprite-y-15.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/yellow/sprite-y-16.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/yellow/sprite-y-17.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/yellow/sprite-y-18.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/yellow/sprite-y-19.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/yellow/sprite-y-2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/yellow/sprite-y-20.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/yellow/sprite-y-3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/yellow/sprite-y-4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/yellow/sprite-y-5.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/yellow/sprite-y-6.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/yellow/sprite-y-7.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/yellow/sprite-y-8.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/sprites/yellow/sprite-y-9.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/super-action.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/tovar.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/tovar.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/ExchangePrice.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/r_palmin.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/ExchangePrice_node_modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+    <list default="true" id="057235be-6082-4551-a59a-11a27ee158c3" name="Default" comment="Проверка коммита">
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gulp/config.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gulp/tasks/build.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gulp/tasks/clean.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gulp/tasks/copydata.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gulp/tasks/copyindex.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gulp/tasks/css-images.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gulp/tasks/css.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gulp/tasks/gc.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gulp/tasks/images.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gulp/tasks/js.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gulp/tasks/jshinter.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gulp/tasks/less.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gulp/tasks/vendor.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gulp/tasks/watch.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gulpfile.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/less/main.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/less/pe-main-table.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/less/typegraphics.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/less/variables.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-b-1.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-b-10.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-b-11.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-b-12.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-b-13.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-b-14.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-b-15.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-b-16.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-b-17.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-b-18.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-b-19.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-b-2.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-b-20.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-b-3.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-b-4.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-b-5.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-b-6.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-b-7.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-b-8.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-b-9.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-g-1.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-g-10.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-g-11.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-g-12.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-g-13.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-g-14.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-g-15.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-g-16.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-g-17.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-g-18.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-g-19.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-g-2.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-g-20.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-g-3.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-g-4.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-g-5.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-g-6.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-g-7.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-g-8.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-g-9.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-r-1.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-r-10.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-r-11.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-r-12.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-r-13.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-r-14.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-r-15.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-r-16.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-r-17.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-r-18.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-r-19.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-r-2.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-r-20.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-r-3.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-r-4.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-r-5.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-r-6.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-r-7.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-r-8.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-r-9.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-y-1.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-y-10.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-y-11.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-y-12.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-y-13.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-y-14.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-y-15.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-y-16.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-y-17.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-y-18.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-y-19.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-y-2.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-y-20.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-y-3.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-y-4.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-y-5.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-y-6.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-y-7.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-y-8.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/sprites/sprite-y-9.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/nsws1.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/nsws10.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/nsws11.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/nsws12.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/nsws13.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/nsws14.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/nsws15.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/nsws16.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/nsws17.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/nsws18.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/nsws19.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/nsws2.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/nsws20.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/nsws21.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/nsws22.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/nsws23.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/nsws24.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/nsws25.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/nsws26.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/nsws27.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/nsws28.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/nsws29.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/nsws3.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/nsws30.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/nsws31.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/nsws32.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/nsws33.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/nsws34.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/nsws4.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/nsws5.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/nsws6.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/nsws7.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/nsws8.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/nsws9.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/nws1.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/nws10.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/nws11.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/nws12.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/nws13.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/nws14.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/nws15.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/nws16.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/nws17.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/nws18.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/nws19.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/nws2.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/nws20.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/nws21.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/nws22.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/nws23.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/nws24.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/nws25.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/nws26.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/nws27.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/nws28.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/nws29.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/nws3.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/nws30.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/nws31.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/nws32.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/nws33.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/nws34.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/nws4.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/nws5.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/nws6.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/nws7.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/nws8.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/nws9.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/js/app/app.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/js/app/controllers/data-processing.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/js/app/models/position.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/js/app/settings.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/js/app/utils/utils.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/js/app/views/app-view.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/js/app/views/coin-sets.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/js/config.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/js/vendor/jquery.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/js/vendor/require.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/js/vendor/underscore-min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/script.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
     </list>
     <ignored path="ExchangePrice.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -343,7 +60,7 @@
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="51">
-              <caret line="3" column="3" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
+              <caret line="3" column="5" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -700,7 +417,7 @@
       <workItem from="1478172287727" duration="45395000" />
       <workItem from="1478610416824" duration="21681000" />
       <workItem from="1478759859844" duration="21269000" />
-      <workItem from="1478844823389" duration="7722000" />
+      <workItem from="1478844823389" duration="7759000" />
     </task>
     <task id="LOCAL-00001" summary="Настройка исключений">
       <created>1476342538777</created>
@@ -709,11 +426,18 @@
       <option name="project" value="LOCAL" />
       <updated>1476342538777</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Проверка коммита">
+      <created>1478857017354</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1478857017354</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="446423000" />
+    <option name="totallyTimeSpent" value="446460000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1193,7 +917,7 @@
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
-          <caret line="3" column="3" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
+          <caret line="3" column="5" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
           <folding />
         </state>
       </provider>
