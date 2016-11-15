@@ -21,7 +21,8 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set'], fu
         pretenders: {
             currentPretenders: [],
             currentCoins: [],
-            prevPretenders: []
+            prevPretenders: [],
+            speedprevPretenders: []
         },
 
         superAction: {

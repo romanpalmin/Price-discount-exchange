@@ -16,7 +16,7 @@ define([], function () {
         superAction: {
             maxDiscountPercent: 55
         },
-        speedDropping: 50,
+        speedDropping: 5000,
         origin: 'it-173.vp.local',
         step: 0,
         maxStep: 34,
