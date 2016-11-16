@@ -42,6 +42,13 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set'], fu
         },
 
         init: function (curStep, isSequence) {
+            var self = this;
+
+
+            self.startApp(curStep, isSequence);
+        },
+
+        startApp: function(curStep, isSequence){
             settings.step = !curStep ? 0 : curStep;
             if (isSequence) {
                 this.sequence();
@@ -49,7 +56,6 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set'], fu
                 //this.initData(this.actionType.currentAction);
                 //this.initData(this.actionType.superAction);
             }
-
         },
 
         initData: function (actionType) {
