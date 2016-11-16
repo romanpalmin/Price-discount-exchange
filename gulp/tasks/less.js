@@ -18,6 +18,9 @@ gulp.task('less', function () {
             cascade: false
         }))
         .pipe(concat('less.all.css'))
+        /* минифифируем на проде
+        .pipe(cssmin())
+        .pipe(rename({suffix: '.min'}))*/
         .pipe(gulp.dest(config.less.dest))
         .pipe(gulp.dest(deploy.css));
 });

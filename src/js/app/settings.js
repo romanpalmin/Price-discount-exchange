@@ -10,13 +10,13 @@ define([], function () {
             superAction: 1
         },
         timeout: {
-            actions: 2500,
-            superAction: 2500
+            actions: 3500,
+            superAction: 3500
         },
         superAction: {
             maxDiscountPercent: 55
         },
-        speedDropping: 5000,
+        speedDropping: 65,
         origin: 'it-173.vp.local',
         step: 0,
         maxStep: 34,

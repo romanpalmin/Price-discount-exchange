@@ -70,7 +70,7 @@ module.exports = {
 
     vendors: {
         src: {
-            js: [/*'./node_modules/dustjs-linkedin/dist/dust-core.min.js'*/
+            js: [
                 './node_modules/jquery/dist/jquery.min.js',
                 './node_modules/underscore/underscore-min.js',
                 srcAssets + '/js/vendor/require.js'
