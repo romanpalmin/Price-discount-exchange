@@ -3,3 +3,7 @@
 /node_modules
 .idea
 /test
+/test/index.html
+/test/script.js
+/test/img/
+/test/
