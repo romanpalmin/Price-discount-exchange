@@ -43,12 +43,46 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set'], fu
 
         init: function (curStep, isSequence) {
             var self = this;
-
-
-            self.startApp(curStep, isSequence);
+            //console.log('Здесь мы первоначально заполним колбы...');
+            //setTimeout(function () {
+                self.startApp(curStep, isSequence);
+            //}, 20000);
         },
 
-        startApp: function(curStep, isSequence){
+        preLoading: function (callback) {
+            var options = {};
+            var colId = 1;
+            var glass = $('.current-glass.col' + colId).find('div.changing-class');
+            options.currentGlass = glass;
+            for (var coins = 1; coins <= 20; coins++) {
+                options.colId = colId;
+                options.coinNum = coins;
+                this.drawDroppingCoinInGlass(options);
+            }
+
+            var className = 'icon-';
+            var newClass = '';
+            var letter = this.colors[colId][0];
+            var maxImgId;
+
+            var timerId = setInterval(function () {
+
+                newClass = className + letter + '_' + glass + '_' + i;
+                glass.removeClass().addClass('changing-class');
+                glass.addClass(newClass);
+                if (i === maxImgId - 1) {
+                    clearInterval(timerId);
+                    if (callback && typeof(callback) === "function") {
+                        callback();
+                    }
+                }
+                i++;
+            }, settings.speedDropping);
+
+        },
+
+        startApp: function (curStep, isSequence) {
+            //console.log('Запускаем рабочий прогон...');
             settings.step = !curStep ? 0 : curStep;
             if (isSequence) {
                 this.sequence();
