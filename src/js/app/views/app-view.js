@@ -49,10 +49,11 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set'], fu
             //}, 20000);
         },
 
-        preLoading: function (callback) {
+        /*preLoading: function (callback) {
             var options = {};
             var colId = 1;
             var glass = $('.current-glass.col' + colId).find('div.changing-class');
+            var i = 0;
             options.currentGlass = glass;
             for (var coins = 1; coins <= 20; coins++) {
                 options.colId = colId;
@@ -79,7 +80,7 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set'], fu
                 i++;
             }, settings.speedDropping);
 
-        },
+        },*/
 
         startApp: function (curStep, isSequence) {
             //console.log('Запускаем рабочий прогон...');
