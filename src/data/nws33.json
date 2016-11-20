@@ -1,7 +1,7 @@
 [
   {
     "id": "111f6235-951e-11e6-a94e-50e549af31d2",
-    "Name": "Гамбургер",
+    "Name": "Бургер Ред Биф",
     "ImageUrl": "/images/positions/hamburger.png",
     "DiscountWasChanged": false,
     "CurrentDiscount": 17,
@@ -10,7 +10,7 @@
   },
   {
     "id": "222f60f9-951e-11e6-a94e-50e549af31d2",
-    "Name": "Хотдог",
+    "Name": "Бургер Классика 'Просто и вкусно'",
     "ImageUrl": "/images/positions/hotdog.png",
     "DiscountWasChanged": false,
     "CurrentDiscount": 19,
@@ -19,7 +19,7 @@
   },
   {
     "id": "333f6321-951e-11e6-a94e-50e549af31d2",
-    "Name": "Пиво",
+    "Name": "Бургер №1",
     "ImageUrl": "/images/positions/beer.png",
     "DiscountWasChanged": false,
     "CurrentDiscount": 20,
