@@ -5,13 +5,18 @@ define([], function () {
         USERNAME: 'DataExchange',
         PASSWORD: '123456',
         intervalId: 0,
+        coinsTotal : 20,
         intervalIds: {
             currentActions: 0,
-            superAction: 1
+            superAction: 1,
+            preloadCurrentAction: 2,
+            preloadSuperAction: 3
         },
         timeout: {
             actions: 2500,
-            superAction: 2500
+            superAction: 2500,
+            preloadActions: 500,
+            preloadSuperAction: 500
         },
         superAction: {
             maxDiscountPercent: 55

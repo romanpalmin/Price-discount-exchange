@@ -1,5 +1,5 @@
 // jshint maxparams:9
-define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set',], function ($, app, settings, process, utils, cset) {
+define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set'], function ($, app, settings, process, utils, cset) {
     var appView;
     appView = {
         classes: {
@@ -43,10 +43,63 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set',], f
         init: function (curStep, isSequence) {
             settings.step = !curStep ? 0 : curStep;
             if (isSequence) {
-                this.sequence();
-            } else {
-                //this.initData(this.actionType.currentAction);
-                //this.initData(this.actionType.superAction);
+                this.preloadData(function () {
+                    console.log('Готово');
+                });
+                //this.sequence();
+            }
+        },
+
+        preloadData: function (callback) {
+            var isPreloaded = false;
+            var self = this;
+            var counterSuperAction = 0;
+            var counterActions = 0;
+
+            var preloadSuperActionInterval = setInterval(function () {
+                if (counterActions >= settings.coinsTotal) {
+                    PostPreLoading();
+                    if (isPreloaded) {
+                        clearInterval(preloadSuperActionInterval);
+                    }
+                }
+                else {
+                    counterSuperAction++;
+                }
+                if (!isPreloaded) {
+                    console.log('Проход суперакции №' + counterSuperAction);
+                    //self.initData(self.actionType.superAction);
+                }
+            }, settings.timeout.preloadSuperAction);
+
+            var preloadActionsInterval = setInterval(function () {
+                if (counterActions >= settings.coinsTotal) {
+                    PostPreLoading();
+                    if (isPreloaded) {
+                        clearInterval(preloadActionsInterval);
+                    }
+                } else {
+                    counterActions++;
+                }
+
+                if (!isPreloaded) {
+                    console.log('Проход акции №' + counterActions);
+                }
+            }, settings.timeout.preloadSuperAction);
+
+            function PostPreLoading() {
+                if (counterActions >= settings.coinsTotal && counterSuperAction >= settings.coinsTotal && !isPreloaded) {
+                    console.log('Открываем экран и запускаем основные циклы...');
+                    self.startRealApp(callback);
+                }
+                isPreloaded = true;
+            }
+        },
+
+        startRealApp: function(callback){
+            console.log('Обнуляем переменные шагов...');
+            if (callback && typeof(callback) === "function") {
+                callback();
             }
 
         },
@@ -194,7 +247,7 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set',], f
                 currentTitle.html(pretenderItem.name);
                 //currentDiscount.html(pretenderItem.currentDiscount);
                 currentRest.html(pretenderItem.remainToDiscount);
-                if (colId === 4){
+                if (colId === 4) {
                     currentPercentDiscount.html(pretenderItem.currentDiscountSuperAction);
                 }
             }
