@@ -31,7 +31,6 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set'], fu
                 this.preloadData(function () {
                     self.sequence();
                 });
-                //this.sequence();
             }
         },
 
@@ -86,7 +85,6 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set'], fu
 
             function PostPreLoading() {
                 if (counterActions >= settings.coinsTotal && counterSuperAction >= settings.coinsTotal && !isPreloaded) {
-                    console.log('Открываем экран и запускаем основные циклы...');
                     self.startRealApp(callback);
                 }
                 isPreloaded = true;
@@ -94,7 +92,6 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set'], fu
         },
 
         startRealApp: function (callback) {
-            console.log('Обнуляем переменные шагов...');
             if (callback && typeof(callback) === "function") {
                 callback();
             }
@@ -136,7 +133,7 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set'], fu
         render: function (data, actionType) {
             var self = this;
             var newPretenders;
-            if (actionType) {
+            if (actionType === this.actionType.currentAction) {
                 // Обрабатываем текущую акцию
                 if (this.pretenders.currentPretenders.length === 0) {
                     //console.log('Инициируем массив...');
@@ -181,7 +178,6 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set'], fu
                 var i = minImgId;
                 maxImgId = currentCoinArr[coinNum - 1];
                 var timerId = setInterval(function () {
-
                     newClass = className + letter + '_' + coinNum + '_' + i;
                     currentGlass.removeClass().addClass('changing-class');
                     currentGlass.addClass(newClass);
@@ -210,15 +206,13 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set'], fu
             var curCoins = {id: pretenderItem.id, coins: pretenderItem.currentCoin, type: colId};
             var savedCoins = +utils.getCurrentCoinByUserIdAndColId(this.pretenders.currentCoins, pretenderItem.id, colId);
 
-            var isDropCoin = (savedCoins !== pretenderItem.currentCoin /*&& savedCoins>0*/);
+            var isDropCoin = (savedCoins !== pretenderItem.currentCoin);
             var currentColumn = $('.current-glass.col' + colId);
             var currentTitle = currentColumn.find('span.position-name');
-            //var currentDiscount = currentColumn.find('div.current-percent');
             var currentCoins = currentColumn.find('img.coins');
             var currentCoinsForClass = currentColumn.find('div.changing-class');
             var currentRest = $('span.rest.col' + colId);
             var currentPercentDiscount = currentColumn.find('div.super-action-percent');
-            //var currentLogo = currentColumn.find('img.img-pretender');
             var options = {
                 colId: colId,
                 currentCoins: currentCoins,
