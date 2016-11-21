@@ -84,7 +84,7 @@ module.exports = {
     },
 
     data: {
-        src: srcAssets + 'data/*',
+        src: srcAssets + 'data/**/*',
         dest: distAssets + 'data'
     },
 
