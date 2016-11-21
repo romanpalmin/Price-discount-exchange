@@ -1,0 +1,11 @@
+[
+  {
+    "id": "444",
+    "Name": "Предзагрузка суперакции",
+    "ImageUrl": "/images/preload.png",
+    "DiscountWasChanged": true,
+    "CurrentDiscount": 20,
+    "TotalItemsSold": 0,
+    "RemainToDiscount": 80
+  }
+]

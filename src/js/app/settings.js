@@ -19,7 +19,7 @@ define([], function () {
             preloadSuperAction: 500
         },
         superAction: {
-            maxDiscountPercent: 55
+            maxDiscountPercent: 100
         },
         speedDropping: 50,
         origin: 'it-173.vp.local',
