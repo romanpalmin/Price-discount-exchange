@@ -1,0 +1,29 @@
+[
+  {
+    "id": "111",
+    "Name": "Предзагрузка акций",
+    "ImageUrl": "/images/preload.png",
+    "DiscountWasChanged": true,
+    "CurrentDiscount": 0,
+    "TotalItemsSold": 4,
+    "RemainToDiscount": 16
+  },
+  {
+    "id": "222",
+    "Name": "Предзагрузка акций",
+    "ImageUrl": "/images/preload.png",
+    "DiscountWasChanged": true,
+    "CurrentDiscount": 0,
+    "TotalItemsSold": 4,
+    "RemainToDiscount": 16
+  },
+  {
+    "id": "333",
+    "Name": "Предзагрузка акций",
+    "ImageUrl": "/images/preload.png",
+    "DiscountWasChanged": true,
+    "CurrentDiscount": 0,
+    "TotalItemsSold": 4,
+    "RemainToDiscount": 16
+  }
+]
