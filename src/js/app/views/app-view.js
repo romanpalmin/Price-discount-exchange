@@ -44,43 +44,47 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set'], fu
         init: function (curStep, isSequence) {
             var self = this;
             //console.log('Здесь мы первоначально заполним колбы...');
+            //self.preLoading(function(){console.log('Закончили предазагрузку...');})
             //setTimeout(function () {
                 self.startApp(curStep, isSequence);
             //}, 20000);
         },
 
-        /*preLoading: function (callback) {
+        preLoading: function (callback) {
             var options = {};
             var colId = 1;
             var glass = $('.current-glass.col' + colId).find('div.changing-class');
             var i = 0;
             options.currentGlass = glass;
-            for (var coins = 1; coins <= 20; coins++) {
+            /*for (var coins = 1; coins <= 20; coins++) {
                 options.colId = colId;
                 options.coinNum = coins;
                 this.drawDroppingCoinInGlass(options);
-            }
+            }*/
+
 
             var className = 'icon-';
             var newClass = '';
             var letter = this.colors[colId][0];
             var maxImgId;
 
-            var timerId = setInterval(function () {
-
-                newClass = className + letter + '_' + glass + '_' + i;
-                glass.removeClass().addClass('changing-class');
-                glass.addClass(newClass);
-                if (i === maxImgId - 1) {
-                    clearInterval(timerId);
-                    if (callback && typeof(callback) === "function") {
-                        callback();
+            /*var timerId = setInterval(function () {
+                setTimeout(function(){
+                    newClass = className + letter + '_' + glass + '_' + i;
+                    glass.removeClass().addClass('changing-class');
+                    glass.addClass(newClass);
+                    if (i === maxImgId - 1) {
+                        clearInterval(timerId);
+                        if (callback && typeof(callback) === "function") {
+                            callback();
+                        }
                     }
-                }
-                i++;
-            }, settings.speedDropping);
+                    i++;
+                }, 1000);
 
-        },*/
+            }, settings.speedDropping);*/
+
+        },
 
         startApp: function (curStep, isSequence) {
             //console.log('Запускаем рабочий прогон...');

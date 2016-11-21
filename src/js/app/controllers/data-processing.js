@@ -1,13 +1,34 @@
 /*global _, $, underscore*/
 define(['jquery', 'settings', 'position'], function ($, settings, Position) {
     var DataProcessing = {
+        variables: {
+            current: 0
+        },
         // Получение данных с вебсервиса
         init: function (url, callback) {
+            var self = this;
             if (settings.FROMWS) {
                 this.getDataFromWs(url, callback);
             } else {
-                this.getDataFromWsJson(url, callback);
+                self.getDataFromWsJson(url, callback);
             }
+                /*if (this.variables.current < 40) {
+                    settings.speedDropping = 40;
+                    settings.timeout.actions = 1000;
+                    settings.timeout.superAction = 1000;
+                    setTimeout(function () {
+                        console.log('проход № ' + self.variables.current);
+                        self.getDataFromWsJson(url, callback);
+                        self.variables.current++;
+                    }, 1000)
+                } else {
+                    settings.speedDropping = 65;
+                    settings.timeout.actions = 3500;
+                    settings.timeout.superAction = 3500;
+                    console.log('Запускаем сервис');
+                    self.getDataFromWsJson(url, callback);
+                }
+*/
         },
 
         getDataFromWsJson: function (url, callback) {
