@@ -15,8 +15,8 @@ define([], function () {
         timeout: {
             actions: 2500,
             superAction: 2500,
-            preloadActions: 500,
-            preloadSuperAction: 500
+            preloadActions: 1500,
+            preloadSuperAction: 1500
         },
         superAction: {
             maxDiscountPercent: 100

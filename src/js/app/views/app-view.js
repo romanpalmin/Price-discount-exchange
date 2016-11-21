@@ -2,22 +2,6 @@
 define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set'], function ($, app, settings, process, utils, cset) {
     var appView;
     appView = {
-        classes: {
-            pretenderClasses: {
-                glasses: '.item-pretender-glass.inner',
-                logo: '.item-pretender-logo',
-                info: '.item-pretender-info',
-                name: '.item-pretender-name',
-                tooltip: '.item-pretender-tooltip',
-                progress: ''
-            },
-            leaderClasses: {
-                logo: '.item-leader-logo',
-                info: '.item-leader-info',
-                name: '.item-leader-name'
-            }
-        },
-
         pretenders: {
             currentPretenders: [],
             currentCoins: [],
@@ -41,10 +25,11 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set'], fu
         },
 
         init: function (curStep, isSequence) {
+            var self = this;
             settings.step = !curStep ? 0 : curStep;
             if (isSequence) {
                 this.preloadData(function () {
-                    console.log('Готово');
+                    self.sequence();
                 });
                 //this.sequence();
             }
@@ -55,6 +40,11 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set'], fu
             var self = this;
             var counterSuperAction = 0;
             var counterActions = 0;
+            var path = 'data/preloader/';
+            var urlPreffixSuperAction = path + 'pl_sws';
+            var urlPreffixActions = path + 'pl_ws';
+            var urlPostfix = '.json';
+            var url = '';
 
             var preloadSuperActionInterval = setInterval(function () {
                 if (counterActions >= settings.coinsTotal) {
@@ -67,8 +57,8 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set'], fu
                     counterSuperAction++;
                 }
                 if (!isPreloaded) {
-                    console.log('Проход суперакции №' + counterSuperAction);
-                    //self.initData(self.actionType.superAction);
+                    url = urlPreffixSuperAction + counterSuperAction + urlPostfix;
+                    processPreload(url, self.actionType.superAction);
                 }
             }, settings.timeout.preloadSuperAction);
 
@@ -83,9 +73,16 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set'], fu
                 }
 
                 if (!isPreloaded) {
-                    console.log('Проход акции №' + counterActions);
+                    url = urlPreffixActions + counterActions + urlPostfix;
+                    processPreload(url, self.actionType.currentAction);
                 }
             }, settings.timeout.preloadSuperAction);
+
+            function processPreload(url, actionType) {
+                process.init(url, function (resp) {
+                    self.render(resp, actionType);
+                });
+            }
 
             function PostPreLoading() {
                 if (counterActions >= settings.coinsTotal && counterSuperAction >= settings.coinsTotal && !isPreloaded) {
@@ -96,7 +93,7 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set'], fu
             }
         },
 
-        startRealApp: function(callback){
+        startRealApp: function (callback) {
             console.log('Обнуляем переменные шагов...');
             if (callback && typeof(callback) === "function") {
                 callback();
@@ -245,7 +242,6 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set'], fu
             }
             function updateInfo() {
                 currentTitle.html(pretenderItem.name);
-                //currentDiscount.html(pretenderItem.currentDiscount);
                 currentRest.html(pretenderItem.remainToDiscount);
                 if (colId === 4) {
                     currentPercentDiscount.html(pretenderItem.currentDiscountSuperAction);
