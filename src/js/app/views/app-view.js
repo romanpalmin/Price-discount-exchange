@@ -253,60 +253,7 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set'], fu
             var colId = $('[data-id=' + item.id + ']').attr('data-col-id');
             return item.id && item.id !== 0 && item.id !== '0' ? colId : 0;
         },
-
-        searchExistingPretenders: function (pretenders) {
-            var self = this;
-            var result;
-            var newColumns = [];
-            var newPretenders = [];
-            var statuses = [];
-            var colIds = [1, 2, 3];
-            var emptyColIds = [];
-            var existsItems = [];
-
-            pretenders.forEach(function (newItem) {
-                var status = 'new';
-                for (var i = 0; i < self.pretenders.currentPretenders.length; i++) {
-                    if (newItem.id === self.pretenders.currentPretenders[i].id) {
-                        status = newItem.id === 0 || newItem.id === '0' ? 'empty' : 'exist';
-                        if (newItem.id === 0 || newItem.id === '0') {
-                            status = 'empty';
-                        } else {
-                            status = 'exist';
-                            existsItems.push({item: newItem, colId: self.getColumnId(newItem)});
-                        }
-                        break;
-                    }
-                }
-                statuses.push({item: newItem, status: status});
-                if (status === 'empty' || status === 'new') {
-                    newPretenders.push(newItem);
-                }
-            });
-
-            colIds.forEach(function (item) {
-                var isInclude = false;
-                for (var i = 0; i < existsItems.length; i++) {
-                    if (item === +existsItems[i].colId) {
-                        isInclude = true;
-                        break;
-                    }
-                }
-                if (!isInclude) {
-                    emptyColIds.push(item);
-                }
-            });
-
-
-            if (emptyColIds.length === newPretenders.length) {
-                for (var i = 0; i < emptyColIds.length; i++) {
-                    newColumns.push({item: newPretenders[i], colId: '' + emptyColIds[i]});
-                }
-            }
-            result = existsItems.concat(newColumns);
-            return result;
-        },
-
+        
         sequence: function () {
             var self = this;
             this.initData(self.actionType.currentAction);
