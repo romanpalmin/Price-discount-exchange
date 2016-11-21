@@ -92,6 +92,7 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set'], fu
         },
 
         startRealApp: function (callback) {
+            $('.preloader').fadeOut();
             if (callback && typeof(callback) === "function") {
                 callback();
             }
