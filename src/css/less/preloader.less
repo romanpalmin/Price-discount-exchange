@@ -4,9 +4,30 @@
   background: @blue url("../images/bg-fill.png") repeat scroll center center / 100% auto;
   height: 100%;
   left: 0;
-  opacity: 0.9;
+  opacity: 1;
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 1000;
+
+  .outer{
+    width:300px;
+    height:220px;
+    position:absolute;
+    left:50%;
+    top:50%;
+    margin:-100px 0 0 -150px;
+    border: 2px solid @white;
+    background: @lightblue;
+    background: linear-gradient(to right, @blue, @lightblue);
+    line-height: 200px;
+    text-align: center;
+    border-radius: 3%;
+  }
+  .inner {
+    display: inline-block; /* центрировать..*/
+    vertical-align: middle;  /* ..по вертикали */
+    line-height: 1.25; /* переопределить высоту строки на обычную */
+
+  }
 }

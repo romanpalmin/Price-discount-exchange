@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Верстка</title>
+    <title>Тотализатор</title>
     <link rel="stylesheet" type="text/css" href="css/style.all.min.css"/>
     <link rel="stylesheet" type="text/css" href="css/less.all.css"/>
 </head>
@@ -128,7 +128,16 @@
         </tr>
     </table>
 
-<div class="preloader wrapper"></div>
+<div class="preloader wrapper">
+    <div class=" outer">
+        <div class="inner">
+            <img src="images/svg/preloader.svg">
+            <div>Loading...</div>
+            Загружено
+            <span class="preloading-percent">0</span>%
+        </div>
+    </div>
+</div>
 </div>
 <script type="text/javascript" src="js/vendor/require.js" data-main="js/config"></script>
 </body>

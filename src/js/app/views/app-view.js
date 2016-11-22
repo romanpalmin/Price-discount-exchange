@@ -2,6 +2,13 @@
 define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set'], function ($, app, settings, process, utils, cset) {
     var appView;
     appView = {
+        blocks: {
+            preloader: {
+                div: '.preloader',
+                percent: '.preloading-percent'
+            }
+        },
+
         pretenders: {
             currentPretenders: [],
             currentCoins: [],
@@ -68,6 +75,7 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set'], fu
                         clearInterval(preloadActionsInterval);
                     }
                 } else {
+                    $(self.blocks.preloader.percent).html(+counterSuperAction * 5);
                     counterActions++;
                 }
 
@@ -92,10 +100,13 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set'], fu
         },
 
         startRealApp: function (callback) {
-            $('.preloader').fadeOut();
+            var self = this;
             if (callback && typeof(callback) === "function") {
                 callback();
             }
+            setTimeout(function () {
+                $(self.blocks.preloader.div).fadeOut('slow');
+            }, 500);
 
         },
 
@@ -248,7 +259,7 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set'], fu
             var colId = $('[data-id=' + item.id + ']').attr('data-col-id');
             return item.id && item.id !== 0 && item.id !== '0' ? colId : 0;
         },
-        
+
         sequence: function () {
             var self = this;
             this.initData(self.actionType.currentAction);
