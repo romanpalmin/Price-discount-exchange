@@ -21,6 +21,7 @@ module.exports = {
             index: deploy,
             images: deploy ,
             data: deploy + '/data',
+            fonts: deploy + '/css/fonts',
             vendor: {
                 js: deploy + '/js/vendor',
                 css: deploy + '/css/vendor'
@@ -86,6 +87,11 @@ module.exports = {
     data: {
         src: srcAssets + 'data/**/*',
         dest: distAssets + 'data'
+    },
+
+    fonts: {
+        src: srcAssets + '/css/fonts/**/*',
+        dest: distAssets + '/css/fonts'
     },
 
     index: {

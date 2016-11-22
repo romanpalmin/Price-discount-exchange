@@ -35,9 +35,14 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set'], fu
             var self = this;
             settings.step = !curStep ? 0 : curStep;
             if (isSequence) {
-                this.preloadData(function () {
+                if (settings.hasPreload) {
+                    this.preloadData(function () {
+                        self.sequence();
+                    });
+                }
+                else {
                     self.sequence();
-                });
+                }
             }
         },
 
@@ -51,6 +56,8 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set'], fu
             var urlPreffixActions = path + 'pl_ws';
             var urlPostfix = '.json';
             var url = '';
+            $(self.blocks.preloader.div).fadeIn('fast');
+            
 
             var preloadSuperActionInterval = setInterval(function () {
                 if (counterActions >= settings.coinsTotal) {
