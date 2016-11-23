@@ -19,7 +19,7 @@ module.exports = {
             js: deploy + '/js',
             css: deploy + '/css',
             index: deploy,
-            images: deploy ,
+            images: deploy,
             data: deploy + '/data',
             fonts: deploy + '/css/fonts',
             vendor: {
@@ -34,11 +34,15 @@ module.exports = {
     },
 
     css: {
-        src: [srcAssets + '/css/**/*.css', '!' + srcAssets + '/css/*.min.css'],
+        src: [
+            srcAssets + '/css/**/*.css',
+            '!' + srcAssets + '/css/*.min.css',
+            '!' + srcAssets + '/css/*.all.css'
+        ],
         dest: distAssets + '',
-        images:{
+        images: {
             src: [srcAssets + '/css/**/*.png'],
-            dest:  distAssets + ''
+            dest: distAssets + ''
         }
     },
 

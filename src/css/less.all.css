@@ -1,0 +1,236 @@
+.current-discount {
+  width: 100%;
+  height: 250px;
+  line-height: 250px;
+  /*  background-color: @blue;*/
+  position: absolute;
+  top: 400px;
+  /* z-index: 2000;*/
+  display: none;
+}
+
+body {
+  background: #000 url('../images/bg3.png') no-repeat center center fixed;
+  background-size: cover;
+}
+@font-face {
+  font-family: 'PfdinProLight';
+  src: url(fonts/PFDinTextCondPro-Light.ttf);
+}
+@font-face {
+  font-family: 'PfdinProBold';
+  src: url(fonts/PFDinTextCondPro-Bold.ttf);
+}
+@font-face {
+  font-family: 'PfdinProMedium';
+  src: url(fonts/PFDinTextCondPro-Medium.ttf);
+}
+.pe-main-frame {
+  width: 100%;
+  cursor: crosshair;
+}
+.mf-footer {
+  width: 100%;
+  text-align: center;
+}
+.hidden {
+  visibility: hidden;
+}
+
+.pe-main-table-2 {
+  margin: 0 auto;
+  width: 90%;
+  border-collapse: collapse;
+  border-spacing: 7px 11px;
+}
+.pe-main-table-2 td,
+.pe-main-table-2 th {
+  padding: 3px;
+  /* Поля вокруг содержимого таблицы */
+  text-align: center;
+}
+.pe-main-table-2 td.logo,
+.pe-main-table-2 th.logo {
+  vertical-align: top;
+  min-width: 45px;
+}
+.pe-main-table-2 .tr-rest-header {
+  height: 180px;
+  vertical-align: bottom;
+}
+.pe-main-table-2 .actions-title {
+  height: 20px;
+  width: 80%;
+  margin: 0 auto;
+}
+.pe-main-table-2 .logo {
+  max-height: 100%;
+  min-width: 50px;
+  margin: 0 auto;
+}
+.pe-main-table-2 .logo img {
+  left: 10px;
+  position: fixed;
+  top: 10px;
+}
+.pe-main-table-2 .row {
+  width: 100%;
+}
+.pe-main-table-2 .table-border__columns {
+  display: table;
+  width: 100%;
+}
+.pe-main-table-2 .row-border {
+  display: table-cell;
+  border-color: #fff;
+  padding: 6px;
+  width: 16.6%;
+}
+.pe-main-table-2 .row-border.right {
+  border-top: 2px solid #fff;
+  border-right: 2px solid #fff;
+}
+.pe-main-table-2 .row-border.left {
+  border-top: 2px solid #fff;
+  border-left: 2px solid #fff;
+}
+.pe-main-table-2 .row-border.empty {
+  border: none;
+}
+.pe-main-table-2 .row-border.left-only {
+  border-left: 2px solid #fff;
+}
+.pe-main-table-2 .glass-img-wrapper {
+  margin: 0 auto;
+}
+.pe-main-table-2 .current-glass {
+  position: relative;
+}
+.pe-main-table-2 .position-header-wrapper {
+  width: 100%;
+  position: absolute;
+  margin: auto;
+}
+.pe-main-table-2 .position-circle {
+  margin: 0 auto;
+}
+.pe-main-table-2 .position-circle img {
+  width: 100%;
+  border-radius: 100%;
+  max-width: 190px;
+  border: 2px solid;
+}
+.pe-main-table-2 .position-circle img.lightblue {
+  border-color: lightblue;
+}
+.pe-main-table-2 .position-circle img.orange {
+  border-color: orange;
+}
+.pe-main-table-2 .position-circle img.green {
+  border-color: darkseagreen;
+}
+.pe-main-table-2 .position-circle img.white {
+  border-color: white;
+}
+.pe-main-table-2 .rest-title {
+  position: absolute;
+  bottom: 0;
+}
+.pe-main-table-2 .rest-title.action {
+  margin-bottom: -60px;
+  margin-left: -120px;
+}
+.pe-main-table-2 .rest-title.super-action {
+  margin-bottom: -55px;
+  margin-left: 140px;
+}
+.pe-main-table-2 .current-percent {
+  border-radius: 40%;
+  color: #fff;
+  font-size: xx-large;
+  font-weight: 800;
+  line-height: 60px;
+  min-height: 40px;
+  min-width: 90px;
+  position: absolute;
+  left: -95px;
+  top: 40%;
+  z-index: -1;
+  opacity: 0.6;
+}
+.pe-main-table-2 .current-percent.lightblue {
+  background-color: lightblue;
+}
+.pe-main-table-2 .current-percent.orange {
+  background-color: orange;
+}
+.pe-main-table-2 .current-percent.green {
+  background-color: darkseagreen;
+}
+.pe-main-table-2 .current-percent.white {
+  background-color: #fff;
+}
+.pe-main-table-2 .changing-class {
+  width: 200px;
+  height: 735px;
+  margin: 0 auto;
+  position: relative;
+  top: 120px;
+}
+
+.preloader {
+  background: #5CA0FF url("../images/bg-fill.png") repeat scroll center center / 100% auto;
+  height: 100%;
+  left: 0;
+  opacity: 1;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  display: none;
+}
+.preloader .outer {
+  width: 300px;
+  height: 220px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -100px 0 0 -150px;
+  border: 2px solid #fff;
+  background: lightblue;
+  background: linear-gradient(to right, #5CA0FF, lightblue);
+  line-height: 200px;
+  text-align: center;
+  border-radius: 3%;
+}
+.preloader .inner {
+  display: inline-block;
+  /* центрировать..*/
+  vertical-align: middle;
+  /* ..по вертикали */
+  line-height: 1.25;
+  /* переопределить высоту строки на обычную */
+}
+
+.header {
+  color: #fff;
+}
+.header.rest {
+  color: #fff;
+  font-size: xx-large;
+  font-weight: 800;
+}
+.upper {
+  text-transform: uppercase;
+}
+.pfdin-light {
+  font-family: PfdinProLight;
+  font-size: xx-large;
+}
+.pfdin-bold {
+  font-family: PfdinProBold;
+}
+.pfdin-medium {
+  font-family: PfdinProMedium;
+}
+
