@@ -111,6 +111,7 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set'], fu
         startRealApp: function (callback) {
             var self = this;
             self.isPreloader = false;
+            $('.current-glass.col4').find('div.super-action-percent').css('top', 661);
             if (callback && typeof(callback) === "function") {
                 callback();
             }
@@ -251,13 +252,13 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set'], fu
             var currentCoinsForClass = currentColumn.find('div.changing-class');
             var currentRest = $('span.rest.col' + colId);
             var currentPercentDiscount = currentColumn.find('div.super-action-percent');
+            
             var options = {
                 colId: colId,
                 currentCoins: currentCoins,
                 coinNum: pretenderItem.currentCoin ? pretenderItem.currentCoin : 0,
                 currentGlass: currentCoinsForClass
             };
-
             if (options && options.coinNum >= 0 && isDropCoin) {
                 this.drawDroppingCoinInGlass(options, updateInfo);
                 this.pretenders.currentCoins = _.without(this.pretenders.currentCoins, _.findWhere(this.pretenders.currentCoins, {
@@ -273,10 +274,16 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set'], fu
                 updateInfo();
             }
             function updateInfo() {
+                if (options && options.coinNum >= 0 && isDropCoin) {
+                    currentPercentDiscount.css('top', 661 - 20 * options.coinNum);
+                }
                 currentTitle.html(pretenderItem.name);
                 currentRest.html(pretenderItem.remainToDiscount);
                 if (colId === 4) {
                     currentPercentDiscount.html(pretenderItem.currentDiscountSuperAction);
+                    if (pretenderItem.currentCoin === 0) {
+                        currentPercentDiscount.css('top', 661 );
+                    }
                 }
             }
         },

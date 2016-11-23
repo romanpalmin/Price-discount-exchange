@@ -2,7 +2,7 @@ define([], function () {
     return {
         FROMWS: false,
         ISAUTO: true,
-        hasPreload: false,
+        hasPreload: true,
         USERNAME: 'DataExchange',
         PASSWORD: '123456',
         intervalId: 0,
