@@ -2,6 +2,7 @@
 define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set'], function ($, app, settings, process, utils, cset) {
     var appView;
     appView = {
+        isPreloader: false,
         blocks: {
             preloader: {
                 div: '.preloader',
@@ -47,6 +48,7 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set'], fu
         },
 
         preloadData: function (callback) {
+            this.isPreloader = true;
             var isPreloaded = false;
             var self = this;
             var counterSuperAction = 0;
@@ -57,7 +59,7 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set'], fu
             var urlPostfix = '.json';
             var url = '';
             $(self.blocks.preloader.div).fadeIn('fast');
-            
+
 
             var preloadSuperActionInterval = setInterval(function () {
                 if (counterActions >= settings.coinsTotal) {
@@ -108,12 +110,13 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set'], fu
 
         startRealApp: function (callback) {
             var self = this;
+            self.isPreloader = false;
             if (callback && typeof(callback) === "function") {
                 callback();
             }
             setTimeout(function () {
                 $(self.blocks.preloader.div).fadeOut('slow');
-            }, 500);
+            }, 1000);
 
         },
 
@@ -208,6 +211,22 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set'], fu
                     }
                     i++;
                 }, settings.speedDropping);
+            }
+            // проверяем, не пора ли туглить стаканы и крутилку скидки для акций
+            if (colId !== 4 && !this.isPreloader) {
+                if (coinNum >= 20) {
+                    $('.bang.col' + colId).css('visibility', 'visible');
+                    setTimeout(function () {
+                        $('.bang.col' + colId).css('visibility', 'hidden');
+                        currentGlass.css('visibility', 'hidden');
+                        $('.current-discount.col' + colId).css('visibility', 'visible');
+                    }, settings.timeout.showDiscountCoinAfterFilling);
+
+                } else if (currentGlass.css('visibility') === 'hidden') {
+                    currentGlass.css('visibility', 'visible');
+                    $('.current-discount.col' + colId).css('visibility', 'hidden');
+                    $('.bang.col' + colId).css('visibility', 'hidden');
+                }
             }
         },
 
