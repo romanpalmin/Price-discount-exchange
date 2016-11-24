@@ -117,7 +117,7 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set'], fu
             }
             setTimeout(function () {
                 $(self.blocks.preloader.div).fadeOut('slow');
-            }, 1000);
+            }, settings.timeout.pauseBeforeShowReal);
 
         },
 
@@ -224,6 +224,9 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set'], fu
                     }, settings.timeout.showDiscountCoinAfterFilling);
 
                 } else if (currentGlass.css('visibility') === 'hidden') {
+                    if (coinNum === 0) {
+                        this.drawEmptyGlass({colId: colId, currentGlass: currentGlass});
+                    }
                     currentGlass.css('visibility', 'visible');
                     $('.current-discount.col' + colId).css('visibility', 'hidden');
                     $('.bang.col' + colId).css('visibility', 'hidden');
@@ -252,7 +255,7 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set'], fu
             var currentCoinsForClass = currentColumn.find('div.changing-class');
             var currentRest = $('span.rest.col' + colId);
             var currentPercentDiscount = currentColumn.find('div.super-action-percent');
-            
+
             var options = {
                 colId: colId,
                 currentCoins: currentCoins,
@@ -282,7 +285,7 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set'], fu
                 if (colId === 4) {
                     currentPercentDiscount.html(pretenderItem.currentDiscountSuperAction);
                     if (pretenderItem.currentCoin === 0) {
-                        currentPercentDiscount.css('top', 661 );
+                        currentPercentDiscount.css('top', 661);
                     }
                 }
             }
