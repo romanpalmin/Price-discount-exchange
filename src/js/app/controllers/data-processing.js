@@ -1,5 +1,5 @@
 /*global _, $, underscore*/
-define(['jquery', 'settings', 'position'], function ($, settings, Position) {
+define(['jquery', 'settings', 'position', 'utils'], function ($, settings, Position, utils) {
     var DataProcessing = {
         // Получение данных с вебсервиса
         init: function (url, callback) {
@@ -52,9 +52,9 @@ define(['jquery', 'settings', 'position'], function ($, settings, Position) {
                         self.getData(resp, callback);
                     }
                 })
-                .fail(function (jqxhr, textStatus, error) {
-                    var err = textStatus + ', ' + error;
-                    console.log("Request Failed: " + err + "," + jqxhr.responseText);
+                .fail(function (jqxhr) {
+                    console.log('Статус ошибки: ' + jqxhr.status);
+                    console.log('Сообщение ошибки: ' + jqxhr.responseText);
                 });
         },
 

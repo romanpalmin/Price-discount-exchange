@@ -9,8 +9,8 @@ define([], function () {
         this.currentDiscount = (options.CurrentDiscount ? options.CurrentDiscount.toFixed(0) : 0);// + '%';
         //this.currentCoin = options.TotalItemsSold ? options.TotalItemsSold : 0;
         this.currentCoin = options.TotalItemsSold > 20 ? 20 : options.TotalItemsSold ? options.TotalItemsSold : 0;
-        this.remainToDiscount = (options.RemainToDiscount ? options.RemainToDiscount : '0')/* + ' ед.'*/;
-        this.currentDiscountSuperAction = (options.CurrentDiscount ? options.CurrentDiscount.toFixed(0) : '0') + '%';
+        this.remainToDiscount = (options.RemainToDiscount ? options.RemainToDiscount : 0)/* + ' ед.'*/;
+        this.currentDiscountSuperAction = (options.CurrentDiscount ? options.CurrentDiscount.toFixed(0) : 0) + '%';
     };
     return Position;
 });

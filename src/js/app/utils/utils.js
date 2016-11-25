@@ -1,12 +1,12 @@
-define(['underscore', 'settings'], function (underscore, settings) {
+define(['underscore', 'settings', 'position'], function (underscore, settings, position) {
     var utils = {
-        generateEmpty: function (isLeader) {
-            return new app.Position({
-                Name: 'Нет позиции',
+        generateEmpty: function () {
+            return new position({
+                Name: 'Нет данных',
                 ImageUrl: '/images/empty.jpg',
-                RemainToDiscount: 0,
-                CurrentDiscount: 0,
-                isLeader: isLeader,
+                RemainToDiscount: +0,
+                CurrentDiscount: +0,
+                TotalItemsSold: +0,
                 id: '0'
             });
         },
