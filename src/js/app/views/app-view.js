@@ -1,5 +1,5 @@
 // jshint maxparams:9
-define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set'], function ($, app, settings, process, utils, cset) {
+define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'const'], function ($, app, settings, process, utils, cset, constants) {
     var appView;
     appView = {
         isPreloader: false,
@@ -111,7 +111,7 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set'], fu
         startRealApp: function (callback) {
             var self = this;
             self.isPreloader = false;
-            $('.current-glass.col4').find('div.super-action-percent').css('top', 661);
+            $('.current-glass.col4').find('div.super-action-percent').css('top', constants.GLASSBOTTOM);
             if (callback && typeof(callback) === "function") {
                 callback();
             }
@@ -278,14 +278,14 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set'], fu
             }
             function updateInfo() {
                 if (options && options.coinNum >= 0 && isDropCoin) {
-                    currentPercentDiscount.css('top', 661 - 20 * options.coinNum);
+                    currentPercentDiscount.css('top', constants.GLASSBOTTOM - constants.COINHEIGHT * options.coinNum);
                 }
                 currentTitle.html(pretenderItem.name);
                 currentRest.html(pretenderItem.remainToDiscount);
                 if (colId === 4) {
                     currentPercentDiscount.html(pretenderItem.currentDiscountSuperAction);
                     if (pretenderItem.currentCoin === 0) {
-                        currentPercentDiscount.css('top', 661);
+                        currentPercentDiscount.css('top', constants.GLASSBOTTOM);
                     }
                 }
             }
