@@ -56,8 +56,8 @@ define(['jquery', 'settings', 'position', 'utils'], function ($, settings, Posit
                     }
                 })
                 .fail(function (jqxhr) {
-                    console.log('Статус ошибки: ' + jqxhr.status);
-                    console.log('Сообщение ошибки: ' + jqxhr.responseText);
+                    console.log('Статус ошибки: ' + jqxhr.status + '.');
+                    //console.log('Сообщение ошибки: ' + jqxhr.responseText);
                 });
         },
 
