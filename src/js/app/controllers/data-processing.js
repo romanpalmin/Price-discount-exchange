@@ -1,6 +1,6 @@
 /*global _, $, underscore*/
 define(['jquery', 'settings', 'position', 'utils'], function ($, settings, Position, utils) {
-    var DataProcessing = {
+    return {
         // Получение данных с вебсервиса
         init: function (url, callback) {
             if (settings.FROMWS) {
@@ -51,6 +51,9 @@ define(['jquery', 'settings', 'position', 'utils'], function ($, settings, Posit
                     if (resp.length > 0) {
                         self.getData(resp, callback);
                     }
+                    else {
+                        self.getData([utils.generateEmpty()], callback);
+                    }
                 })
                 .fail(function (jqxhr) {
                     console.log('Статус ошибки: ' + jqxhr.status);
@@ -80,6 +83,4 @@ define(['jquery', 'settings', 'position', 'utils'], function ($, settings, Posit
             return new Position(obj);
         }
     };
-
-    return DataProcessing;
 });
