@@ -178,10 +178,11 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'co
 
                 // обрабатываем суперакцию
                 if (data.length === 1) {
+                    /*console.log('Текущая суперакция в фишках: ' + data[0].currentCoin);
                     data[0].currentCoin = data[0].currentDiscount;
                     if (data[0].currentCoin) {
                         data[0].currentCoin = Math.round(+data[0].currentCoin / (settings.superAction.maxDiscountPercent / 20));
-                    }
+                    }*/
                     self.drawPretender(4, data[0]);
                 }
             }
