@@ -1,7 +1,6 @@
 /*global _, $, underscore*/
 define([], function () {
     var Position = function (options) {
-        console.log(options);
         this.id = options.Id ? options.Id : (options.id ? options.id : '');
         this.isLeader = options.isLeader ? options.isLeader : false;
         this.name = options.Name ? options.Name : '';

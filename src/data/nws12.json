@@ -6,7 +6,10 @@
     "DiscountWasChanged": false,
     "CurrentDiscount": 5,
     "TotalItemsSold": 5,
-    "RemainToDiscount": 15
+    "RemainToDiscount": 15,
+    "DisplayCoinsNow": 5,
+    "DisplayCoinsOf": 20,
+    "DisplayBadaBoom": false
   },
   {
     "id": "222f60f9-951e-11e6-a94e-50e549af31d2",
@@ -15,7 +18,10 @@
     "DiscountWasChanged": false,
     "CurrentDiscount": 6,
     "TotalItemsSold": 6,
-    "RemainToDiscount": 14
+    "RemainToDiscount": 14,
+    "DisplayCoinsNow": 6,
+    "DisplayCoinsOf": 20,
+    "DisplayBadaBoom": false
   },
   {
     "id": "333f6321-951e-11e6-a94e-50e549af31d2",
@@ -24,6 +30,9 @@
     "DiscountWasChanged": false,
     "CurrentDiscount": 9,
     "TotalItemsSold": 9,
-    "RemainToDiscount": 11
+    "RemainToDiscount": 11,
+    "DisplayCoinsNow": 9,
+    "DisplayCoinsOf": 20,
+    "DisplayBadaBoom": false
   }
 ]

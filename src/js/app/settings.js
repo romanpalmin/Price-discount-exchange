@@ -1,12 +1,12 @@
 define([], function () {
     return {
-        FROMWS: true,
+        FROMWS: false,
         ISAUTO: true,
         hasPreload: true,
         USERNAME: 'DataExchange',
         PASSWORD: '123456',
         intervalId: 0,
-        coinsTotal : 20,
+        coinsTotal : 21,
         intervalIds: {
             currentActions: 0,
             superAction: 1,

@@ -5,7 +5,10 @@
     "ImageUrl": "/images/positions/hamburger.png",
     "DiscountWasChanged": false,
     "CurrentDiscount": 35,
-    "TotalItemsSold": 0,
-    "RemainToDiscount": 20
+    "TotalItemsSold": 20,
+    "RemainToDiscount": 20,
+    "DisplayCoinsNow": 20,
+    "DisplayCoinsOf": 20,
+    "DisplayBadaBoom": false
   }
 ]

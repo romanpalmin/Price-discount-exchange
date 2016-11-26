@@ -6,6 +6,9 @@
     "DiscountWasChanged": false,
     "CurrentDiscount": 11,
     "TotalItemsSold": 0,
-    "RemainToDiscount": 44
+    "RemainToDiscount": 44,
+    "DisplayCoinsNow": 11,
+    "DisplayCoinsOf": 20,
+    "DisplayBadaBoom": false
   }
 ]
