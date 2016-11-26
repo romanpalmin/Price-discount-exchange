@@ -1,6 +1,6 @@
 /*global _, $, underscore*/
 define([], function () {
-    var Position = function (options) {
+    return function (options) {
         this.id = options.Id ? options.Id : (options.id ? options.id : '');
         this.isLeader = options.isLeader ? options.isLeader : false;
         this.name = options.Name ? options.Name : '';
@@ -14,5 +14,4 @@ define([], function () {
         this.currentDiscountSuperAction = (options.CurrentDiscount ? options.CurrentDiscount.toFixed(0) : 0) + '%';
         this.isExposive = options.DisplayBadaBoom;
     };
-    return Position;
 });
