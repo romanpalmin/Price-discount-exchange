@@ -4,7 +4,7 @@
     "Name": "Бургер Ред Биф",
     "ImageUrl": "/images/positions/hamburger.png",
     "DiscountWasChanged": false,
-    "CurrentDiscount": 2,
+    "CurrentDiscount": 3,
     "TotalItemsSold": 3,
     "RemainToDiscount": 17,
     "DisplayCoinsNow": 3,
@@ -18,7 +18,10 @@
     "DiscountWasChanged": false,
     "CurrentDiscount": 2,
     "TotalItemsSold": 2,
-    "RemainToDiscount": 18
+    "RemainToDiscount": 18,
+    "DisplayCoinsNow": 2,
+    "DisplayCoinsOf": 20,
+    "DisplayBadaBoom": false
   },
   {
     "id": "333f6321-951e-11e6-a94e-50e549af31d2",
@@ -27,6 +30,9 @@
     "DiscountWasChanged": false,
     "CurrentDiscount": 3,
     "TotalItemsSold": 3,
-    "RemainToDiscount": 17
+    "RemainToDiscount": 17,
+    "DisplayCoinsNow": 3,
+    "DisplayCoinsOf": 20,
+    "DisplayBadaBoom": false
   }
 ]

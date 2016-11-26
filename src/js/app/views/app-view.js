@@ -154,9 +154,13 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'co
         },
 
         render: function (data, actionType) {
+            console.log(data);
+            console.log(actionType);
             var self = this;
             var newPretenders;
+
             if (actionType === this.actionType.currentAction) {
+                console.log(123);
                 // Обрабатываем текущую акцию
                 if (this.pretenders.currentPretenders.length === 0) {
                     //console.log('Инициируем массив...');
@@ -167,6 +171,7 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'co
                     );
                 }
                 else {
+                    console.log(345);
                     newPretenders = this.getCurrentPretenders(data);
                     newPretenders.forEach(function (item, index) {
                         self.drawPretender(index + 1, item);
