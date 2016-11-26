@@ -5,9 +5,9 @@
     "ImageUrl": "/images/preload.png",
     "DiscountWasChanged": true,
     "CurrentDiscount": 0,
-    "TotalItemsSold": 7,
-    "RemainToDiscount": 13,
-    "DisplayCoinsNow": 7,
+    "TotalItemsSold": 20,
+    "RemainToDiscount": 0,
+    "DisplayCoinsNow": 20,
     "DisplayCoinsOf": 20,
     "DisplayBadaBoom": false
   },
@@ -17,9 +17,9 @@
     "ImageUrl": "/images/preload.png",
     "DiscountWasChanged": true,
     "CurrentDiscount": 0,
-    "TotalItemsSold": 7,
-    "RemainToDiscount": 13,
-    "DisplayCoinsNow": 7,
+    "TotalItemsSold": 20,
+    "RemainToDiscount": 0,
+    "DisplayCoinsNow": 20,
     "DisplayCoinsOf": 20,
     "DisplayBadaBoom": false
   },
@@ -29,9 +29,9 @@
     "ImageUrl": "/images/preload.png",
     "DiscountWasChanged": true,
     "CurrentDiscount": 0,
-    "TotalItemsSold": 7,
-    "RemainToDiscount": 13,
-    "DisplayCoinsNow": 7,
+    "TotalItemsSold": 20,
+    "RemainToDiscount": 0,
+    "DisplayCoinsNow": 20,
     "DisplayCoinsOf": 20,
     "DisplayBadaBoom": false
   }
