@@ -4,10 +4,10 @@
     "Name": "Предзагрузка суперакции",
     "ImageUrl": "/images/preload.png",
     "DiscountWasChanged": true,
-    "CurrentDiscount": 90,
+    "CurrentDiscount": 100,
     "TotalItemsSold": 0,
-    "RemainToDiscount": 10,
-    "DisplayCoinsNow": 18,
+    "RemainToDiscount": 0,
+    "DisplayCoinsNow": 20,
     "DisplayCoinsOf": 20,
     "DisplayBadaBoom": false
   }
