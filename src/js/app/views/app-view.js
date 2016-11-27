@@ -79,7 +79,7 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'co
 
             var preloadActionsInterval = setInterval(function () {
                 var currentPreloadPercent = +counterSuperAction * 5;
-                if (currentPreloadPercent > 100){
+                if (currentPreloadPercent > 100) {
                     currentPreloadPercent = 100;
                 }
                 if (counterActions >= settings.coinsTotal) {
@@ -158,8 +158,6 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'co
         },
 
         render: function (data, actionType) {
-            console.log(data);
-            console.log(actionType);
             var self = this;
             var newPretenders;
 
@@ -174,7 +172,6 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'co
                     );
                 }
                 else {
-                    console.log(345);
                     newPretenders = this.getCurrentPretenders(data);
                     newPretenders.forEach(function (item, index) {
                         self.drawPretender(index + 1, item);
@@ -187,10 +184,10 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'co
                 // обрабатываем суперакцию
                 if (data.length === 1) {
                     /*console.log('Текущая суперакция в фишках: ' + data[0].currentCoin);
-                    data[0].currentCoin = data[0].currentDiscount;
-                    if (data[0].currentCoin) {
-                        data[0].currentCoin = Math.round(+data[0].currentCoin / (settings.superAction.maxDiscountPercent / 20));
-                    }*/
+                     data[0].currentCoin = data[0].currentDiscount;
+                     if (data[0].currentCoin) {
+                     data[0].currentCoin = Math.round(+data[0].currentCoin / (settings.superAction.maxDiscountPercent / 20));
+                     }*/
                     self.drawPretender(4, data[0]);
                 }
             }
@@ -201,6 +198,7 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'co
             var colId = options.colId;
             var coinNum = options.coinNum;
             var currentGlass = options.currentGlass;
+            var isExplosive = options.isExplosive;
             var className = 'icon-';
             var newClass = '';
             var letter = this.colors[colId][0];
@@ -223,8 +221,10 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'co
                 }, settings.speedDropping);
             }
             // проверяем, не пора ли туглить стаканы и крутилку скидки для акций
+
             if (colId !== 4 && !this.isPreloader) {
-                if (coinNum >= 20) {
+                if (isExplosive) {
+                    console.log('Включаем крутилку на столбце ' + colId);
                     $('.bang.col' + colId).css('visibility', 'visible');
                     setTimeout(function () {
                         $('.bang.col' + colId).css('visibility', 'hidden');
@@ -269,7 +269,8 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'co
                 colId: colId,
                 currentCoins: currentCoins,
                 coinNum: pretenderItem.currentCoin ? pretenderItem.currentCoin : 0,
-                currentGlass: currentCoinsForClass
+                currentGlass: currentCoinsForClass,
+                isExplosive: pretenderItem.isExplosive
             };
             if (options && options.coinNum >= 0 && isDropCoin) {
                 this.drawDroppingCoinInGlass(options, updateInfo);
