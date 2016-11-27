@@ -12,6 +12,6 @@ define([], function () {
         this.currentCoin = options.DisplayCoinsNow;
         this.remainToDiscount = (options.RemainToDiscount ? options.RemainToDiscount : 0)/* + ' ед.'*/;
         this.currentDiscountSuperAction = (options.CurrentDiscount ? options.CurrentDiscount.toFixed(0) : 0) + '%';
-        this.isExposive = options.DisplayBadaBoom;
+        this.isExplosive = options.DisplayBadaBoom;
     };
 });
