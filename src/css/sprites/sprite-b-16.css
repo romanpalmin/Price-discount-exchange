@@ -159,33 +159,39 @@ Icon classes can be used entirely standalone. They are named after their origina
   width: 200px;
   height: 735px;
 }
-.icon-b_16_5 {
+.icon-b_16_4 {
   background-image: url(../images/sprites/blue/sprite-b-16.png);
   background-position: -200px -1470px;
   width: 200px;
   height: 735px;
 }
-.icon-b_16_6 {
+.icon-b_16_5 {
   background-image: url(../images/sprites/blue/sprite-b-16.png);
   background-position: -400px -1470px;
   width: 200px;
   height: 735px;
 }
-.icon-b_16_7 {
+.icon-b_16_6 {
   background-image: url(../images/sprites/blue/sprite-b-16.png);
   background-position: -600px -1470px;
   width: 200px;
   height: 735px;
 }
-.icon-b_16_8 {
+.icon-b_16_7 {
   background-image: url(../images/sprites/blue/sprite-b-16.png);
   background-position: -800px -1470px;
   width: 200px;
   height: 735px;
 }
-.icon-b_16_9 {
+.icon-b_16_8 {
   background-image: url(../images/sprites/blue/sprite-b-16.png);
   background-position: -1000px -1470px;
+  width: 200px;
+  height: 735px;
+}
+.icon-b_16_9 {
+  background-image: url(../images/sprites/blue/sprite-b-16.png);
+  background-position: -1200px -1470px;
   width: 200px;
   height: 735px;
 }

@@ -17,7 +17,7 @@ Icon classes can be used entirely standalone. They are named after their origina
 }
 .icon-b_5_1 {
   background-image: url(../images/sprites/blue/sprite-b-5.png);
-  background-position: -1800px 0px;
+  background-position: -1600px -735px;
   width: 200px;
   height: 735px;
 }
@@ -113,13 +113,13 @@ Icon classes can be used entirely standalone. They are named after their origina
 }
 .icon-b_5_24 {
   background-image: url(../images/sprites/blue/sprite-b-5.png);
-  background-position: -1600px -735px;
+  background-position: 0px 0px;
   width: 200px;
   height: 735px;
 }
 .icon-b_5_25 {
   background-image: url(../images/sprites/blue/sprite-b-5.png);
-  background-position: 0px 0px;
+  background-position: -1800px 0px;
   width: 200px;
   height: 735px;
 }
@@ -183,45 +183,39 @@ Icon classes can be used entirely standalone. They are named after their origina
   width: 200px;
   height: 735px;
 }
-.icon-b_5_35 {
+.icon-b_5_4 {
   background-image: url(../images/sprites/blue/sprite-b-5.png);
   background-position: -1000px -1470px;
   width: 200px;
   height: 735px;
 }
-.icon-b_5_4 {
+.icon-b_5_5 {
   background-image: url(../images/sprites/blue/sprite-b-5.png);
   background-position: -1200px -1470px;
   width: 200px;
   height: 735px;
 }
-.icon-b_5_5 {
+.icon-b_5_6 {
   background-image: url(../images/sprites/blue/sprite-b-5.png);
   background-position: -1400px -1470px;
   width: 200px;
   height: 735px;
 }
-.icon-b_5_6 {
+.icon-b_5_7 {
   background-image: url(../images/sprites/blue/sprite-b-5.png);
   background-position: -1600px -1470px;
   width: 200px;
   height: 735px;
 }
-.icon-b_5_7 {
+.icon-b_5_8 {
   background-image: url(../images/sprites/blue/sprite-b-5.png);
   background-position: -1800px -1470px;
   width: 200px;
   height: 735px;
 }
-.icon-b_5_8 {
-  background-image: url(../images/sprites/blue/sprite-b-5.png);
-  background-position: -2000px -1470px;
-  width: 200px;
-  height: 735px;
-}
 .icon-b_5_9 {
   background-image: url(../images/sprites/blue/sprite-b-5.png);
-  background-position: -2200px -1470px;
+  background-position: -2000px -1470px;
   width: 200px;
   height: 735px;
 }

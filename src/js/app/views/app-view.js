@@ -78,13 +78,17 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'co
             }, settings.timeout.preloadSuperAction);
 
             var preloadActionsInterval = setInterval(function () {
+                var currentPreloadPercent = +counterSuperAction * 5;
+                if (currentPreloadPercent > 100){
+                    currentPreloadPercent = 100;
+                }
                 if (counterActions >= settings.coinsTotal) {
                     PostPreLoading();
                     if (isPreloaded) {
                         clearInterval(preloadActionsInterval);
                     }
                 } else {
-                    $(self.blocks.preloader.percent).html(+counterSuperAction * 5);
+                    $(self.blocks.preloader.percent).html(currentPreloadPercent);
                     counterActions++;
                 }
 
@@ -160,7 +164,6 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'co
             var newPretenders;
 
             if (actionType === this.actionType.currentAction) {
-                console.log(123);
                 // Обрабатываем текущую акцию
                 if (this.pretenders.currentPretenders.length === 0) {
                     //console.log('Инициируем массив...');
