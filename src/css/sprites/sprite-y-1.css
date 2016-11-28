@@ -8,6 +8,7 @@ Icon classes can be used entirely standalone. They are named after their origina
 <!-- `display: inline-block` sprite -->
 <img class="icon-home" />
 ```
+../images/sprites/blue/sprite-r-1.png
 */
 .icon-y_1_0 {
   background-image: url(../images/sprites/yellow/sprite-y-1.png);

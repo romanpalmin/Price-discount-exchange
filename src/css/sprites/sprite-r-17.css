@@ -153,45 +153,39 @@ Icon classes can be used entirely standalone. They are named after their origina
   width: 200px;
   height: 735px;
 }
-.icon-r_17_30 {
+.icon-r_17_4 {
   background-image: url(../images/sprites/red/sprite-r-17.png);
   background-position: 0px -1470px;
   width: 200px;
   height: 735px;
 }
-.icon-r_17_4 {
+.icon-r_17_5 {
   background-image: url(../images/sprites/red/sprite-r-17.png);
   background-position: -200px -1470px;
   width: 200px;
   height: 735px;
 }
-.icon-r_17_5 {
+.icon-r_17_6 {
   background-image: url(../images/sprites/red/sprite-r-17.png);
   background-position: -400px -1470px;
   width: 200px;
   height: 735px;
 }
-.icon-r_17_6 {
+.icon-r_17_7 {
   background-image: url(../images/sprites/red/sprite-r-17.png);
   background-position: -600px -1470px;
   width: 200px;
   height: 735px;
 }
-.icon-r_17_7 {
+.icon-r_17_8 {
   background-image: url(../images/sprites/red/sprite-r-17.png);
   background-position: -800px -1470px;
   width: 200px;
   height: 735px;
 }
-.icon-r_17_8 {
-  background-image: url(../images/sprites/red/sprite-r-17.png);
-  background-position: -1000px -1470px;
-  width: 200px;
-  height: 735px;
-}
 .icon-r_17_9 {
   background-image: url(../images/sprites/red/sprite-r-17.png);
-  background-position: -1200px -1470px;
+  background-position: -1000px -1470px;
   width: 200px;
   height: 735px;
 }
