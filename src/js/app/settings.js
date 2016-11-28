@@ -30,8 +30,8 @@ define([], function () {
         maxStep: 40,
         NUMBERS_OF_PRETENDER: 3,
         url: {
-            getCurrentActions: '/menu/hs/display/get-current-actions',
-            getSuperAction: '/menu/hs/display/get-super-action'
+            getCurrentActions: 'http://DataExchange:123456@birzhaserv/menu/hs/display/get-current-actions',
+            getSuperAction: 'http://DataExchange:123456@birzhaserv/menu/hs/display/get-super-action'
         }
     };
 });
