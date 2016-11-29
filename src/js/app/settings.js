@@ -1,6 +1,6 @@
 define([], function () {
     return {
-        FROMWS: false,
+        FROMWS: true,
         ISAUTO: true,
         hasPreload: true,
         USERNAME: 'DataExchange',
