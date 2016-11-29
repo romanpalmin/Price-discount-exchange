@@ -32,6 +32,13 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'co
             4: 'blue'
         },
 
+        spinners: {
+            col1: false,
+            col2: false,
+            col3: false,
+            col4: false
+        },
+
         init: function (curStep, isSequence) {
             var self = this;
             settings.step = !curStep ? 0 : curStep;
@@ -62,7 +69,7 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'co
 
 
             var preloadSuperActionInterval = setInterval(function () {
-                if (counterActions >= settings.coinsTotal) {
+                if (counterActions >= settings.preloadTimes) {
                     PostPreLoading();
                     if (isPreloaded) {
                         clearInterval(preloadSuperActionInterval);
@@ -82,7 +89,7 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'co
                 if (currentPreloadPercent > 100) {
                     currentPreloadPercent = 100;
                 }
-                if (counterActions >= settings.coinsTotal) {
+                if (counterActions >= settings.preloadTimes) {
                     PostPreLoading();
                     if (isPreloaded) {
                         clearInterval(preloadActionsInterval);
@@ -105,7 +112,7 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'co
             }
 
             function PostPreLoading() {
-                if (counterActions >= settings.coinsTotal && counterSuperAction >= settings.coinsTotal && !isPreloaded) {
+                if (counterActions >= settings.preloadTimes && counterSuperAction >= settings.preloadTimes && !isPreloaded) {
                     self.startRealApp(callback);
                 }
                 isPreloaded = true;
@@ -183,11 +190,6 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'co
 
                 // обрабатываем суперакцию
                 if (data.length === 1) {
-                    /*console.log('Текущая суперакция в фишках: ' + data[0].currentCoin);
-                     data[0].currentCoin = data[0].currentDiscount;
-                     if (data[0].currentCoin) {
-                     data[0].currentCoin = Math.round(+data[0].currentCoin / (settings.superAction.maxDiscountPercent / 20));
-                     }*/
                     self.drawPretender(4, data[0]);
                 }
             }
@@ -195,6 +197,7 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'co
 
         drawDroppingCoinInGlass: function (options, callback) {
             var minImgId = 0;
+            var self = this;
             var colId = options.colId;
             var coinNum = options.coinNum;
             var currentGlass = options.currentGlass;
@@ -203,6 +206,10 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'co
             var newClass = '';
             var letter = this.colors[colId][0];
             var maxImgId;
+            var discount = 20;
+            var spinnerIndex = 0;
+            var spinnerMax = 24;
+            var currentCol = 'col' + colId;
             if (currentGlass && coinNum > 0 && coinNum <= 20) {
                 var currentCoinArr = cset.coins[this.colors[colId]];
                 var i = minImgId;
@@ -221,24 +228,26 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'co
                 }, settings.speedDropping);
             }
             // проверяем, не пора ли туглить стаканы и крутилку скидки для акций
-
-            if (colId !== 4 && !this.isPreloader) {
+            if (colId !== 4) {
                 if (isExplosive) {
-                    console.log('Включаем крутилку на столбце ' + colId);
-                    $('.bang.col' + colId).css('visibility', 'visible');
                     setTimeout(function () {
-                        $('.bang.col' + colId).css('visibility', 'hidden');
-                        currentGlass.css('visibility', 'hidden');
-                        $('.current-discount.col' + colId).css('visibility', 'visible');
+                        self.spinners[currentCol] = true;
+                        var spinnerTimer = setInterval(function () {
+                            newClass = className + 's_' + letter + '_' + discount + '_' + spinnerIndex;
+                            currentGlass.removeClass().addClass('changing-class');
+                            currentGlass.addClass(newClass);
+                            if (!self.spinners[currentCol]) {
+                                clearInterval(spinnerTimer);
+                            }
+                            spinnerIndex++;
+                            if (spinnerIndex > spinnerMax) {
+                                spinnerIndex = 0;
+                            }
+                        }, settings.speedDropping);
                     }, settings.timeout.showDiscountCoinAfterFilling);
-
-                } else if (currentGlass.css('visibility') === 'hidden') {
-                    if (coinNum === 0) {
-                        this.drawEmptyGlass({colId: colId, currentGlass: currentGlass});
-                    }
-                    currentGlass.css('visibility', 'visible');
-                    $('.current-discount.col' + colId).css('visibility', 'hidden');
-                    $('.bang.col' + colId).css('visibility', 'hidden');
+                }
+                else {
+                    self.spinners[currentCol] = false;
                 }
             }
         },

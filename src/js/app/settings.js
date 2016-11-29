@@ -7,6 +7,7 @@ define([], function () {
         PASSWORD: '123456',
         intervalId: 0,
         coinsTotal : 21,
+        preloadTimes: 23,
         intervalIds: {
             currentActions: 0,
             superAction: 1,
@@ -14,11 +15,11 @@ define([], function () {
             preloadSuperAction: 3
         },
         timeout: {
-            actions: 3500,
-            superAction: 3500,
-            preloadActions: 2000,
-            preloadSuperAction: 2000,
-            showDiscountCoinAfterFilling: 2000,
+            actions: 4500,
+            superAction: 4500,
+            preloadActions: 2300,
+            preloadSuperAction: 2300,
+            showDiscountCoinAfterFilling: 3000,
             pauseBeforeShowReal: 5000
         },
         superAction: {
