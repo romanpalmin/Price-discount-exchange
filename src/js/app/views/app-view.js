@@ -273,6 +273,7 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'co
             var currentCoinsForClass = currentColumn.find('div.changing-class');
             var currentRest = $('span.rest.col' + colId);
             var currentPercentDiscount = currentColumn.find('div.super-action-percent');
+            var currentLogo = currentColumn.find('img.position-logo');
 
             var options = {
                 colId: colId,
@@ -301,6 +302,9 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'co
                 }
                 currentTitle.html(pretenderItem.name);
                 currentRest.html(pretenderItem.remainToDiscount);
+                if (settings.FROMWS && pretenderItem.imageUrl){
+                    currentLogo.attr('src', settings.server + pretenderItem.imageUrl);
+                }
                 if (colId === 4) {
                     currentPercentDiscount.html(pretenderItem.currentDiscountSuperAction);
                     if (pretenderItem.currentCoin === 0) {
