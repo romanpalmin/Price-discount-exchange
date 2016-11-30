@@ -17,3 +17,7 @@ gulp.task('develop', function () {
 gulp.task('compile', function () {
     runSequence('build', 'watch');
 });
+
+gulp.task('gen-sprites', function () {
+    runSequence('sprites');
+});

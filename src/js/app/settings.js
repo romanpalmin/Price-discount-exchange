@@ -3,6 +3,7 @@ define([], function () {
         FROMWS: true,
         ISAUTO: true,
         hasPreload: true,
+        server: 'birzhaserv',
         USERNAME: 'DataExchange',
         PASSWORD: '123456',
         intervalId: 0,
