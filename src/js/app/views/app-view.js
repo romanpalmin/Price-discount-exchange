@@ -254,6 +254,7 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'co
 
         drawEmptyGlass: function (options) {
             var colId = options.colId;
+            this.spinners['col' + colId] = false; // сброс крутилки
             var currentGlass = options.currentGlass;
             var letter = this.colors[colId][0];
             var newClass = 'icon-' + letter + '_1_0';
