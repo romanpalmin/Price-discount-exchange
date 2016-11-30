@@ -5,11 +5,13 @@ var imagemin = require('gulp-imagemin');
 var buffer = require('vinyl-buffer');
 
 var src = 'sprites/src/';
-var dest = 'sprites/dest/';
+var dest = 'sprites/dest/all-sprites';
 var folders =
     [
-        'spinners/green/',
-        'spinners/red/'
+        //{'url':'spinners/green/', 'poatfix'},
+        'spinners/green/20/',
+        'spinners/yellow/20/',
+        'spinners/red/20/'
     ];
 
 function getName(path) {
@@ -18,15 +20,16 @@ function getName(path) {
     arr.forEach(function (elem) {
         name += isNaN(elem) ? elem[0] + '-' : elem + '-';
     });
-    return name.substring(0, name.length-1);
+    name = name.substring(0, name.length-2);
+    return name;
 }
 
 gulp.task('sprites', function () {
     var tasks = folders.map(function (path) {
-        return gulp.src(src + path + '**/*.png')
+        return gulp.src(src + path + '*.png')
          .pipe(spritesmith({
-         imgName: path + getName(path) + '20.png',
-         cssName: path + getName(path) + '20.css'
+         imgName: 'images/' + getName(path) + '.png',
+         cssName: 'css/' + getName(path) + '.css'
          }))
          .pipe(buffer())
          .pipe(imagemin())
