@@ -5,7 +5,8 @@ var dist = './build' + project;
 var assets = '';
 var srcAssets = src + assets;
 var distAssets = dist + assets;
-var deploy = './deploy' + project;
+var deploy2 = './deploy' + project;
+var deploy = './deploy2' + project;
 
 module.exports = {
     paths: {
