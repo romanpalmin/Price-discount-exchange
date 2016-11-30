@@ -1,4 +1,5 @@
 /*global _, $, underscore*/
+// jshint maxparams: 9
 define(['jquery', 'settings', 'position', 'utils'], function ($, settings, Position, utils) {
     return {
         // Получение данных с вебсервиса
