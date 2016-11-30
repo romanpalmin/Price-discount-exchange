@@ -9,9 +9,9 @@ var src = 'sprites/src/';
 var dest = 'sprites/dest/';
 var folders =
     [
-        'spinners/green/15/',
-        'spinners/yellow/15/',
-        'spinners/red/15/'
+        'spinners/green/20/',
+        'spinners/yellow/20/',
+        'spinners/red/20/'
     ];
 
 function getName(path) {

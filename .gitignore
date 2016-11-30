@@ -4,3 +4,4 @@
 .idea
 /sprites/dest/**/*
 /sprites/src/**/*
+/src/css/*.min.css
