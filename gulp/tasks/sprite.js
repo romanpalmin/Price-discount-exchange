@@ -3,12 +3,12 @@ var spritesmith = require('gulp.spritesmith');
 var merge = require('merge-stream');
 var imagemin = require('gulp-imagemin');
 var buffer = require('vinyl-buffer');
+var pngquant = require('imagemin-pngquant');
 
 var src = 'sprites/src/';
 var dest = 'sprites/dest/all-sprites';
 var folders =
     [
-        //{'url':'spinners/green/', 'poatfix'},
         'spinners/green/20/',
         'spinners/yellow/20/',
         'spinners/red/20/'
@@ -32,7 +32,9 @@ gulp.task('sprites', function () {
          cssName: 'css/' + getName(path) + '.css'
          }))
          .pipe(buffer())
-         .pipe(imagemin())
+         .pipe(imagemin({
+             progressive: true
+         }))
          .pipe(gulp.dest(dest));
     });
     return merge(tasks);
