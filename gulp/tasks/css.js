@@ -17,7 +17,7 @@ gulp.task('css', function () {
         }))
         .pipe(cssmin())
         .pipe(rename({suffix: '.min'}))
-        .pipe(concat('style.all.min.css'))
+        .pipe(concat('sprites.min.css'))
         .pipe(gulp.dest(config.dest + '/css'))
         .pipe(gulp.dest(deploy.css));
 });

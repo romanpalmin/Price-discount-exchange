@@ -1,6 +1,6 @@
 /build
 /deploy
 /node_modules
-/sprites
 .idea
-
+/sprites/dest/**/*
+/sprites/src/**/*
