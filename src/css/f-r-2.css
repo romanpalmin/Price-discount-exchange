@@ -1,0 +1,246 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.icon-f-r-2-1 {
+  background-image: url(images/sprites/f-r-2.png);
+  background-position: -420px 0px;
+  width: 420px;
+  height: 770px;
+}
+.icon-f-r-2-10 {
+  background-image: url(images/sprites/f-r-2.png);
+  background-position: -2520px -770px;
+  width: 420px;
+  height: 770px;
+}
+.icon-f-r-2-11 {
+  background-image: url(images/sprites/f-r-2.png);
+  background-position: -840px 0px;
+  width: 420px;
+  height: 770px;
+}
+.icon-f-r-2-12 {
+  background-image: url(images/sprites/f-r-2.png);
+  background-position: -1260px 0px;
+  width: 420px;
+  height: 770px;
+}
+.icon-f-r-2-13 {
+  background-image: url(images/sprites/f-r-2.png);
+  background-position: 0px -770px;
+  width: 420px;
+  height: 770px;
+}
+.icon-f-r-2-14 {
+  background-image: url(images/sprites/f-r-2.png);
+  background-position: -420px -770px;
+  width: 420px;
+  height: 770px;
+}
+.icon-f-r-2-15 {
+  background-image: url(images/sprites/f-r-2.png);
+  background-position: -840px -770px;
+  width: 420px;
+  height: 770px;
+}
+.icon-f-r-2-16 {
+  background-image: url(images/sprites/f-r-2.png);
+  background-position: -1260px -770px;
+  width: 420px;
+  height: 770px;
+}
+.icon-f-r-2-17 {
+  background-image: url(images/sprites/f-r-2.png);
+  background-position: -1680px 0px;
+  width: 420px;
+  height: 770px;
+}
+.icon-f-r-2-18 {
+  background-image: url(images/sprites/f-r-2.png);
+  background-position: -1680px -770px;
+  width: 420px;
+  height: 770px;
+}
+.icon-f-r-2-19 {
+  background-image: url(images/sprites/f-r-2.png);
+  background-position: -2100px 0px;
+  width: 420px;
+  height: 770px;
+}
+.icon-f-r-2-2 {
+  background-image: url(images/sprites/f-r-2.png);
+  background-position: -2100px -770px;
+  width: 420px;
+  height: 770px;
+}
+.icon-f-r-2-20 {
+  background-image: url(images/sprites/f-r-2.png);
+  background-position: 0px -1540px;
+  width: 420px;
+  height: 770px;
+}
+.icon-f-r-2-21 {
+  background-image: url(images/sprites/f-r-2.png);
+  background-position: -420px -1540px;
+  width: 420px;
+  height: 770px;
+}
+.icon-f-r-2-22 {
+  background-image: url(images/sprites/f-r-2.png);
+  background-position: -840px -1540px;
+  width: 420px;
+  height: 770px;
+}
+.icon-f-r-2-23 {
+  background-image: url(images/sprites/f-r-2.png);
+  background-position: -1260px -1540px;
+  width: 420px;
+  height: 770px;
+}
+.icon-f-r-2-24 {
+  background-image: url(images/sprites/f-r-2.png);
+  background-position: -1680px -1540px;
+  width: 420px;
+  height: 770px;
+}
+.icon-f-r-2-25 {
+  background-image: url(images/sprites/f-r-2.png);
+  background-position: -2100px -1540px;
+  width: 420px;
+  height: 770px;
+}
+.icon-f-r-2-26 {
+  background-image: url(images/sprites/f-r-2.png);
+  background-position: -2520px 0px;
+  width: 420px;
+  height: 770px;
+}
+.icon-f-r-2-27 {
+  background-image: url(images/sprites/f-r-2.png);
+  background-position: 0px 0px;
+  width: 420px;
+  height: 770px;
+}
+.icon-f-r-2-28 {
+  background-image: url(images/sprites/f-r-2.png);
+  background-position: -2520px -1540px;
+  width: 420px;
+  height: 770px;
+}
+.icon-f-r-2-29 {
+  background-image: url(images/sprites/f-r-2.png);
+  background-position: -2940px 0px;
+  width: 420px;
+  height: 770px;
+}
+.icon-f-r-2-3 {
+  background-image: url(images/sprites/f-r-2.png);
+  background-position: -2940px -770px;
+  width: 420px;
+  height: 770px;
+}
+.icon-f-r-2-30 {
+  background-image: url(images/sprites/f-r-2.png);
+  background-position: -2940px -1540px;
+  width: 420px;
+  height: 770px;
+}
+.icon-f-r-2-31 {
+  background-image: url(images/sprites/f-r-2.png);
+  background-position: 0px -2310px;
+  width: 420px;
+  height: 770px;
+}
+.icon-f-r-2-32 {
+  background-image: url(images/sprites/f-r-2.png);
+  background-position: -420px -2310px;
+  width: 420px;
+  height: 770px;
+}
+.icon-f-r-2-33 {
+  background-image: url(images/sprites/f-r-2.png);
+  background-position: -840px -2310px;
+  width: 420px;
+  height: 770px;
+}
+.icon-f-r-2-34 {
+  background-image: url(images/sprites/f-r-2.png);
+  background-position: -1260px -2310px;
+  width: 420px;
+  height: 770px;
+}
+.icon-f-r-2-35 {
+  background-image: url(images/sprites/f-r-2.png);
+  background-position: -1680px -2310px;
+  width: 420px;
+  height: 770px;
+}
+.icon-f-r-2-36 {
+  background-image: url(images/sprites/f-r-2.png);
+  background-position: -2100px -2310px;
+  width: 420px;
+  height: 770px;
+}
+.icon-f-r-2-37 {
+  background-image: url(images/sprites/f-r-2.png);
+  background-position: -2520px -2310px;
+  width: 420px;
+  height: 770px;
+}
+.icon-f-r-2-38 {
+  background-image: url(images/sprites/f-r-2.png);
+  background-position: -2940px -2310px;
+  width: 420px;
+  height: 770px;
+}
+.icon-f-r-2-4 {
+  background-image: url(images/sprites/f-r-2.png);
+  background-position: -3360px 0px;
+  width: 420px;
+  height: 770px;
+}
+.icon-f-r-2-5 {
+  background-image: url(images/sprites/f-r-2.png);
+  background-position: -3360px -770px;
+  width: 420px;
+  height: 770px;
+}
+.icon-f-r-2-6 {
+  background-image: url(images/sprites/f-r-2.png);
+  background-position: -3360px -1540px;
+  width: 420px;
+  height: 770px;
+}
+.icon-f-r-2-7 {
+  background-image: url(images/sprites/f-r-2.png);
+  background-position: -3360px -2310px;
+  width: 420px;
+  height: 770px;
+}
+.icon-f-r-2-8 {
+  background-image: url(images/sprites/f-r-2.png);
+  background-position: -3780px 0px;
+  width: 420px;
+  height: 770px;
+}
+.icon-f-r-2-9 {
+  background-image: url(images/sprites/f-r-2.png);
+  background-position: -3780px -770px;
+  width: 420px;
+  height: 770px;
+}

@@ -1,0 +1,210 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.icon-f-y-10-1 {
+  background-image: url(images/sprites/f-y-10.png);
+  background-position: -420px 0px;
+  width: 420px;
+  height: 770px;
+}
+.icon-f-y-10-10 {
+  background-image: url(images/sprites/f-y-10.png);
+  background-position: -1680px -1540px;
+  width: 420px;
+  height: 770px;
+}
+.icon-f-y-10-11 {
+  background-image: url(images/sprites/f-y-10.png);
+  background-position: -840px 0px;
+  width: 420px;
+  height: 770px;
+}
+.icon-f-y-10-12 {
+  background-image: url(images/sprites/f-y-10.png);
+  background-position: -1260px 0px;
+  width: 420px;
+  height: 770px;
+}
+.icon-f-y-10-13 {
+  background-image: url(images/sprites/f-y-10.png);
+  background-position: 0px -770px;
+  width: 420px;
+  height: 770px;
+}
+.icon-f-y-10-14 {
+  background-image: url(images/sprites/f-y-10.png);
+  background-position: -420px -770px;
+  width: 420px;
+  height: 770px;
+}
+.icon-f-y-10-15 {
+  background-image: url(images/sprites/f-y-10.png);
+  background-position: -840px -770px;
+  width: 420px;
+  height: 770px;
+}
+.icon-f-y-10-16 {
+  background-image: url(images/sprites/f-y-10.png);
+  background-position: -1260px -770px;
+  width: 420px;
+  height: 770px;
+}
+.icon-f-y-10-17 {
+  background-image: url(images/sprites/f-y-10.png);
+  background-position: -1680px 0px;
+  width: 420px;
+  height: 770px;
+}
+.icon-f-y-10-18 {
+  background-image: url(images/sprites/f-y-10.png);
+  background-position: -1680px -770px;
+  width: 420px;
+  height: 770px;
+}
+.icon-f-y-10-19 {
+  background-image: url(images/sprites/f-y-10.png);
+  background-position: -2100px 0px;
+  width: 420px;
+  height: 770px;
+}
+.icon-f-y-10-2 {
+  background-image: url(images/sprites/f-y-10.png);
+  background-position: -2100px -770px;
+  width: 420px;
+  height: 770px;
+}
+.icon-f-y-10-20 {
+  background-image: url(images/sprites/f-y-10.png);
+  background-position: 0px -1540px;
+  width: 420px;
+  height: 770px;
+}
+.icon-f-y-10-21 {
+  background-image: url(images/sprites/f-y-10.png);
+  background-position: -420px -1540px;
+  width: 420px;
+  height: 770px;
+}
+.icon-f-y-10-22 {
+  background-image: url(images/sprites/f-y-10.png);
+  background-position: -840px -1540px;
+  width: 420px;
+  height: 770px;
+}
+.icon-f-y-10-23 {
+  background-image: url(images/sprites/f-y-10.png);
+  background-position: -1260px -1540px;
+  width: 420px;
+  height: 770px;
+}
+.icon-f-y-10-24 {
+  background-image: url(images/sprites/f-y-10.png);
+  background-position: 0px 0px;
+  width: 420px;
+  height: 770px;
+}
+.icon-f-y-10-25 {
+  background-image: url(images/sprites/f-y-10.png);
+  background-position: -2100px -1540px;
+  width: 420px;
+  height: 770px;
+}
+.icon-f-y-10-26 {
+  background-image: url(images/sprites/f-y-10.png);
+  background-position: -2520px 0px;
+  width: 420px;
+  height: 770px;
+}
+.icon-f-y-10-27 {
+  background-image: url(images/sprites/f-y-10.png);
+  background-position: -2520px -770px;
+  width: 420px;
+  height: 770px;
+}
+.icon-f-y-10-28 {
+  background-image: url(images/sprites/f-y-10.png);
+  background-position: -2520px -1540px;
+  width: 420px;
+  height: 770px;
+}
+.icon-f-y-10-29 {
+  background-image: url(images/sprites/f-y-10.png);
+  background-position: -2940px 0px;
+  width: 420px;
+  height: 770px;
+}
+.icon-f-y-10-3 {
+  background-image: url(images/sprites/f-y-10.png);
+  background-position: -2940px -770px;
+  width: 420px;
+  height: 770px;
+}
+.icon-f-y-10-30 {
+  background-image: url(images/sprites/f-y-10.png);
+  background-position: -2940px -1540px;
+  width: 420px;
+  height: 770px;
+}
+.icon-f-y-10-31 {
+  background-image: url(images/sprites/f-y-10.png);
+  background-position: 0px -2310px;
+  width: 420px;
+  height: 770px;
+}
+.icon-f-y-10-32 {
+  background-image: url(images/sprites/f-y-10.png);
+  background-position: -420px -2310px;
+  width: 420px;
+  height: 770px;
+}
+.icon-f-y-10-4 {
+  background-image: url(images/sprites/f-y-10.png);
+  background-position: -840px -2310px;
+  width: 420px;
+  height: 770px;
+}
+.icon-f-y-10-5 {
+  background-image: url(images/sprites/f-y-10.png);
+  background-position: -1260px -2310px;
+  width: 420px;
+  height: 770px;
+}
+.icon-f-y-10-6 {
+  background-image: url(images/sprites/f-y-10.png);
+  background-position: -1680px -2310px;
+  width: 420px;
+  height: 770px;
+}
+.icon-f-y-10-7 {
+  background-image: url(images/sprites/f-y-10.png);
+  background-position: -2100px -2310px;
+  width: 420px;
+  height: 770px;
+}
+.icon-f-y-10-8 {
+  background-image: url(images/sprites/f-y-10.png);
+  background-position: -2520px -2310px;
+  width: 420px;
+  height: 770px;
+}
+.icon-f-y-10-9 {
+  background-image: url(images/sprites/f-y-10.png);
+  background-position: -2940px -2310px;
+  width: 420px;
+  height: 770px;
+}
