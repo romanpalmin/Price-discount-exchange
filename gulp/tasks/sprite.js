@@ -9,7 +9,7 @@ var src = 'sprites/src/';
 var dest = 'sprites/dest/';
 var folders =
     [
-        'spinners/green/20/',
+        /*'spinners/green/20/',
         'spinners/yellow/20/',
         'spinners/red/20/',
         'spinners/blue/50/',
@@ -95,8 +95,12 @@ var folders =
         'falling/yellow/16/',
         'falling/yellow/17/',
         'falling/yellow/18/',
-        'falling/yellow/19/',
-        'falling/yellow/20/'
+        'falling/yellow/19/',*/
+
+        'burst/red/20/'/*,
+        'burst/yellow/20/',
+        'burst/yellow/20/',
+        'burst/yellow/20/'*/
     ];
 
 function getName(path) {

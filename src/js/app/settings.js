@@ -16,12 +16,12 @@ define([], function () {
             preloadSuperAction: 3
         },
         timeout: {
-            actions: 3000,
-            superAction: 3000,
+            actions: 2300,
+            superAction: 2300,
             preloadActions: 2300,
             preloadSuperAction: 2300,
-            showDiscountCoinAfterFilling: 3000,
-            pauseBeforeShowReal: 5000
+            showDiscountCoinAfterFilling: 4000,
+            pauseBeforeShowReal: 3000
         },
         superAction: {
             maxDiscountPercent: 100

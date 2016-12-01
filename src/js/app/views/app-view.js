@@ -230,26 +230,48 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'co
             // проверяем, не пора ли туглить стаканы и крутилку скидки для акций
             if (colId !== 4) {
                 if (isExplosive) {
+                    // стартуем взрыв через showDiscountCoinAfterFilling/1000 секунд после падения
                     setTimeout(function () {
-                        self.spinners[currentCol] = true;
-                        var spinnerTimer = setInterval(function () {
-                            newClass = className + 's-' + letter + '-' + discount + '-' + spinnerIndex;
-                            currentGlass.removeClass().addClass('changing-class');
-                            currentGlass.addClass(newClass);
-                            console.log(newClass);
-                            if (!self.spinners[currentCol]) {
-                                clearInterval(spinnerTimer);
-                            }
-                            spinnerIndex++;
-                            if (spinnerIndex > spinnerMax) {
-                                spinnerIndex = 1;
-                            }
-                        }, settings.speedDropping);
+                        console.log('Выжидаем...');
+                        startBurst();
                     }, settings.timeout.showDiscountCoinAfterFilling);
                 }
                 else {
                     self.spinners[currentCol] = false;
                 }
+            }
+
+            function startBurst() {
+                var burstIndex = 1;
+                var burstInterval = setInterval(function () {
+                    newClass = className + 'b-' + /*letter*/'r' + '-' + discount + '-' + burstIndex;
+                    currentGlass.removeClass().addClass('changing-class');
+                    currentGlass.addClass(newClass);
+
+                    if (burstIndex === constants.FRAMES_IN_BURST) {
+                        console.log('Стартуем спиннер');
+                        startSpinner();
+                        clearInterval(burstInterval);
+                    }
+                    burstIndex++;
+                }, settings.speedDropping);
+
+            }
+
+            function startSpinner() {
+                self.spinners[currentCol] = true;
+                var spinnerTimer = setInterval(function () {
+                    newClass = className + 's-' + letter + '-' + discount + '-' + spinnerIndex;
+                    currentGlass.removeClass().addClass('changing-class');
+                    currentGlass.addClass(newClass);
+                    if (!self.spinners[currentCol]) {
+                        clearInterval(spinnerTimer);
+                    }
+                    spinnerIndex++;
+                    if (spinnerIndex > spinnerMax) {
+                        spinnerIndex = 1;
+                    }
+                }, settings.speedDropping);
             }
         },
 
@@ -259,7 +281,6 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'co
             var currentGlass = options.currentGlass;
             var letter = this.colors[colId][0];
             var newClass = 'icon-f-' + letter + '-1-1';
-            console.log(newClass);
             currentGlass.removeClass().addClass('changing-class');
             currentGlass.addClass(newClass);
 
@@ -305,7 +326,7 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'co
                 }
                 currentTitle.html(pretenderItem.name);
                 currentRest.html(pretenderItem.remainToDiscount);
-                if (settings.FROMWS && pretenderItem.imageUrl){
+                if (settings.FROMWS && pretenderItem.imageUrl) {
                     currentLogo.attr('src', settings.server + pretenderItem.imageUrl);
                 }
                 if (colId === 4) {
