@@ -41,7 +41,7 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'co
 
         init: function (curStep, isSequence) {
             var self = this;
-            settings.step = !curStep ? 0 : curStep;
+            settings.step = !curStep ? constants.START_STEP : curStep;
             if (isSequence) {
                 if (settings.hasPreload) {
                     this.preloadData(function () {
@@ -137,7 +137,7 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'co
             var urlCurrentActions;
             var urlSuperAction;
             if (!settings.FROMWS) {
-                if (settings.step === 0) {
+                if (settings.step === constants.START_STEP) {
                     settings.step++;
                 }
                 urlCurrentActions = 'data/nws' + settings.step + '.json';
@@ -207,8 +207,7 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'co
             var letter = this.colors[colId][0];
             var maxImgId;
             var discount = 20;
-            var spinnerIndex = 1;
-            var spinnerMax = 25;
+
             var currentCol = 'col' + colId;
             if (currentGlass && coinNum > 0 && coinNum <= 20) {
                 var currentCoinArr = cset.coins[this.colors[colId]];
@@ -232,7 +231,6 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'co
                 if (isExplosive) {
                     // стартуем взрыв через showDiscountCoinAfterFilling/1000 секунд после падения
                     setTimeout(function () {
-                        console.log('Выжидаем...');
                         startBurst();
                     }, settings.timeout.showDiscountCoinAfterFilling);
                 }
@@ -249,7 +247,6 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'co
                     currentGlass.addClass(newClass);
 
                     if (burstIndex === constants.FRAMES_IN_BURST) {
-                        console.log('Стартуем спиннер');
                         startSpinner();
                         clearInterval(burstInterval);
                     }
@@ -259,6 +256,8 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'co
             }
 
             function startSpinner() {
+                var spinnerIndex = 1;
+                var spinnerMax = constants.SPINNER_FRAMES;
                 self.spinners[currentCol] = true;
                 var spinnerTimer = setInterval(function () {
                     newClass = className + 's-' + letter + '-' + discount + '-' + spinnerIndex;
@@ -349,7 +348,7 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'co
             this.initData(self.actionType.superAction);
             settings.intervalIds.currentActions = setInterval(function () {
                 if (settings.step >= settings.maxStep) {
-                    settings.step = 0;
+                    settings.step = constants.START_STEP;
                 }
                 settings.step += 1;
                 self.initData(self.actionType.currentAction);

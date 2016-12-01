@@ -20,7 +20,7 @@ define([], function () {
             superAction: 2300,
             preloadActions: 2300,
             preloadSuperAction: 2300,
-            showDiscountCoinAfterFilling: 4000,
+            showDiscountCoinAfterFilling: 1500,
             pauseBeforeShowReal: 3000
         },
         superAction: {
