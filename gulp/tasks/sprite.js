@@ -95,12 +95,12 @@ var folders =
         'falling/yellow/16/',
         'falling/yellow/17/',
         'falling/yellow/18/',
-        'falling/yellow/19/',*/
+        'falling/yellow/19/',
 
-        'burst/red/20/'/*,
-        'burst/yellow/20/',
-        'burst/yellow/20/',
-        'burst/yellow/20/'*/
+        'burst/red/20/',
+        'burst/green/20/',
+        'burst/yellow/20/',*/
+        'burst/blue/50/'
     ];
 
 function getName(path) {
