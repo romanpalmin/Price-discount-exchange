@@ -1,35 +1,27 @@
 define([], function () {
     return {
-        FROMWS: false,
-        ISAUTO: true,
+        fromWs: false,
+        isAuto: true,
         hasPreload: false,
         server: 'http://birzhaserv',
-        USERNAME: 'DataExchange',
-        PASSWORD: '123456',
-        intervalId: 0,
-        coinsTotal : 21,
+        username: 'DataExchange',
+        password: '123456',
         preloadTimes: 23,
-        intervalIds: {
-            currentActions: 0,
-            superAction: 1,
-            preloadCurrentAction: 2,
-            preloadSuperAction: 3
-        },
         timeout: {
             actions: 2300,
             superAction: 2300,
             preloadActions: 2300,
             preloadSuperAction: 2300,
             showDiscountCoinAfterFilling: 1500,
-            pauseBeforeShowReal: 3000
+            pauseBeforeShowReal: 3000,
+            speedDropping: 50
         },
-        superAction: {
-            maxDiscountPercent: 100
+        steps:{
+            step: 0,
+            maxStep: 40,
+            startStep: 32
         },
-        speedDropping: 50,
-        step: 0,
-        maxStep: 40,
-        NUMBERS_OF_PRETENDER: 3,
+
         url: {
             getCurrentActions: 'http://DataExchange:123456@birzhaserv/menu/hs/display/get-current-actions',
             getSuperAction: 'http://DataExchange:123456@birzhaserv/menu/hs/display/get-super-action'

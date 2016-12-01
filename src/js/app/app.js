@@ -3,7 +3,7 @@ define(['app-view', 'settings'], function(view, settings){
         init: function () {
             app.currentPretendersArray = [];
             app.currentLeader = {};
-            view.init(settings.step, settings.ISAUTO);
+            view.init(settings.steps.step, settings.isAuto);
         }
     };
     return app;

@@ -1,5 +1,5 @@
 // jshint maxparams:9
-define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'const'], function ($, app, settings, process, utils, cset, constants) {
+define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'const', "underscore"], function ($, app, settings, process, utils, cset, constants, _) {
     var appView;
     appView = {
         isPreloader: false,
@@ -25,6 +25,11 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'co
             superAction: false
         },
 
+        intervalIds: {
+            action: 0,
+            superaction: 1
+        },
+
         colors: {
             1: 'green',
             2: 'yellow',
@@ -39,9 +44,12 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'co
             col4: false
         },
 
+        step: 0,
+
         init: function (curStep, isSequence) {
             var self = this;
-            settings.step = !curStep ? constants.START_STEP : curStep;
+            //settings.steps.step = 
+            this.step = !curStep ? constants.START_STEP : curStep;
             if (isSequence) {
                 if (settings.hasPreload) {
                     this.preloadData(function () {
@@ -136,12 +144,12 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'co
             var self = this;
             var urlCurrentActions;
             var urlSuperAction;
-            if (!settings.FROMWS) {
-                if (settings.step === constants.START_STEP) {
-                    settings.step++;
+            if (!settings.fromWs) {
+                if (this.step === constants.START_STEP) {
+                    this.step++;
                 }
-                urlCurrentActions = 'data/nws' + settings.step + '.json';
-                urlSuperAction = 'data/nsws' + settings.step + '.json';
+                urlCurrentActions = 'data/nws' + this.step + '.json';
+                urlSuperAction = 'data/nsws' + this.step + '.json';
             } else {
                 urlCurrentActions = settings.url.getCurrentActions;
                 urlSuperAction = settings.url.getSuperAction;
@@ -224,7 +232,7 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'co
                         }
                     }
                     i++;
-                }, settings.speedDropping);
+                }, settings.timeout.speedDropping);
             }
             // проверяем, не пора ли туглить стаканы и крутилку скидки для акций
             if (colId !== 4) {
@@ -244,13 +252,13 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'co
                 var burstInterval = setInterval(function () {
                     newClass = className + 'b-' + letter + '-' + discount + '-' + burstIndex;
                     currentGlass.removeClass().addClass('changing-class').addClass(newClass);
-                    
+
                     if (burstIndex === constants.FRAMES_IN_BURST) {
                         startSpinner();
                         clearInterval(burstInterval);
                     }
                     burstIndex++;
-                }, settings.speedDropping);
+                }, settings.timeout.speedDropping);
 
             }
 
@@ -261,7 +269,7 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'co
                 var spinnerTimer = setInterval(function () {
                     newClass = className + 's-' + letter + '-' + discount + '-' + spinnerIndex;
                     currentGlass.removeClass().addClass('changing-class').addClass(newClass);
-                    
+
                     if (!self.spinners[currentCol] && spinnerIndex === 14) {
                         startDestroy();
                         console.log('Нчинаем уничстожать стакан...');
@@ -272,19 +280,19 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'co
                     if (spinnerIndex > spinnerMax) {
                         spinnerIndex = 1;
                     }
-                }, settings.speedDropping);
+                }, settings.timeout.speedDropping);
             }
 
             function startDestroy() {
                 var destroyIndex = 1;
                 var destroyMax = constants.FRAMES_IN_DESTROY;
                 var destroyTimer = setInterval(function () {
-                    
-                    if (destroyIndex === destroyMax){
+
+                    if (destroyIndex === destroyMax) {
                         clearInterval(destroyTimer);
                     }
 
-                }, settings.speedDropping);
+                }, settings.timeout.speedDropping);
             }
         },
 
@@ -339,7 +347,7 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'co
                 }
                 currentTitle.html(pretenderItem.name);
                 currentRest.html(pretenderItem.remainToDiscount);
-                if (settings.FROMWS && pretenderItem.imageUrl) {
+                if (settings.fromWs && pretenderItem.imageUrl) {
                     currentLogo.attr('src', settings.server + pretenderItem.imageUrl);
                 }
                 if (colId === 4) {
@@ -360,17 +368,23 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'co
             var self = this;
             this.initData(self.actionType.currentAction);
             this.initData(self.actionType.superAction);
-            settings.intervalIds.currentActions = setInterval(function () {
-                if (settings.step >= settings.maxStep) {
-                    settings.step = constants.START_STEP;
+            this.intervalIds.action = setInterval(function () {
+                if (self.step >= settings.steps.maxStep) {
+                    self.step = constants.START_STEP;
                 }
-                settings.step += 1;
+                self.step += 1;
                 self.initData(self.actionType.currentAction);
             }, settings.timeout.actions);
 
-            settings.intervalIds.superAction = setInterval(function () {
+            this.intervalIds.superaction = setInterval(function () {
                 self.initData(self.actionType.superAction);
             }, settings.timeout.superAction);
+        },
+
+        stopActions: function () {
+            clearInterval(this.intervalIds.action);
+            clearInterval(this.intervalIds.superaction);
+
         }
     };
     return appView;

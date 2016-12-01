@@ -4,7 +4,7 @@ define(['jquery', 'settings', 'position', 'utils'], function ($, settings, Posit
     return {
         // Получение данных с вебсервиса
         init: function (url, callback) {
-            if (settings.FROMWS) {
+            if (settings.fromWs) {
                 this.getDataFromWs(url, callback);
             } else {
                 this.getDataFromWsJson(url, callback);
@@ -16,8 +16,8 @@ define(['jquery', 'settings', 'position', 'utils'], function ($, settings, Posit
             $.ajax({
 
                 headers: {
-                    'password': settings.PASSWORD,
-                    'login': settings.USERNAME
+                    'password': settings.password,
+                    'login': settings.username
                 },
                 charset: 'ISO',
                 method: 'GET',
@@ -41,8 +41,8 @@ define(['jquery', 'settings', 'position', 'utils'], function ($, settings, Posit
             $.ajax({
                 method: 'GET',
                 beforeSend: function (request) {
-                    request.setRequestHeader("username", settings.USERNAME);
-                    request.setRequestHeader("password", settings.PASSWORD);
+                    request.setRequestHeader("username", settings.username);
+                    request.setRequestHeader("password", settings.password);
                 },
                 url: url,
                 contentType: "text/plain",
