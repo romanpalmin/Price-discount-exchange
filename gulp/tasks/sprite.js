@@ -12,6 +12,7 @@ var folders =
         'spinners/green/20/',
         'spinners/yellow/20/',
         'spinners/red/20/',
+        'spinners/blue/50/',
         
         'falling/blue/1/',
         'falling/blue/2/',

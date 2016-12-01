@@ -215,7 +215,7 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'co
                 var i = minImgId;
                 maxImgId = currentCoinArr[coinNum - 1];
                 var timerId = setInterval(function () {
-                    newClass = className + letter + '_' + coinNum + '_' + i;
+                    newClass = className + 'f-' + letter + '-' + coinNum + '-' + i;
                     currentGlass.removeClass().addClass('changing-class');
                     currentGlass.addClass(newClass);
                     if (i === maxImgId - 1) {
@@ -233,7 +233,7 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'co
                     setTimeout(function () {
                         self.spinners[currentCol] = true;
                         var spinnerTimer = setInterval(function () {
-                            newClass = className + 's_' + letter + '_' + discount + '_' + spinnerIndex;
+                            newClass = className + 's-' + letter + '-' + discount + '-' + spinnerIndex;
                             currentGlass.removeClass().addClass('changing-class');
                             currentGlass.addClass(newClass);
                             if (!self.spinners[currentCol]) {

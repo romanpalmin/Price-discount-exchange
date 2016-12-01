@@ -1,5 +1,6 @@
 /build
 /deploy
+/deploy2
 /node_modules
 .idea
 /sprites/dest/**/*
