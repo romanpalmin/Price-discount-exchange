@@ -242,10 +242,8 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'co
             function startBurst() {
                 var burstIndex = 1;
                 var burstInterval = setInterval(function () {
-                    newClass = className + 'b-' + /*letter*/'r' + '-' + discount + '-' + burstIndex;
-                    currentGlass.removeClass().addClass('changing-class');
-                    currentGlass.addClass(newClass);
-
+                    newClass = className + 'b-' + letter + '-' + discount + '-' + burstIndex;
+                    currentGlass.removeClass().addClass('changing-class').addClass(newClass);;
                     if (burstIndex === constants.FRAMES_IN_BURST) {
                         startSpinner();
                         clearInterval(burstInterval);
