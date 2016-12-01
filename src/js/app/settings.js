@@ -27,7 +27,6 @@ define([], function () {
             maxDiscountPercent: 100
         },
         speedDropping: 50,
-        origin: 'it-173.vp.local',
         step: 0,
         maxStep: 40,
         NUMBERS_OF_PRETENDER: 3,

@@ -243,7 +243,8 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'co
                 var burstIndex = 1;
                 var burstInterval = setInterval(function () {
                     newClass = className + 'b-' + letter + '-' + discount + '-' + burstIndex;
-                    currentGlass.removeClass().addClass('changing-class').addClass(newClass);;
+                    currentGlass.removeClass().addClass('changing-class').addClass(newClass);
+                    
                     if (burstIndex === constants.FRAMES_IN_BURST) {
                         startSpinner();
                         clearInterval(burstInterval);
@@ -255,19 +256,34 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'co
 
             function startSpinner() {
                 var spinnerIndex = 1;
-                var spinnerMax = constants.SPINNER_FRAMES;
+                var spinnerMax = constants.FRAMES_IN_SPINNER;
                 self.spinners[currentCol] = true;
                 var spinnerTimer = setInterval(function () {
                     newClass = className + 's-' + letter + '-' + discount + '-' + spinnerIndex;
-                    currentGlass.removeClass().addClass('changing-class');
-                    currentGlass.addClass(newClass);
-                    if (!self.spinners[currentCol]) {
+                    currentGlass.removeClass().addClass('changing-class').addClass(newClass);
+                    
+                    if (!self.spinners[currentCol] && spinnerIndex === 14) {
+                        startDestroy();
+                        console.log('Нчинаем уничстожать стакан...');
+                        console.log('Текущее значение монет в столбце:' + coinNum);
                         clearInterval(spinnerTimer);
                     }
                     spinnerIndex++;
                     if (spinnerIndex > spinnerMax) {
                         spinnerIndex = 1;
                     }
+                }, settings.speedDropping);
+            }
+
+            function startDestroy() {
+                var destroyIndex = 1;
+                var destroyMax = constants.FRAMES_IN_DESTROY;
+                var destroyTimer = setInterval(function () {
+                    
+                    if (destroyIndex === destroyMax){
+                        clearInterval(destroyTimer);
+                    }
+
                 }, settings.speedDropping);
             }
         },
