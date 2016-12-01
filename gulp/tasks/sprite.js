@@ -101,6 +101,12 @@ var folders =
         'burst/green/20/',
         'burst/yellow/20/',
         'burst/blue/50/'*/
+
+        'destroy/red/20/',
+        'destroy/yellow/20/',
+        'destroy/green/20/',
+        'destroy/blue/50/'
+        
     ];
 
 function getName(path) {
