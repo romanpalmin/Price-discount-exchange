@@ -196,7 +196,7 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'co
         },
 
         drawDroppingCoinInGlass: function (options, callback) {
-            var minImgId = 0;
+            var minImgId = 1;
             var self = this;
             var colId = options.colId;
             var coinNum = options.coinNum;
@@ -207,8 +207,8 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'co
             var letter = this.colors[colId][0];
             var maxImgId;
             var discount = 20;
-            var spinnerIndex = 0;
-            var spinnerMax = 24;
+            var spinnerIndex = 1;
+            var spinnerMax = 25;
             var currentCol = 'col' + colId;
             if (currentGlass && coinNum > 0 && coinNum <= 20) {
                 var currentCoinArr = cset.coins[this.colors[colId]];
@@ -236,12 +236,13 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'co
                             newClass = className + 's-' + letter + '-' + discount + '-' + spinnerIndex;
                             currentGlass.removeClass().addClass('changing-class');
                             currentGlass.addClass(newClass);
+                            console.log(newClass);
                             if (!self.spinners[currentCol]) {
                                 clearInterval(spinnerTimer);
                             }
                             spinnerIndex++;
                             if (spinnerIndex > spinnerMax) {
-                                spinnerIndex = 0;
+                                spinnerIndex = 1;
                             }
                         }, settings.speedDropping);
                     }, settings.timeout.showDiscountCoinAfterFilling);
@@ -257,7 +258,8 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'co
             this.spinners['col' + colId] = false; // сброс крутилки
             var currentGlass = options.currentGlass;
             var letter = this.colors[colId][0];
-            var newClass = 'icon-' + letter + '_1_0';
+            var newClass = 'icon-f-' + letter + '-1-1';
+            console.log(newClass);
             currentGlass.removeClass().addClass('changing-class');
             currentGlass.addClass(newClass);
 

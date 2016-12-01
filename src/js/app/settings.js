@@ -1,6 +1,6 @@
 define([], function () {
     return {
-        FROMWS: true,
+        FROMWS: false,
         ISAUTO: true,
         hasPreload: false,
         server: 'http://birzhaserv',
@@ -16,8 +16,8 @@ define([], function () {
             preloadSuperAction: 3
         },
         timeout: {
-            actions: 4500,
-            superAction: 4500,
+            actions: 3000,
+            superAction: 3000,
             preloadActions: 2300,
             preloadSuperAction: 2300,
             showDiscountCoinAfterFilling: 3000,
@@ -26,7 +26,7 @@ define([], function () {
         superAction: {
             maxDiscountPercent: 100
         },
-        speedDropping: 70,
+        speedDropping: 50,
         origin: 'it-173.vp.local',
         step: 0,
         maxStep: 40,

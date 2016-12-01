@@ -1,6 +1,6 @@
 define([], function () {
     return {
-        GLASSBOTTOM: 661, // нижняя грань стакана
+        GLASSBOTTOM: 681, // нижняя грань стакана
         COINHEIGHT: 20, // высота монеты
     };
 });
