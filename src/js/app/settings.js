@@ -8,18 +8,18 @@ define([], function () {
         password: '123456',
         preloadTimes: 23,
         timeout: {
-            actions: 2300,
-            superAction: 2300,
+            actions: 2500,
+            superAction: 2500,
             preloadActions: 2300,
             preloadSuperAction: 2300,
             showDiscountCoinAfterFilling: 1500,
             pauseBeforeShowReal: 3000,
-            speedDropping: 50
+            speedDropping: 65
         },
         steps:{
             step: 0,
             maxStep: 40,
-            startStep: 32
+            startStep: 0
         },
 
         url: {

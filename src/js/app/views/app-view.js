@@ -12,7 +12,7 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'co
 
         pretenders: {
             currentPretenders: [],
-            currentCoins: [],
+            currentCoinsInGlass: [],
             prevPretenders: []
         },
 
@@ -44,12 +44,40 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'co
             col4: false
         },
 
+        destroy: {
+            col1: false,
+            col2: false,
+            col3: false,
+            col4: false
+        },
+
+        burst: {
+            col1: false,
+            col2: false,
+            col3: false,
+            col4: false
+        },
+
+        falling: {
+            col1: true,
+            col2: true,
+            col3: true,
+            col4: true
+        },
+
+        currentCoinsInGlass: {
+            col1: 0,
+            col2: 0,
+            col3: 0,
+            col4: 0
+        },
+
         step: 0,
 
         init: function (curStep, isSequence) {
             var self = this;
             //settings.steps.step = 
-            this.step = !curStep ? constants.START_STEP : curStep;
+            this.step = !curStep ? settings.steps.startStep : curStep;
             if (isSequence) {
                 if (settings.hasPreload) {
                     this.preloadData(function () {
@@ -145,7 +173,7 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'co
             var urlCurrentActions;
             var urlSuperAction;
             if (!settings.fromWs) {
-                if (this.step === constants.START_STEP) {
+                if (this.step === settings.steps.startStep) {
                     this.step++;
                 }
                 urlCurrentActions = 'data/nws' + this.step + '.json';
@@ -215,16 +243,19 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'co
             var letter = this.colors[colId][0];
             var maxImgId;
             var discount = 20;
-
             var currentCol = 'col' + colId;
+
             if (currentGlass && coinNum > 0 && coinNum <= 20) {
                 var currentCoinArr = cset.coins[this.colors[colId]];
                 var i = minImgId;
                 maxImgId = currentCoinArr[coinNum - 1];
                 var timerId = setInterval(function () {
                     newClass = className + 'f-' + letter + '-' + coinNum + '-' + i;
-                    currentGlass.removeClass().addClass('changing-class');
-                    currentGlass.addClass(newClass);
+
+                    if (self.falling[currentCol]) {
+                        currentGlass.removeClass().addClass('changing-class');
+                        currentGlass.addClass(newClass);
+                    }
                     if (i === maxImgId - 1) {
                         clearInterval(timerId);
                         if (callback && typeof(callback) === "function") {
@@ -236,6 +267,7 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'co
             }
             // проверяем, не пора ли туглить стаканы и крутилку скидки для акций
             if (colId !== 4) {
+                self.currentCoinsInGlass[currentCol] = coinNum;
                 if (isExplosive) {
                     // стартуем взрыв через showDiscountCoinAfterFilling/1000 секунд после падения
                     setTimeout(function () {
@@ -249,12 +281,15 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'co
 
             function startBurst() {
                 var burstIndex = 1;
+                self.falling[currentCol] = false;
+                self.burst[currentCol] = true;
                 var burstInterval = setInterval(function () {
                     newClass = className + 'b-' + letter + '-' + discount + '-' + burstIndex;
                     currentGlass.removeClass().addClass('changing-class').addClass(newClass);
 
                     if (burstIndex === constants.FRAMES_IN_BURST) {
                         startSpinner();
+                        self.burst[currentCol] = false;
                         clearInterval(burstInterval);
                     }
                     burstIndex++;
@@ -269,12 +304,16 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'co
                 var spinnerTimer = setInterval(function () {
                     newClass = className + 's-' + letter + '-' + discount + '-' + spinnerIndex;
                     currentGlass.removeClass().addClass('changing-class').addClass(newClass);
-
-                    if (!self.spinners[currentCol] && spinnerIndex === 14) {
-                        startDestroy();
-                        console.log('Нчинаем уничстожать стакан...');
-                        console.log('Текущее значение монет в столбце:' + coinNum);
-                        clearInterval(spinnerTimer);
+                    if (!self.burst[currentCol] && !self.spinners[currentCol]) {
+                        if (currentCol === 1) {
+                            console.log('Текущий класс: ' + currentGlass.attr('class'));
+                            console.log(spinnerIndex);
+                        }
+                        if (spinnerIndex === 14) {
+                            self.spinners[currentCol] = false;
+                            startDestroy();
+                            clearInterval(spinnerTimer);
+                        }
                     }
                     spinnerIndex++;
                     if (spinnerIndex > spinnerMax) {
@@ -285,10 +324,30 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'co
 
             function startDestroy() {
                 var destroyIndex = 1;
+                var arrayOfFallingFrames = cset.coins[self.colors[colId]];
+                var lastIndex = arrayOfFallingFrames[arrayOfFallingFrames.length - 1];
+                var stepIndex = self.currentCoinsInGlass[currentCol];
+                self.destroy['col' + colId] = true;
                 var destroyMax = constants.FRAMES_IN_DESTROY;
+                if (stepIndex === 0){
+                    stepIndex = 1;
+                    lastIndex = 1;
+                }
                 var destroyTimer = setInterval(function () {
-
+                    if (!self.spinners[currentCol]) {
+                        newClass = className + 'd-' + letter + '-' + discount + '-' + destroyIndex;
+                        currentGlass.removeClass().addClass('changing-class').addClass(newClass);
+                    }
+                    destroyIndex++;
                     if (destroyIndex === destroyMax) {
+                        // получаем и устанавливаем последний кадр анимации падения для отображения реального состояния
+                        newClass = className + 'f-' + letter + '-' + stepIndex + '-' + lastIndex;
+                        console.log(newClass);
+                        currentGlass.removeClass().addClass('changing-class').addClass(newClass);
+
+                        // включаем падение и выключаем
+                        self.destroy['col' + colId] = false;
+                        self.falling[currentCol] = true;
                         clearInterval(destroyTimer);
                     }
 
@@ -309,7 +368,7 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'co
 
         drawPretender: function (colId, pretenderItem) {
             var curCoins = {id: pretenderItem.id, coins: pretenderItem.currentCoin, type: colId};
-            var savedCoins = +utils.getCurrentCoinByUserIdAndColId(this.pretenders.currentCoins, pretenderItem.id, colId);
+            var savedCoins = +utils.getCurrentCoinByUserIdAndColId(this.pretenders.currentCoinsInGlass, pretenderItem.id, colId);
 
             var isDropCoin = (savedCoins !== pretenderItem.currentCoin);
             var currentColumn = $('.current-glass.col' + colId);
@@ -322,18 +381,18 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'co
 
             var options = {
                 colId: colId,
-                currentCoins: currentCoins,
+                currentCoinsInGlass: currentCoins,
                 coinNum: pretenderItem.currentCoin ? pretenderItem.currentCoin : 0,
                 currentGlass: currentCoinsForClass,
                 isExplosive: pretenderItem.isExplosive
             };
             if (options && options.coinNum >= 0 && isDropCoin) {
                 this.drawDroppingCoinInGlass(options, updateInfo);
-                this.pretenders.currentCoins = _.without(this.pretenders.currentCoins, _.findWhere(this.pretenders.currentCoins, {
+                this.pretenders.currentCoinsInGlass = _.without(this.pretenders.currentCoinsInGlass, _.findWhere(this.pretenders.currentCoinsInGlass, {
                     id: pretenderItem.id,
                     type: colId
                 }));
-                this.pretenders.currentCoins.push(curCoins);
+                this.pretenders.currentCoinsInGlass.push(curCoins);
             }
             else {
                 if (pretenderItem.currentCoin === 0) {
@@ -370,7 +429,7 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'co
             this.initData(self.actionType.superAction);
             this.intervalIds.action = setInterval(function () {
                 if (self.step >= settings.steps.maxStep) {
-                    self.step = constants.START_STEP;
+                    self.step = settings.steps.startStep;
                 }
                 self.step += 1;
                 self.initData(self.actionType.currentAction);
