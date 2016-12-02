@@ -305,10 +305,6 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'co
                     newClass = className + 's-' + letter + '-' + discount + '-' + spinnerIndex;
                     currentGlass.removeClass().addClass('changing-class').addClass(newClass);
                     if (!self.burst[currentCol] && !self.spinners[currentCol]) {
-                        if (currentCol === 1) {
-                            console.log('Текущий класс: ' + currentGlass.attr('class'));
-                            console.log(spinnerIndex);
-                        }
                         if (spinnerIndex === 14) {
                             self.spinners[currentCol] = false;
                             startDestroy();
@@ -342,7 +338,6 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'co
                     if (destroyIndex === destroyMax) {
                         // получаем и устанавливаем последний кадр анимации падения для отображения реального состояния
                         newClass = className + 'f-' + letter + '-' + stepIndex + '-' + lastIndex;
-                        console.log(newClass);
                         currentGlass.removeClass().addClass('changing-class').addClass(newClass);
 
                         // включаем падение и выключаем
