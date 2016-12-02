@@ -28,11 +28,11 @@
     "Name": "Бургер №1",
     "ImageUrl": "/images/positions/beer.png",
     "DiscountWasChanged": false,
-    "CurrentDiscount": 20,
+    "CurrentDiscount": 0,
     "TotalItemsSold": 20,
-    "RemainToDiscount": 0,
-    "DisplayCoinsNow": 20,
+    "RemainToDiscount": 20,
+    "DisplayCoinsNow": 0,
     "DisplayCoinsOf": 20,
-    "DisplayBadaBoom": true
+    "DisplayBadaBoom": false
   }
 ]
