@@ -101,6 +101,7 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'co
             var urlPreffixActions = path + 'pl_ws';
             var urlPostfix = '.json';
             var url = '';
+            var currentPreloadPercent = 0;
             $(self.blocks.preloader.div).fadeIn('fast');
 
 
@@ -121,7 +122,7 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'co
             }, settings.timeout.preloadSuperAction);
 
             var preloadActionsInterval = setInterval(function () {
-                var currentPreloadPercent = +counterSuperAction * 5;
+                currentPreloadPercent += parseInt(100/23);
                 if (currentPreloadPercent > 100) {
                     currentPreloadPercent = 100;
                 }
@@ -148,7 +149,7 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'co
             }
 
             function PostPreLoading() {
-                if (counterActions >= settings.preloadTimes && counterSuperAction >= settings.preloadTimes && !isPreloaded) {
+                if (counterActions === settings.preloadTimes && counterSuperAction === settings.preloadTimes && !isPreloaded) {
                     self.startRealApp(callback);
                 }
                 isPreloaded = true;
