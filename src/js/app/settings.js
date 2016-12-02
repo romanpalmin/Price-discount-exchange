@@ -2,19 +2,19 @@ define([], function () {
     return {
         fromWs: false,
         isAuto: true,
-        hasPreload: false,
+        hasPreload: true,
         server: 'http://birzhaserv',
         username: 'DataExchange',
         password: '123456',
         preloadTimes: 23,
         timeout: {
-            actions: 2500,
-            superAction: 2500,
-            preloadActions: 2300,
-            preloadSuperAction: 2300,
+            actions: 4500,
+            superAction: 4500,
+            preloadActions: 2500,
+            preloadSuperAction: 2500,
             showDiscountCoinAfterFilling: 1500,
-            pauseBeforeShowReal: 3000,
-            speedDropping: 65
+            pauseBeforeShowReal: 7000,
+            speedDropping: 70
         },
         steps:{
             step: 0,
