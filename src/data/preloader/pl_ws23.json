@@ -1,38 +1,38 @@
 [
   {
     "id": "111",
-    "Name": "Предзагрузка акций",
-    "ImageUrl": "/images/preload.png",
+    "Name": "-",
+    "ImageUrl": "/images/tovar.jpg",
     "DiscountWasChanged": true,
     "CurrentDiscount": 0,
     "TotalItemsSold": 20,
     "RemainToDiscount": 0,
-    "DisplayCoinsNow": 20,
+    "DisplayCoinsNow": 0,
     "DisplayCoinsOf": 20,
-    "DisplayBadaBoom": true
+    "DisplayBadaBoom": false
   },
   {
     "id": "222",
-    "Name": "Предзагрузка акций",
-    "ImageUrl": "/images/preload.png",
+    "Name": "-",
+    "ImageUrl": "/images/tovar.jpg",
     "DiscountWasChanged": true,
     "CurrentDiscount": 0,
     "TotalItemsSold": 20,
     "RemainToDiscount": 0,
-    "DisplayCoinsNow": 20,
+    "DisplayCoinsNow": 0,
     "DisplayCoinsOf": 20,
-    "DisplayBadaBoom": true
+    "DisplayBadaBoom": false
   },
   {
     "id": "333",
-    "Name": "Предзагрузка акций",
-    "ImageUrl": "/images/preload.png",
+    "Name": "-",
+    "ImageUrl": "/images/tovar.jpg",
     "DiscountWasChanged": true,
     "CurrentDiscount": 0,
     "TotalItemsSold": 20,
     "RemainToDiscount": 0,
-    "DisplayCoinsNow": 20,
+    "DisplayCoinsNow": 0,
     "DisplayCoinsOf": 20,
-    "DisplayBadaBoom": true
+    "DisplayBadaBoom": false
   }
 ]

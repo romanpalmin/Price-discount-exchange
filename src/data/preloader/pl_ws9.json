@@ -1,8 +1,8 @@
 [
   {
     "id": "111",
-    "Name": "Предзагрузка акций",
-    "ImageUrl": "/images/preload.png",
+    "Name": "-",
+    "ImageUrl": "/images/tovar.jpg",
     "DiscountWasChanged": true,
     "CurrentDiscount": 0,
     "TotalItemsSold": 8,
@@ -13,8 +13,8 @@
   },
   {
     "id": "222",
-    "Name": "Предзагрузка акций",
-    "ImageUrl": "/images/preload.png",
+    "Name": "-",
+    "ImageUrl": "/images/tovar.jpg",
     "DiscountWasChanged": true,
     "CurrentDiscount": 0,
     "TotalItemsSold": 8,
@@ -25,8 +25,8 @@
   },
   {
     "id": "333",
-    "Name": "Предзагрузка акций",
-    "ImageUrl": "/images/preload.png",
+    "Name": "-",
+    "ImageUrl": "/images/tovar.jpg",
     "DiscountWasChanged": true,
     "CurrentDiscount": 0,
     "TotalItemsSold": 8,

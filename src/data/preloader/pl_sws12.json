@@ -1,8 +1,8 @@
 [
   {
     "id": "444",
-    "Name": "Предзагрузка суперакции",
-    "ImageUrl": "/images/preload.png",
+    "Name": "-",
+    "ImageUrl": "/images/tovar.jpg",
     "DiscountWasChanged": true,
     "CurrentDiscount": 55,
     "TotalItemsSold": 0,

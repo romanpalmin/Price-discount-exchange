@@ -1,14 +1,14 @@
 [
   {
     "id": "444",
-    "Name": "Предзагрузка суперакции",
-    "ImageUrl": "/images/preload.png",
+    "Name": "-",
+    "ImageUrl": "/images/tovar.jpg",
     "DiscountWasChanged": true,
     "CurrentDiscount": 100,
     "TotalItemsSold": 0,
-    "RemainToDiscount": 0,
-    "DisplayCoinsNow": 20,
+    "RemainToDiscount": 20,
+    "DisplayCoinsNow": 0,
     "DisplayCoinsOf": 20,
-    "DisplayBadaBoom": true
+    "DisplayBadaBoom": false
   }
 ]
