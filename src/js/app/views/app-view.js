@@ -101,7 +101,7 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'co
             var urlPreffixActions = path + 'pl_ws';
             var urlPostfix = '.json';
             var url = '';
-            var currentPreloadPercent = 0;
+            var currentPreloadPercent = 4;
             $(self.blocks.preloader.div).fadeIn('fast');
 
 
