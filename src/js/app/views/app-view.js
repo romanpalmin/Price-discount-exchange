@@ -122,7 +122,7 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'co
             }, settings.timeout.preloadSuperAction);
 
             var preloadActionsInterval = setInterval(function () {
-                currentPreloadPercent += parseInt(100/23);
+                currentPreloadPercent += parseInt(100 / settings.preloadTimes);
                 if (currentPreloadPercent > 100) {
                     currentPreloadPercent = 100;
                 }
@@ -149,7 +149,7 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'co
             }
 
             function PostPreLoading() {
-                if (counterActions === settings.preloadTimes && counterSuperAction === settings.preloadTimes && !isPreloaded) {
+                if (!isPreloaded) {
                     self.startRealApp(callback);
                 }
                 isPreloaded = true;
@@ -326,7 +326,7 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'co
                 var stepIndex = self.currentCoinsInGlass[currentCol];
                 self.destroy['col' + colId] = true;
                 var destroyMax = constants.FRAMES_IN_DESTROY;
-                if (stepIndex === 0){
+                if (stepIndex === 0) {
                     stepIndex = 1;
                     lastIndex = 1;
                 }
