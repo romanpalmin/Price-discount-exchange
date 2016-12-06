@@ -13,7 +13,7 @@ define([], function () {
             preloadActions: 2500,
             preloadSuperAction: 2500,
             showDiscountCoinAfterFilling: 1500,
-            pauseBeforeShowReal: 7000,
+            pauseBeforeShowReal: 10000,
             speedDropping: 70
         },
         steps:{
