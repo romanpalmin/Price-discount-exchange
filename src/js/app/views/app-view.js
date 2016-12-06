@@ -232,6 +232,11 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'co
             }
         },
 
+        /**
+         * Отрисовка основных анимаций: падение, стартовый взрыв, крутилка скидки, разрушение стакана
+         * @param options
+         * @param callback
+         */
         drawDroppingCoinInGlass: function (options, callback) {
             var minImgId = 1;
             var self = this;
@@ -351,6 +356,10 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'co
             }
         },
 
+        /**
+         * Отрисовка пустого стакана
+         * @param options: {colId, currentGlass}
+         */
         drawEmptyGlass: function (options) {
             var colId = options.colId;
             this.spinners['col' + colId] = false; // сброс крутилки
@@ -362,6 +371,11 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'co
 
         },
 
+        /**
+         * Отрисовка столбца позиции либо с эффектом падающей фишки, либо с обновлением только данных
+         * @param colId
+         * @param pretenderItem
+         */
         drawPretender: function (colId, pretenderItem) {
             var curCoins = {id: pretenderItem.id, coins: pretenderItem.currentCoin, type: colId};
             var savedCoins = +utils.getCurrentCoinByUserIdAndColId(this.pretenders.currentCoinsInGlass, pretenderItem.id, colId);
@@ -396,20 +410,42 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'co
                 }
                 updateInfo();
             }
+
+            /**
+             * Обновление информации по позиции после каждого запроса к серверу
+             */
             function updateInfo() {
+                // двигаем бейдж с текущей скидкой вверх по стакану
                 if (options && options.coinNum >= 0 && isDropCoin) {
                     currentPercentDiscount.css('top', constants.GLASSBOTTOM - constants.COINHEIGHT * options.coinNum);
                 }
+
+                // выводим наименование позиции
                 currentTitle.html(pretenderItem.name);
-                currentRest.html(pretenderItem.remainToDiscount);
+
+                //pretenderItem.restTime = '25 сек.';
+
+                // если пришло время до конца акции, выводим его, иначе остаток до скидки
+                if (pretenderItem.restTime !== '') {
+                    currentRest.html(pretenderItem.restTime);
+                }
+                else {
+                    currentRest.html(pretenderItem.remainToDiscount);
+                }
+
+                // заполняем логотипы позиций для акций
                 if (settings.fromWs && pretenderItem.imageUrl && colId !== 4) {
                     currentLogo.attr('src', settings.server + pretenderItem.imageUrl);
                 }
+
+                // заполняем логотипы позиции и текущую скидку для суперакций
                 if (colId === 4) {
                     currentPercentDiscount.html(pretenderItem.currentDiscountSuperAction);
                     /*if(currentLogo.attr('src') !== settings.server + '/images/rolling.gif') {
-                        currentLogo.attr('src', settings.server + '/images/rolling.gif');
-                    }*/
+                     currentLogo.attr('src', settings.server + '/images/rolling.gif');
+                     }*/
+
+                    // скидываем бейдж к основанию стакана при нулевой скидке
                     if (pretenderItem.currentCoin === 0) {
                         currentPercentDiscount.css('top', constants.GLASSBOTTOM);
                     }
