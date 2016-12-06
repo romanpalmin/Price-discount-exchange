@@ -407,7 +407,9 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'co
                 }
                 if (colId === 4) {
                     currentPercentDiscount.html(pretenderItem.currentDiscountSuperAction);
-                    currentLogo.attr('src', settings.server + '/images/rolling.gif');
+                    /*if(currentLogo.attr('src') !== settings.server + '/images/rolling.gif') {
+                        currentLogo.attr('src', settings.server + '/images/rolling.gif');
+                    }*/
                     if (pretenderItem.currentCoin === 0) {
                         currentPercentDiscount.css('top', constants.GLASSBOTTOM);
                     }
