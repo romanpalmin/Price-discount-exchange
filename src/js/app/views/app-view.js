@@ -402,11 +402,12 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'co
                 }
                 currentTitle.html(pretenderItem.name);
                 currentRest.html(pretenderItem.remainToDiscount);
-                if (settings.fromWs && pretenderItem.imageUrl) {
+                if (settings.fromWs && pretenderItem.imageUrl && colId !== 4) {
                     currentLogo.attr('src', settings.server + pretenderItem.imageUrl);
                 }
                 if (colId === 4) {
                     currentPercentDiscount.html(pretenderItem.currentDiscountSuperAction);
+                    currentLogo.attr('src', settings.server + '/images/rolling.gif');
                     if (pretenderItem.currentCoin === 0) {
                         currentPercentDiscount.css('top', constants.GLASSBOTTOM);
                     }
