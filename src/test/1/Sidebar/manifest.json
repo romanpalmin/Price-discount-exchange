@@ -1,0 +1,19 @@
+{
+   "background": {
+      "page": "background.html"
+   },
+   "content_scripts": [ {
+      "js": [ "script.js", "script2.js" ],
+      "matches": [ "*://*.vk.com/*" ]
+   } ],
+   "description": "Inject a VK sidebar on the current tab when the page action is clicked",
+      "manifest_version": 2,
+   "name": "Inject VK sidebar",
+   "page_action": {
+      "default_icon": "whittlr.logo.png",
+      "default_title": "Inject sidebar"
+   },
+   "permissions": [ "tabs" ],
+   "version": "0.2",
+   "web_accessible_resources": [ "frame.html" ]
+}
