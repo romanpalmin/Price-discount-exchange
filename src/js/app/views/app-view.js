@@ -274,7 +274,7 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'co
             // проверяем, не пора ли туглить стаканы и крутилку скидки для акций
             if (colId !== 4) {
                 self.currentCoinsInGlass[currentCol] = coinNum;
-                if (isExplosive) {
+                if (isExplosive && !self.spinners[currentCol]) {
                     // стартуем взрыв через showDiscountCoinAfterFilling/1000 секунд после падения
                     setTimeout(function () {
                         startBurst();
