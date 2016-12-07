@@ -6,10 +6,10 @@
     "DiscountWasChanged": false,
     "CurrentDiscount": 3,
     "TotalItemsSold": 3,
-    "RemainToDiscount": 17,
-    "DisplayCoinsNow": 3,
+    "RemainToDiscount": 0,
+    "DisplayCoinsNow": 20,
     "DisplayCoinsOf": 20,
-    "DisplayBadaBoom": false
+    "DisplayBadaBoom": true
   },
   {
     "id": "222f60f9-951e-11e6-a94e-50e549af31d2",
@@ -18,10 +18,10 @@
     "DiscountWasChanged": false,
     "CurrentDiscount": 2,
     "TotalItemsSold": 2,
-    "RemainToDiscount": 18,
-    "DisplayCoinsNow": 2,
+    "RemainToDiscount": 0,
+    "DisplayCoinsNow": 20,
     "DisplayCoinsOf": 20,
-    "DisplayBadaBoom": false
+    "DisplayBadaBoom": true
   },
   {
     "id": "333f6321-951e-11e6-a94e-50e549af31d2",
@@ -30,9 +30,9 @@
     "DiscountWasChanged": false,
     "CurrentDiscount": 3,
     "TotalItemsSold": 3,
-    "RemainToDiscount": 17,
-    "DisplayCoinsNow": 3,
+    "RemainToDiscount": 2,
+    "DisplayCoinsNow": 18,
     "DisplayCoinsOf": 20,
-    "DisplayBadaBoom": false
+    "DisplayBadaBoom": true
   }
 ]
