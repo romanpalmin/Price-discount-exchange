@@ -76,10 +76,10 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'co
 
         init: function (curStep, isSequence) {
             var self = this;
-            //settings.steps.step = 
             this.step = !curStep ? settings.steps.startStep : curStep;
             if (isSequence) {
                 if (settings.hasPreload) {
+                    $(self.blocks.preloader.div).fadeIn('fast');
                     this.preloadData(function () {
                         self.sequence();
                     });
@@ -94,7 +94,6 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'co
             this.isPreloader = true;
             var isPreloaded = false;
             var self = this;
-            var counterSuperAction = 0;
             var counterActions = 0;
             var path = 'data/preloader/';
             var urlPreffixSuperAction = path + 'pl_sws';
@@ -102,24 +101,7 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'co
             var urlPostfix = '.json';
             var url = '';
             var currentPreloadPercent = parseInt(100 / settings.preloadTimes);
-            $(self.blocks.preloader.div).fadeIn('fast');
 
-
-            var preloadSuperActionInterval = setInterval(function () {
-                if (counterActions >= settings.preloadTimes) {
-                    PostPreLoading();
-                    if (isPreloaded) {
-                        clearInterval(preloadSuperActionInterval);
-                    }
-                }
-                else {
-                    counterSuperAction++;
-                }
-                if (!isPreloaded) {
-                    url = urlPreffixSuperAction + counterSuperAction + urlPostfix;
-                    processPreload(url, self.actionType.superAction);
-                }
-            }, settings.timeout.preloadSuperAction);
 
             var preloadActionsInterval = setInterval(function () {
                 currentPreloadPercent += parseInt(100 / settings.preloadTimes);
@@ -127,18 +109,22 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'co
                     currentPreloadPercent = 100;
                 }
                 if (counterActions >= settings.preloadTimes) {
-                    PostPreLoading();
+
                     if (isPreloaded) {
                         clearInterval(preloadActionsInterval);
+                    } else {
+                        PostPreLoading();
                     }
                 } else {
                     $(self.blocks.preloader.percent).html(currentPreloadPercent);
                     counterActions++;
                 }
 
-                if (!isPreloaded) {
+                if (!isPreloaded && counterActions <= settings.preloadTimes) {
                     url = urlPreffixActions + counterActions + urlPostfix;
                     processPreload(url, self.actionType.currentAction);
+                    url = urlPreffixSuperAction + counterActions + urlPostfix;
+                    processPreload(url, self.actionType.superAction);
                 }
             }, settings.timeout.preloadSuperAction);
 
@@ -149,10 +135,17 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'co
             }
 
             function PostPreLoading() {
-                if (!isPreloaded) {
-                    self.startRealApp(callback);
+                var notSpinners = !self.spinners.col1 && !self.spinners.col2 && !self.spinners.col3;
+                var notDestroy = !self.destroy.col1 && !self.destroy.col2 && !self.destroy.col3;
+                var notBurst = !self.burst.col1 && !self.burst.col2 && !self.burst.col3;
+                if (notSpinners && notDestroy && notBurst) {
+                    isPreloaded = true;
                 }
-                isPreloaded = true;
+                if (isPreloaded) {
+                    setTimeout(function () {
+                        self.startRealApp(callback);
+                    }, 2000);
+                }
             }
         },
 
@@ -347,6 +340,7 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'co
                         currentGlass.removeClass().addClass('changing-class').addClass(newClass);
 
                         // включаем падение и выключаем
+                        self.spinners['col' + colId] = false;
                         self.destroy['col' + colId] = false;
                         self.falling[currentCol] = true;
                         clearInterval(destroyTimer);
