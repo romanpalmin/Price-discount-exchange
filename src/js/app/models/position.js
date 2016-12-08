@@ -13,6 +13,7 @@ define([], function () {
         this.remainToDiscount = (options.RemainToDiscount ? options.RemainToDiscount : 0)/* + ' ед.'*/;
         this.currentDiscountSuperAction = (options.CurrentDiscount ? options.CurrentDiscount.toFixed(0) : 0) + '%';
         this.isExplosive = options.DisplayBadaBoom;
-        this.restTime = (options.restDiscountSeconds !=='' && options.restDiscountSeconds !== undefined) ? options.restDiscountSeconds + ' сек.' : '';
+        this.restTime = options.RemainSecondsToFinish;
+        this.restTimeToString = this.restTime + ' сек.';
     };
 });

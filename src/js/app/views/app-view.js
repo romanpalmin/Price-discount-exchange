@@ -334,8 +334,8 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'co
                         currentGlass.removeClass().addClass('changing-class').addClass(newClass);
                     }
                     destroyIndex++;
-                    if (destroyIndex === destroyMax) {
-                        // получаем и устанавливаем последний кадр анимации падения для отображения реального состояния
+                    if (destroyIndex === destroyMax && stepIndex !== 20) {
+                        // получаем и устанавливаем последний кадр анимации падения для отображения реального состояния, если не 20
                         newClass = className + 'f-' + letter + '-' + stepIndex + '-' + lastIndex;
                         currentGlass.removeClass().addClass('changing-class').addClass(newClass);
 
@@ -420,8 +420,8 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'co
                 //pretenderItem.restTime = '25 сек.';
 
                 // если пришло время до конца акции, выводим его, иначе остаток до скидки
-                if (pretenderItem.restTime !== '') {
-                    currentRest.html(pretenderItem.restTime);
+                if (pretenderItem.restTime !== 0) {
+                    currentRest.html(pretenderItem.restTimeToString);
                 }
                 else {
                     currentRest.html(pretenderItem.remainToDiscount);
