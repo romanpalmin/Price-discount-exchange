@@ -334,10 +334,11 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'co
                         currentGlass.removeClass().addClass('changing-class').addClass(newClass);
                     }
                     destroyIndex++;
-                    if (destroyIndex === destroyMax && stepIndex !== 20) {
+                    if (destroyIndex === destroyMax) {
+                        //if (stepIndex === 20) lastIndex = 1;
                         // получаем и устанавливаем последний кадр анимации падения для отображения реального состояния, если не 20
-                        newClass = className + 'f-' + letter + '-' + stepIndex + '-' + lastIndex;
-                        currentGlass.removeClass().addClass('changing-class').addClass(newClass);
+                        //newClass = className + 'f-' + letter + '-' + stepIndex + '-' + lastIndex;
+                        //currentGlass.removeClass().addClass('changing-class').addClass(newClass);
 
                         // включаем падение и выключаем
                         self.spinners['col' + colId] = false;
@@ -423,8 +424,11 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'co
                 if (pretenderItem.restTime !== 0) {
                     currentRest.html(pretenderItem.restTimeToString);
                 }
-                else {
+                else if (pretenderItem.remainToDiscount !== 0) {
                     currentRest.html(pretenderItem.remainToDiscount);
+                }
+                else {
+                    currentRest.html('');
                 }
 
                 // заполняем логотипы позиций для акций
