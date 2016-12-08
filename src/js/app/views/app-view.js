@@ -432,7 +432,7 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'co
                 }
 
                 // заполняем логотипы позиций для акций
-                if (settings.fromWs && pretenderItem.imageUrl && colId !== 4) {
+                if (settings.fromWs && pretenderItem.imageUrl/* && colId !== 4*/) {
                     currentLogo.attr('src', settings.server + pretenderItem.imageUrl);
                 }
 
