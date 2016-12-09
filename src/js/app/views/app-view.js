@@ -425,7 +425,7 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'co
                 //pretenderItem.restTime = '25 сек.';
 
                 // если пришло время до конца акции, выводим его, иначе остаток до скидки
-                if (pretenderItem.restTime !== 0) {
+                if (pretenderItem.restTime !== 0 && !!pretenderItem.restTime) {
                     currentRest.html(pretenderItem.restTimeToString);
                 }
                 else if (pretenderItem.remainToDiscount !== 0) {
