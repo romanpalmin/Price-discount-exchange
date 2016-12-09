@@ -1,5 +1,5 @@
 // jshint maxparams:9
-define(['underscore', 'settings', 'position', 'const'], function (underscore, settings, position, constants) {
+define(['underscore', 'settings', 'position', 'const', 'jquery'], function (underscore, settings, position, constants, $) {
     return {
         generateEmpty: function () {
             return new position({
@@ -32,6 +32,37 @@ define(['underscore', 'settings', 'position', 'const'], function (underscore, se
         getCurrentCoinByUserIdAndColId: function (array, userId, colId) {
             var res = _.where(array, {id: userId, type: colId});
             return res.length === 1 ? res[0].coins : 0;
+        },
+
+        preloadImages: function () {
+            var callback;
+            var images;
+            var count;
+            var selector = '.preload-img';
+            var img = $(selector);
+            var imgPath = 'css/images/sprites/';
+            if (typeof arguments[arguments.length - 1] == 'function') {
+                callback = arguments[arguments.length - 1];
+            } else {
+                callback = false;
+            }
+            if (typeof arguments[0] == 'object') {
+                images = arguments[0];
+                count = images.length;
+            } else {
+                images = arguments;
+                count = images.length - 1;
+            }
+            var not_loaded = count;
+            for (var i = 0; i < count; i++) {
+                img.on('load', function () {
+                    if (--not_loaded < 1 && typeof callback == 'function') {
+                        img.css('display', 'none');
+                        callback();
+                    }
+                }).attr('src', imgPath + images[i]);
+            }
         }
-    };
+
+    }
 });
