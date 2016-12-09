@@ -244,6 +244,10 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'co
             var discount = 20;
             var currentCol = 'col' + colId;
 
+            if(colId === 4){
+                discount = 50;
+            }
+
             if (currentGlass && coinNum > 0 && coinNum <= 20) {
                 var currentCoinArr = cset.coins[this.colors[colId]];
                 var i = minImgId;
@@ -265,7 +269,7 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'co
                 }, settings.timeout.speedDropping);
             }
             // проверяем, не пора ли туглить стаканы и крутилку скидки для акций
-            if (colId !== 4) {
+            //if (colId !== 4) {
                 self.currentCoinsInGlass[currentCol] = coinNum;
                 if (isExplosive && !self.spinners[currentCol]) {
                     // стартуем взрыв через showDiscountCoinAfterFilling/1000 секунд после падения
@@ -276,7 +280,7 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'co
                 else {
                     self.spinners[currentCol] = false;
                 }
-            }
+            //}
 
             function startBurst() {
                 var burstIndex = 1;
@@ -337,8 +341,8 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'co
                     if (destroyIndex === destroyMax) {
                         //if (stepIndex === 20) lastIndex = 1;
                         // получаем и устанавливаем последний кадр анимации падения для отображения реального состояния, если не 20
-                        //newClass = className + 'f-' + letter + '-' + stepIndex + '-' + lastIndex;
-                        //currentGlass.removeClass().addClass('changing-class').addClass(newClass);
+                        newClass = className + 'f-' + letter + '-1-1';
+                        currentGlass.removeClass().addClass('changing-class').addClass(newClass);
 
                         // включаем падение и выключаем
                         self.spinners['col' + colId] = false;
