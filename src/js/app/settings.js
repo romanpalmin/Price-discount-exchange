@@ -2,6 +2,8 @@ define([], function () {
     return {
         fromWs: false,
         isAuto: true,
+        hasPreload: true,
+        isNewPreloader: true,
         hasPreload: false,
         isChief: true,
         server: 'http://birzhaserv',
@@ -14,7 +16,7 @@ define([], function () {
             preloadActions: 2500,
             preloadSuperAction: 2500,
             showDiscountCoinAfterFilling: 1500,
-            pauseBeforeShowReal: 10000,
+            pauseBeforeShowReal: 5000,
             speedDropping: 70
         },
         steps:{

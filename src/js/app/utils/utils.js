@@ -1,5 +1,5 @@
 // jshint maxparams:9
-define(['underscore', 'settings', 'position', 'const'], function (underscore, settings, position, constants) {
+define(['underscore', 'settings', 'position', 'const', 'jquery'], function (underscore, settings, position, constants, $) {
     return {
         generateEmpty: function () {
             return new position({
@@ -32,6 +32,24 @@ define(['underscore', 'settings', 'position', 'const'], function (underscore, se
         getCurrentCoinByUserIdAndColId: function (array, userId, colId) {
             var res = _.where(array, {id: userId, type: colId});
             return res.length === 1 ? res[0].coins : 0;
+        },
+
+        /**
+         * Предзагрузка изображений средствами Chrome, использовать аккуратно, оттестировав
+         * @param arr - массив изображений для предзагрузки, по сути все спрайты
+         * @param callback
+         */
+        preloadImagesByChromePreloading: function (arr, callback) {
+            var el;
+            for (var i = 0; i < arr.length; i++) {
+                el = '<link rel="preload" href="' + arr[i] + '" as="image">';
+                $('head').append(el);
+                if (i === arr.length - 1 && typeof callback === 'function'){
+                    callback();
+                }
+            }
         }
+
+
     };
 });
