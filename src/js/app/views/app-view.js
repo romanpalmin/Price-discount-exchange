@@ -382,6 +382,7 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'co
             var isDropCoin = (savedCoins !== pretenderItem.currentCoin);
             var currentColumn = $('.current-glass.col' + colId);
             var currentTitle = currentColumn.find('span.position-name');
+            var nextTitle = currentColumn.find('span.next-position-name');
             var currentCoins = currentColumn.find('img.coins');
             var currentCoinsForClass = currentColumn.find('div.changing-class');
             var currentRest = $('span.rest.col' + colId);
@@ -422,7 +423,10 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'co
                 // выводим наименование позиции
                 currentTitle.html(pretenderItem.name);
 
-                //pretenderItem.restTime = '25 сек.';
+                // для шеф-повара выводим наименование следующей акции
+                if (settings.isChief){
+                    nextTitle.html(pretenderItem.nextPositionName);
+                }
 
                 // если пришло время до конца акции, выводим его, иначе остаток до скидки
                 if (pretenderItem.restTime !== 0 && !!pretenderItem.restTime) {

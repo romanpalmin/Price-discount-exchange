@@ -15,5 +15,6 @@ define([], function () {
         this.isExplosive = options.DisplayBadaBoom;
         this.restTime = options.RemainSecondsToFinish;
         this.restTimeToString = this.restTime + ' сек.';
+        this.nextPositionName = options.NextName ? options.NextName : this.name;
     };
 });
