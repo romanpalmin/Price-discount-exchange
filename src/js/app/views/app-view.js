@@ -1,12 +1,13 @@
 // jshint maxparams:9
-define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'const', "underscore"], function ($, app, settings, process, utils, cset, constants, _) {
+define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'const', "underscore", "images"], function ($, app, settings, process, utils, cset, constants, _, imgs) {
     var appView;
     appView = {
         isPreloader: false,
         blocks: {
             preloader: {
                 div: '.preloader',
-                percent: '.preloading-percent'
+                percent: '.preloading-percent',
+                showpercent: '.show-loading-progress'
             }
         },
 
@@ -78,16 +79,34 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'co
             var self = this;
             this.step = !curStep ? settings.steps.startStep : curStep;
             if (isSequence) {
-                if (settings.hasPreload) {
-                    $(self.blocks.preloader.div).fadeIn('fast');
+                // Запускаем предзагрузчик, в зависимости от настроек, либо старую версию, либо новую
+                if (!settings.isNewPreloader) {
                     this.preloadData(function () {
                         self.sequence();
                     });
-                }
-                else {
-                    self.sequence();
+                } else {
+                    this.preloadDataNew(function () {
+                        self.sequence();
+                    });
                 }
             }
+            else {
+                self.sequence();
+            }
+        },
+
+        /**
+         * Новая версия предзагрузчика, с использованием средств Chrome
+         * @param callback
+         */
+        preloadDataNew: function (callback) {
+            var self = this;
+            $(self.blocks.preloader.showpercent).hide();
+            utils.preloadImagesByChromePreloading(imgs.url, function () {
+                setTimeout(function () {
+                    self.startRealApp(callback)
+                }, 2000);
+            });
         },
 
         preloadData: function (callback) {
@@ -244,7 +263,7 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'co
             var discount = 20;
             var currentCol = 'col' + colId;
 
-            if(colId === 4){
+            if (colId === 4) {
                 discount = 50;
             }
 
@@ -270,16 +289,16 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'co
             }
             // проверяем, не пора ли туглить стаканы и крутилку скидки для акций
             //if (colId !== 4) {
-                self.currentCoinsInGlass[currentCol] = coinNum;
-                if (isExplosive && !self.spinners[currentCol]) {
-                    // стартуем взрыв через showDiscountCoinAfterFilling/1000 секунд после падения
-                    setTimeout(function () {
-                        startBurst();
-                    }, settings.timeout.showDiscountCoinAfterFilling);
-                }
-                else {
-                    self.spinners[currentCol] = false;
-                }
+            self.currentCoinsInGlass[currentCol] = coinNum;
+            if (isExplosive && !self.spinners[currentCol]) {
+                // стартуем взрыв через showDiscountCoinAfterFilling/1000 секунд после падения
+                setTimeout(function () {
+                    startBurst();
+                }, settings.timeout.showDiscountCoinAfterFilling);
+            }
+            else {
+                self.spinners[currentCol] = false;
+            }
             //}
 
             function startBurst() {
@@ -424,7 +443,7 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'co
                 currentTitle.html(pretenderItem.name);
 
                 // для шеф-повара выводим наименование следующей акции
-                if (settings.isChief){
+                if (settings.isChief) {
                     nextTitle.html(pretenderItem.nextPositionName);
                 }
 
