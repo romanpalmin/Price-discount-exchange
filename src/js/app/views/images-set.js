@@ -97,5 +97,5 @@ define([], function () {
             'css/images/sprites/s-r-20.png',
             'css/images/sprites/s-y-20.png'
         ]
-    }
+    };
 });

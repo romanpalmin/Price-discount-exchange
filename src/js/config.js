@@ -12,8 +12,7 @@ requirejs.config({
         "jquery" : "vendor/jquery.min",
         "underscore" : "vendor/underscore-min",
         "settings" : "app/settings",
-        "const" : "app/utils/const",
-        "preloader" : "vendor"
+        "const" : "app/utils/const"
     }
 });
 

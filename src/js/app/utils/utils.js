@@ -32,7 +32,7 @@ define(['underscore', 'settings', 'position', 'const', 'jquery'], function (unde
         getCurrentCoinByUserIdAndColId: function (array, userId, colId) {
             var res = _.where(array, {id: userId, type: colId});
             return res.length === 1 ? res[0].coins : 0;
-        },
+        }/*,
 
         preloadImages: function () {
             var callback;
@@ -41,12 +41,12 @@ define(['underscore', 'settings', 'position', 'const', 'jquery'], function (unde
             var selector = '.preload-img';
             var img = $(selector);
             var imgPath = 'css/images/sprites/';
-            if (typeof arguments[arguments.length - 1] == 'function') {
+            if (typeof arguments[arguments.length - 1] === 'function') {
                 callback = arguments[arguments.length - 1];
             } else {
                 callback = false;
             }
-            if (typeof arguments[0] == 'object') {
+            if (typeof arguments[0] === 'object') {
                 images = arguments[0];
                 count = images.length;
             } else {
@@ -56,13 +56,13 @@ define(['underscore', 'settings', 'position', 'const', 'jquery'], function (unde
             var not_loaded = count;
             for (var i = 0; i < count; i++) {
                 img.on('load', function () {
-                    if (--not_loaded < 1 && typeof callback == 'function') {
+                    if (--not_loaded < 1 && typeof callback === 'function') {
                         img.css('display', 'none');
                         callback();
                     }
                 }).attr('src', imgPath + images[i]);
             }
         }
-
-    }
+*/
+    };
 });

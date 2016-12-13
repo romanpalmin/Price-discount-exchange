@@ -95,73 +95,64 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'co
                 this.isPreloader = true;
                 var isPreloaded = false;
                 var self = this;
-                $.preload(imgs, 1, function(){
-                    console.log('Готово!');
+                imgs.url.forEach(function (item) {
+                    console.log(item + ' ++++  ');
                 });
 
-                /*utils.preloadImages(imgs.url, function () {
-                    console.log('Загрузка завршена.');
-                    setTimeout(function () {
-                        $(self.blocks.preloader.div).fadeOut('slow');
-                    }, settings.timeout.pauseBeforeShowReal);
-                    setTimeout(function () {
-                     self.startRealApp(callback);
-                     }, 2000);
-                });*/
 
-                /*var counterActions = 0;
-                 var path = 'data/preloader/';
-                 var urlPreffixSuperAction = path + 'pl_sws';
-                 var urlPreffixActions = path + 'pl_ws';
-                 var urlPostfix = '.json';
-                 var url = '';
-                 var currentPreloadPercent = parseInt(100 / settings.preloadTimes);
+                var counterActions = 0;
+                var path = 'data/preloader/';
+                var urlPreffixSuperAction = path + 'pl_sws';
+                var urlPreffixActions = path + 'pl_ws';
+                var urlPostfix = '.json';
+                var url = '';
+                var currentPreloadPercent = parseInt(100 / settings.preloadTimes);
 
 
-                 var preloadActionsInterval = setInterval(function () {
-                 currentPreloadPercent += parseInt(100 / settings.preloadTimes);
-                 if (currentPreloadPercent > 100) {
-                 currentPreloadPercent = 100;
-                 }
-                 if (counterActions >= settings.preloadTimes) {
+                var preloadActionsInterval = setInterval(function () {
+                    currentPreloadPercent += parseInt(100 / settings.preloadTimes);
+                    if (currentPreloadPercent > 100) {
+                        currentPreloadPercent = 100;
+                    }
+                    if (counterActions >= settings.preloadTimes) {
 
-                 if (isPreloaded) {
-                 clearInterval(preloadActionsInterval);
-                 } else {
-                 PostPreLoading();
-                 }
-                 } else {
-                 $(self.blocks.preloader.percent).html(currentPreloadPercent);
-                 counterActions++;
-                 }
+                        if (isPreloaded) {
+                            clearInterval(preloadActionsInterval);
+                        } else {
+                            PostPreLoading();
+                        }
+                    } else {
+                        $(self.blocks.preloader.percent).html(currentPreloadPercent);
+                        counterActions++;
+                    }
 
-                 if (!isPreloaded && counterActions <= settings.preloadTimes) {
-                 url = urlPreffixActions + counterActions + urlPostfix;
-                 processPreload(url, self.actionType.currentAction);
-                 url = urlPreffixSuperAction + counterActions + urlPostfix;
-                 processPreload(url, self.actionType.superAction);
-                 }
-                 }, settings.timeout.preloadSuperAction);
+                    if (!isPreloaded && counterActions <= settings.preloadTimes) {
+                        url = urlPreffixActions + counterActions + urlPostfix;
+                        processPreload(url, self.actionType.currentAction);
+                        url = urlPreffixSuperAction + counterActions + urlPostfix;
+                        processPreload(url, self.actionType.superAction);
+                    }
+                }, settings.timeout.preloadSuperAction);
 
-                 function processPreload(url, actionType) {
-                 process.init(url, function (resp) {
-                 self.render(resp, actionType);
-                 });
-                 }
+                function processPreload(url, actionType) {
+                    process.init(url, function (resp) {
+                        self.render(resp, actionType);
+                    });
+                }
 
-                 function PostPreLoading() {
-                 var notSpinners = !self.spinners.col1 && !self.spinners.col2 && !self.spinners.col3;
-                 var notDestroy = !self.destroy.col1 && !self.destroy.col2 && !self.destroy.col3;
-                 var notBurst = !self.burst.col1 && !self.burst.col2 && !self.burst.col3;
-                 if (notSpinners && notDestroy && notBurst) {
-                 isPreloaded = true;
-                 }
-                 if (isPreloaded) {
-                 setTimeout(function () {
-                 self.startRealApp(callback);
-                 }, 2000);
-                 }
-                 }*/
+                function PostPreLoading() {
+                    var notSpinners = !self.spinners.col1 && !self.spinners.col2 && !self.spinners.col3;
+                    var notDestroy = !self.destroy.col1 && !self.destroy.col2 && !self.destroy.col3;
+                    var notBurst = !self.burst.col1 && !self.burst.col2 && !self.burst.col3;
+                    if (notSpinners && notDestroy && notBurst) {
+                        isPreloaded = true;
+                    }
+                    if (isPreloaded) {
+                        setTimeout(function () {
+                            self.startRealApp(callback);
+                        }, 2000);
+                    }
+                }
             },
 
             startRealApp: function (callback) {
