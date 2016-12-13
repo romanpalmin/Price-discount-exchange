@@ -3,6 +3,7 @@ define([], function () {
         fromWs: false,
         isAuto: true,
         hasPreload: true,
+        isNewPreloader: true,
         server: 'http://birzhaserv',
         username: 'DataExchange',
         password: '123456',

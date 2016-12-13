@@ -7,7 +7,8 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'co
             blocks: {
                 preloader: {
                     div: '.preloader',
-                    percent: '.preloading-percent'
+                    percent: '.preloading-percent',
+                    showpercent: '.show-loading-progress'
                 }
             },
 
@@ -81,9 +82,16 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'co
                 if (isSequence) {
                     if (settings.hasPreload) {
                         $(self.blocks.preloader.div).fadeIn('fast');
-                        this.preloadData(function () {
-                            self.sequence();
-                        });
+                        // Запускаем предзагрузчик, в зависимости от настроек, либо старую версию, либо новую
+                        if (!settings.isNewPreloader) {
+                            this.preloadData(function () {
+                                self.sequence();
+                            });
+                        } else {
+                            this.preloadDataNew(function () {
+                                self.sequence();
+                            });
+                        }
                     }
                     else {
                         self.sequence();
@@ -91,15 +99,22 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'co
                 }
             },
 
-            preloadDataNew: function(){
-                utils.preloadImagesByChromePreloading(imgs.url, function(){
-                    console.log('end...');
-                    setTimeout(function () {
-                        self.startRealApp(callback);
-                    }, 1000);
+            /**
+             * Новая версия предзагрузчика, с использованием средств Chrome
+             * @param callback
+             */
+            preloadDataNew: function (callback) {
+                var self = this;
+                $(self.blocks.preloader.showpercent).hide();
+                utils.preloadImagesByChromePreloading(imgs.url, function () {
+                    self.startRealApp(callback);
                 });
             },
 
+            /**
+             * Старая версия предзагрузчика, с использованием пошагового "проброса" всех возможных состояний стакана
+             * @param callback
+             */
             preloadData: function (callback) {
                 this.isPreloader = true;
                 var isPreloaded = false;
@@ -159,6 +174,10 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'co
                 }
             },
 
+            /**
+             * Запуск приложения после предзагрузки
+             * @param callback
+             */
             startRealApp: function (callback) {
                 var self = this;
                 self.isPreloader = false;
@@ -167,8 +186,8 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'co
                     callback();
                 }
                 setTimeout(function () {
-                 $(self.blocks.preloader.div).fadeOut('slow');
-                 }, settings.timeout.pauseBeforeShowReal);
+                    $(self.blocks.preloader.div).fadeOut('slow');
+                }, settings.timeout.pauseBeforeShowReal);
 
             },
 
