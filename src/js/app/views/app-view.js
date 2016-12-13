@@ -79,6 +79,7 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'co
             var self = this;
             this.step = !curStep ? settings.steps.startStep : curStep;
             if (isSequence) {
+                $(self.blocks.preloader.div).fadeIn('fast');
                 // Запускаем предзагрузчик, в зависимости от настроек, либо старую версию, либо новую
                 if (!settings.isNewPreloader) {
                     this.preloadData(function () {

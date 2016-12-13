@@ -1,6 +1,6 @@
 define([], function () {
     return {
-        fromWs: false,
+        fromWs: true,
         isAuto: true,
         hasPreload: true,
         isNewPreloader: true,
@@ -15,7 +15,7 @@ define([], function () {
             preloadActions: 2500,
             preloadSuperAction: 2500,
             showDiscountCoinAfterFilling: 1500,
-            pauseBeforeShowReal: 7000,
+            pauseBeforeShowReal: 6000,
             speedDropping: 70
         },
         steps:{
