@@ -32,37 +32,24 @@ define(['underscore', 'settings', 'position', 'const', 'jquery'], function (unde
         getCurrentCoinByUserIdAndColId: function (array, userId, colId) {
             var res = _.where(array, {id: userId, type: colId});
             return res.length === 1 ? res[0].coins : 0;
-        }/*,
+        },
 
-        preloadImages: function () {
-            var callback;
-            var images;
-            var count;
-            var selector = '.preload-img';
-            var img = $(selector);
-            var imgPath = 'css/images/sprites/';
-            if (typeof arguments[arguments.length - 1] === 'function') {
-                callback = arguments[arguments.length - 1];
-            } else {
-                callback = false;
-            }
-            if (typeof arguments[0] === 'object') {
-                images = arguments[0];
-                count = images.length;
-            } else {
-                images = arguments;
-                count = images.length - 1;
-            }
-            var not_loaded = count;
-            for (var i = 0; i < count; i++) {
-                img.on('load', function () {
-                    if (--not_loaded < 1 && typeof callback === 'function') {
-                        img.css('display', 'none');
-                        callback();
-                    }
-                }).attr('src', imgPath + images[i]);
+        /**
+         * Предзагрузка изображений средствами Chrome, использовать аккуратно, оттестировав
+         * @param arr - массив изображений для предзагрузки, по сути все спрайты
+         * @param callback
+         */
+        preloadImagesByChromePreloading: function (arr, callback) {
+            var el;
+            for (var i = 0; i < arr.length; i++) {
+                el = '<link rel="preload" href="' + arr[i] + '" as="image">';
+                $('head').append(el);
+                if (i === arr.length - 1 && typeof callback === 'function'){
+                    callback();
+                }
             }
         }
-*/
+
+
     };
 });

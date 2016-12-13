@@ -2,7 +2,7 @@ define([], function () {
     return {
         fromWs: false,
         isAuto: true,
-        hasPreload: false,
+        hasPreload: true,
         server: 'http://birzhaserv',
         username: 'DataExchange',
         password: '123456',
@@ -13,7 +13,7 @@ define([], function () {
             preloadActions: 2500,
             preloadSuperAction: 2500,
             showDiscountCoinAfterFilling: 1500,
-            pauseBeforeShowReal: 10000,
+            pauseBeforeShowReal: 5000,
             speedDropping: 70
         },
         steps:{

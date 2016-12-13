@@ -91,15 +91,19 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'co
                 }
             },
 
+            preloadDataNew: function(){
+                utils.preloadImagesByChromePreloading(imgs.url, function(){
+                    console.log('end...');
+                    setTimeout(function () {
+                        self.startRealApp(callback);
+                    }, 1000);
+                });
+            },
+
             preloadData: function (callback) {
                 this.isPreloader = true;
                 var isPreloaded = false;
                 var self = this;
-                imgs.url.forEach(function (item) {
-                    console.log(item + ' ++++  ');
-                });
-
-
                 var counterActions = 0;
                 var path = 'data/preloader/';
                 var urlPreffixSuperAction = path + 'pl_sws';
@@ -162,9 +166,9 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'co
                 if (callback && typeof(callback) === "function") {
                     callback();
                 }
-                /*setTimeout(function () {
+                setTimeout(function () {
                  $(self.blocks.preloader.div).fadeOut('slow');
-                 }, settings.timeout.pauseBeforeShowReal);*/
+                 }, settings.timeout.pauseBeforeShowReal);
 
             },
 
