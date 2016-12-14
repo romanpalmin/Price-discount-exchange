@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Загрузка по клику</title>
+</head>
+<style>
+    html {
+        cursor: crosshair; /*меняем курсор на крест, в дальнейшем указать none*/
+    }
+</style>
+<body>
+
+</body>
+<script>
+    (function () {
+        // vars
+
+        var _size = getCurrentScreenSize();
+
+        /**
+         * Исходные данные
+         */
+        var _pages = {
+            'rows': [
+                {
+                    'cols': ['#page1', '#page2', '#page3']
+                },
+                {
+                    'cols': ['#page4', '#page5', '#page6']
+                },
+                {
+                    'cols': ['#page7', '#page8', '#page9', '#page10']
+                },
+                {
+                    'cols': ['#page11', '#page12']
+                }
+            ]
+        };
+
+        // methods
+
+        /**
+         * Возвращает объект, содержащий текущий размер пользовательского окна
+         * @returns {{width: number, height: number}}
+         */
+        function getCurrentScreenSize() {
+            return {
+                width: document.documentElement.clientWidth,
+                height: document.documentElement.clientHeight
+            };
+        }
+
+        /**
+         * Высчитывает зону попадания клика, получает URL и вызывает метод перехода на другую страницу
+         * */
+        function definePage(coord) {
+            var rowsCount = _pages.rows.length;
+            var colsCount;
+            var currentRow;
+            var currentCol;
+            var rowHeight = _size.height / rowsCount;
+            var colWidth;
+            var retValue;
+            for (var i = 1; i <= rowsCount; i++) {
+                if (coord && coord.y < rowHeight * i) {
+                    currentRow = i - 1;
+                    break;
+                }
+            }
+            colsCount = _pages.rows[currentRow].cols.length;
+            colWidth = _size.width / colsCount;
+            for (var j = 1; j <= colsCount; j++) {
+                if (coord && coord.x < colWidth * j) {
+                    currentCol = j - 1;
+                    break;
+                }
+            }
+            retValue = _pages.rows[currentRow].cols[currentCol];
+            reloadPage(retValue);
+        }
+
+        /**
+         * Загружает заданный URL
+         * */
+        function reloadPage(url) {
+            location.href = url;
+        }
+
+
+        // events
+
+        /**
+         * Обработчик клика на странице, возвращает объект, содержащий координаты клика
+         */
+        document.onclick = function (e) {
+            definePage(
+                    {
+                        y: e.clientY,
+                        x: e.clientX
+                    }
+            );
+        };
+
+        /**
+         * Обработчик изменения размера экрана, пересчитывает размер пользовательского окна
+         */
+        window.onresize = function () {
+            _size = getCurrentScreenSize();
+        }
+    })();
+</script>
+</html>

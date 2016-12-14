@@ -1,6 +1,6 @@
 define([], function () {
     return {
-        fromWs: true,
+        fromWs: false,
         isAuto: true,
         hasPreload: true,
         isNewPreloader: true,
