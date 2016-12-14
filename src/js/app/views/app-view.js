@@ -343,15 +343,10 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'co
 
             function startDestroy() {
                 var destroyIndex = 1;
-                var arrayOfFallingFrames = cset.coins[self.colors[colId]];
-                var lastIndex = arrayOfFallingFrames[arrayOfFallingFrames.length - 1];
-                var stepIndex = self.currentCoinsInGlass[currentCol];
+
                 self.destroy['col' + colId] = true;
                 var destroyMax = constants.FRAMES_IN_DESTROY;
-                if (stepIndex === 0) {
-                    stepIndex = 1;
-                    lastIndex = 1;
-                }
+
                 var destroyTimer = setInterval(function () {
                     if (!self.spinners[currentCol]) {
                         newClass = className + 'd-' + letter + '-' + discount + '-' + destroyIndex;
@@ -359,8 +354,7 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'co
                     }
                     destroyIndex++;
                     if (destroyIndex === destroyMax) {
-                        //if (stepIndex === 20) lastIndex = 1;
-                        // получаем и устанавливаем последний кадр анимации падения для отображения реального состояния, если не 20
+                        // устанавливаем первый кадр анимации падения
                         newClass = className + 'f-' + letter + '-1-1';
                         currentGlass.removeClass().addClass('changing-class').addClass(newClass);
 
