@@ -8,6 +8,10 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'co
                     div: '.preloader',
                     percent: '.preloading-percent',
                     showpercent: '.show-loading-progress'
+                },
+                frames: {
+                    main: '.pe-main-frame',
+                    currentLeader: '.pe-current-leader-frame'
                 }
             },
 
@@ -35,7 +39,8 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'co
             intervalIds: {
                 action: 0,
                 superaction: 1,
-                changeLayer: 2
+                changeLayer: 2,
+                getLeader: 3
             },
 
             colors: {
@@ -505,6 +510,8 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'co
 
                 this.initData(self.actionType.currentAction);
                 this.initData(self.actionType.superAction);
+
+                // настройка интервалов акций
                 this.intervalIds.action = setInterval(function () {
                     if (self.step >= settings.steps.maxStep
                     ) {
@@ -514,31 +521,33 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'co
                     self.initData(self.actionType.currentAction);
                 }, settings.timeout.actions);
 
-                this.intervalIds.superaction = setInterval(
-                    function () {
-                        self.initData(self.actionType.superAction);
-                    }, settings.timeout.superAction);
+                // настройка интервалов суперакций
+                this.intervalIds.superaction = setInterval(function () {
+                    self.initData(self.actionType.superAction);
+                }, settings.timeout.superAction);
 
-                this.intervalIds.changeLayer =
+                // показываем текущего лидера при включенном режиме
+                if (settings.isShowCurrentLeader) {
+                    // настройка интервалов получения текущего лидера
+                    this.intervalIds.getLeader = setInterval(function () {
+                        self.initData(self.actionType.currentLeader);
+                    }, settings.timeout.gettingCurrentLeader);
 
-
-                    setInterval
-
-                    (
+                    // настройка интервалов смены слоев
+                    this.intervalIds.changeLayer = setInterval(
                         function () {
-
-                            self.initData(self.actionType.currentLeader);
+                            $(self.blocks.frames.main + ',' + self.blocks.frames.currentLeader).fadeToggle('slow', 0);
+                            setTimeout(function () {
+                                $(self.blocks.frames.main + ',' + self.blocks.frames.currentLeader).fadeToggle('slow', 0);
+                            }, settings.timeout.showCurrrentLeaderLayer);
                         }, settings.timeout.changeLayers);
+                }
 
 
             },
 
             stopActions: function () {
-
-                clearInterval
-
-                (
-                    this.intervalIds.action);
+                clearInterval(this.intervalIds.action);
                 clearInterval(this.intervalIds.superaction);
                 clearInterval(this.intervalIds.changeLayer);
 

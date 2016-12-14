@@ -1,0 +1,32 @@
+@import "variables";
+
+.pe-current-leader-frame {
+  background: @blue url("../images/bg-fill.png") repeat scroll center center / 100% auto;
+  height: 100%;
+  left: 0;
+  opacity: 1;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  display: none;
+
+  .outer {
+    width: 600px;
+    height: 400px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -200px 0 0 -300px;
+    border: 2px solid @white;
+    line-height: 400px;
+    text-align: center;
+    border-radius: 3%;
+  }
+  .inner {
+    display: inline-block; /* центрировать..*/
+    vertical-align: middle; /* ..по вертикали */
+    line-height: 1.25; /* переопределить высоту строки на обычную */
+
+  }
+}
