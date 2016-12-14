@@ -17,7 +17,7 @@ define([], function () {
             showDiscountCoinAfterFilling: 1500,
             pauseBeforeShowReal: 6000,
             speedDropping: 70,
-            changeLayers: 4500
+            changeLayers: 10000
         },
         steps:{
             step: 0,
