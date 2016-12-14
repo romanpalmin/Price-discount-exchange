@@ -16,7 +16,8 @@ define([], function () {
             preloadSuperAction: 2500,
             showDiscountCoinAfterFilling: 1500,
             pauseBeforeShowReal: 6000,
-            speedDropping: 70
+            speedDropping: 70,
+            changeLayers: 4500
         },
         steps:{
             step: 0,

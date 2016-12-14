@@ -11,6 +11,11 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'co
             }
         },
 
+        screens: {
+            coins: '',
+            leader: ''
+        },
+
         pretenders: {
             currentPretenders: [],
             currentCoinsInGlass: [],
@@ -23,12 +28,14 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'co
         },
         actionType: {
             currentAction: true,
-            superAction: false
+            superAction: false,
+            currentLeader: 'Leader'
         },
 
         intervalIds: {
             action: 0,
-            superaction: 1
+            superaction: 1,
+            changeLayer: 2
         },
 
         colors: {
@@ -197,16 +204,24 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'co
                 urlSuperAction = settings.url.getSuperAction;
             }
 
-            if (actionType === this.actionType.currentAction) {
-                process.init(urlCurrentActions, function (resp) {
-                    //console.log('Данные акции...');
-                    self.render(resp, actionType);
-                });
-            } else {
-                process.init(urlSuperAction, function (resp) {
-                    //console.log('Данные суперакции...');
-                    self.render(resp, actionType);
-                });
+            switch (actionType) {
+                case this.actionType.currentAction :
+                    process.init(urlCurrentActions, function (resp) {
+                        //console.log('Данные акции...');
+                        self.render(resp, actionType);
+                    });
+                    break;
+                case this.actionType.superAction:
+                    process.init(urlSuperAction, function (resp) {
+                        //console.log('Данные суперакции...');
+                        self.render(resp, actionType);
+                    });
+                    break;
+                case this.actionType.currentLeader:
+                    console.log('Получаем данные о текущем лидере...');
+                    break;
+                default:
+                    break;
             }
         },
         // todo написать функцию поиска новых и старых позиций
@@ -218,30 +233,33 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'co
             var self = this;
             var newPretenders;
 
-            if (actionType === this.actionType.currentAction) {
-                // Обрабатываем текущую акцию
-                if (this.pretenders.currentPretenders.length === 0) {
-                    //console.log('Инициируем массив...');
-                    this.pretenders.currentPretenders = data;
-                    data.forEach(function (item, index) {
+            switch (actionType) {
+                case this.actionType.currentAction:
+                    // Обрабатываем текущую акцию
+                    if (this.pretenders.currentPretenders.length === 0) {
+                        //console.log('Инициируем массив...');
+                        this.pretenders.currentPretenders = data;
+                        data.forEach(function (item, index) {
+                                self.drawPretender(index + 1, item);
+                            }
+                        );
+                    }
+                    else {
+                        newPretenders = this.getCurrentPretenders(data);
+                        newPretenders.forEach(function (item, index) {
                             self.drawPretender(index + 1, item);
-                        }
-                    );
-                }
-                else {
-                    newPretenders = this.getCurrentPretenders(data);
-                    newPretenders.forEach(function (item, index) {
-                        self.drawPretender(index + 1, item);
-                    });
-                    this.pretenders.currentPretenders = newPretenders;
-                }
-            }
-            else {
-
-                // обрабатываем суперакцию
-                if (data.length === 1) {
-                    self.drawPretender(4, data[0]);
-                }
+                        });
+                        this.pretenders.currentPretenders = newPretenders;
+                    }
+                    break;
+                case this.actionType.superAction:
+                    // обрабатываем суперакцию
+                    if (data.length === 1) {
+                        self.drawPretender(4, data[0]);
+                    }
+                    break;
+                default:
+                    break;
             }
         },
 
@@ -480,6 +498,8 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'co
 
         sequence: function () {
             var self = this;
+            var currentLayer;
+
             this.initData(self.actionType.currentAction);
             this.initData(self.actionType.superAction);
             this.intervalIds.action = setInterval(function () {
@@ -493,11 +513,18 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'co
             this.intervalIds.superaction = setInterval(function () {
                 self.initData(self.actionType.superAction);
             }, settings.timeout.superAction);
+
+            this.intervalIds.changeLayer = setInterval(function () {
+                self.initData(self.actionType.currentLeader);
+            }, settings.timeout.changeLayers);
+
+
         },
 
         stopActions: function () {
             clearInterval(this.intervalIds.action);
             clearInterval(this.intervalIds.superaction);
+            clearInterval(this.intervalIds.changeLayer);
 
         }
     };
