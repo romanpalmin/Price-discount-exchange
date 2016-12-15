@@ -12,21 +12,59 @@
   display: none;
 
   .outer {
-    width: 600px;
-    height: 400px;
+    width: 900px;
+    height: 600px;
     position: absolute;
     left: 50%;
     top: 50%;
-    margin: -200px 0 0 -300px;
-    border: 2px solid @white;
-    line-height: 400px;
+    margin: -300px 0 0 -450px;
+    border: 2px solid #fff;
+    line-height: 600px;
     text-align: center;
     border-radius: 3%;
+    background: linear-gradient(to left, rgba(168, 206, 175, 0.8) 0%, rgba(0, 0, 0, 0.1) 100%);
   }
   .inner {
-    display: inline-block; /* центрировать..*/
-    vertical-align: middle; /* ..по вертикали */
-    line-height: 1.25; /* переопределить высоту строки на обычную */
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1.25;
+    width: 95%;
 
+    .left {
+      float: left;
+    }
+
+    .right {
+      float: right;
+      width: 50%;
+    }
+
+    img {
+      width: 100%;
+      border-radius: 100%;
+      max-width: 350px;
+      max-height: 350px;
+      border: 2px solid;
+
+      &.lightblue {
+        border-color: @lightblue;
+      }
+
+      &.orange {
+        border-color: @orange;
+      }
+
+      &.green {
+        border-color: @green;
+      }
+
+      &.white {
+        border-color: white;
+      }
+
+      &.red {
+        border-color: @darkred;
+      }
+    }
   }
 }

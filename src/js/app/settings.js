@@ -5,7 +5,7 @@ define([], function () {
         hasPreload: true,
         isNewPreloader: true,
         isChief: false,
-        isShowCurrentLeader: false,
+        isShowCurrentLeader: true,
         server: 'http://birzhaserv',
         username: 'DataExchange',
         password: '123456',
@@ -19,7 +19,7 @@ define([], function () {
             pauseBeforeShowReal: 6000,
             speedDropping: 70,
             changeLayers: 20000,
-            showCurrrentLeaderLayer: 5000,
+            showCurrrentLeaderLayer: 15000,
             gettingCurrentLeader: 60000
         },
         steps:{
