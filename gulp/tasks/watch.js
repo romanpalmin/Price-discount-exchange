@@ -1,6 +1,3 @@
-/**
- * Следит за изменениями в файлах
- */
 'use strict';
 
 var gulp   = require('gulp');

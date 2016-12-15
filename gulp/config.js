@@ -100,7 +100,7 @@ module.exports = {
     },
 
     index: {
-        src: srcAssets + '/index.html',
+        src: srcAssets + '/*.*',
         dest: distAssets + ''
     },
 
