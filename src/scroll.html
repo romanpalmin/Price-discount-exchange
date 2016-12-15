@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Скроллинг движением мыши</title>
+</head>
+<style>
+    body {
+        overflow: hidden; /* скрывает scrollbar */
+    }
+</style>
+<body>
+<div class="container"></div> <!-- требуется для заполнения тестовыми данными -->
+
+<script>
+    /**
+     * Скрипт, вызывающий скролл по движению курсора по оси Y
+     */
+    (function () {
+
+        /**
+         * Настройки скрипта (*require)
+         */
+        var settings = {
+            minStep: 50, // шаг в пикселях, на сколько сдвигать скролл (require*)
+            maxStr: 300, // количество строк для заполнения тестовыми данными (optional)
+            showTestData: true // определяет, заполнять ли страницу тестовыми данными (optional)
+        };
+
+        /**
+         * Состояние скрипта (*require)
+         */
+        var _state = {};
+
+        /**
+         * Обработчик движения курсора с инициацией скролла при необходимости (*require)
+         */
+        document.body.onmousemove = function (e) {
+            var step;
+            if (!(_state.coordY && _state.coordY === e.clientY)) {
+                if (!_state.coordY) {
+                    _state.coordY = e.clientY;
+                }
+                step = _state.coordY < e.clientY ? settings.minStep : -settings.minStep;
+                if (_state.coordY !== e.clientY) {
+                    window.scrollBy(0, step);
+                }
+                _state.coordY = e.clientY;
+            }
+        };
+
+
+        /**
+         * Заполняет страницу тестовыми строками (optional)
+         */
+        function preloadTestData() {
+            var container = document.getElementsByClassName('container')[0];
+            for (var index = 0; index < settings.maxStr; index++) {
+                el = document.createElement('div');
+                el.innerHTML = index;
+                container.appendChild(el);
+            }
+        }
+
+        /**
+         * Определяет, заполнять ли тестовыми данными страницу (optional)
+         */
+        if (settings.showTestData) {
+            preloadTestData();
+        }
+    })();
+</script>
+</body>
+</html>
