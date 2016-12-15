@@ -6,7 +6,7 @@ define([], function () {
         isNewPreloader: true,
         isChief: false,
         isShowCurrentLeader: true,
-        server: 'http://birzhaserv',
+        server: 'birzhaserv',
         username: 'DataExchange',
         password: '123456',
         preloadTimes: 23,
@@ -19,7 +19,7 @@ define([], function () {
             pauseBeforeShowReal: 6000,
             speedDropping: 70,
             changeLayers: 20000,
-            showCurrrentLeaderLayer: 15000,
+            showCurrrentLeaderLayer: 5000,
             gettingCurrentLeader: 60000
         },
         steps:{
@@ -29,8 +29,8 @@ define([], function () {
         },
 
         url: {
-            getCurrentActions: 'http://DataExchange:123456@birzhaserv/menu/hs/display/get-current-actions',
-            getSuperAction: 'http://DataExchange:123456@birzhaserv/menu/hs/display/get-super-action'
+            getCurrentActions: 'http://' + this.username + ':' + this.password + '@' + this.server+ '/menu/hs/display/get-current-actions',
+            getSuperAction: 'http://' + this.username + ':' + this.password + '@' + this.server+ '/menu/hs/display/get-super-action'
         }
     };
 });

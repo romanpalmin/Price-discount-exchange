@@ -541,6 +541,12 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'co
                                 $(self.blocks.frames.main + ',' + self.blocks.frames.currentLeader).fadeToggle('slow', 0);
                             }, settings.timeout.showCurrrentLeaderLayer);
                         }, settings.timeout.changeLayers);
+                        /*
+                        // раскомментировать для тестирования страницы текущего лидера
+                        function(){
+                            $(self.blocks.frames.main).hide();
+                            $(self.blocks.frames.currentLeader).show();
+                        }, settings.timeout.changeLayers);*/
                 }
 
 
