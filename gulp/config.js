@@ -26,7 +26,8 @@ module.exports = {
             vendor: {
                 js: deploy + '/js/vendor',
                 css: deploy + '/css/vendor'
-            }
+            },
+            utils: deploy + '/utils'
         }
     },
 
@@ -72,6 +73,11 @@ module.exports = {
     images: {
         src: [srcAssets + '/**/images/**/*'],
         dest: distAssets + '/images'
+    },
+
+    utils:{
+        src:[srcAssets + '/utils/**/*'],
+        dest: distAssets + '/utils'
     },
 
     vendors: {
