@@ -292,7 +292,8 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'co
                 var currentCol = 'col' + colId;
 
                 if (colId === 4) {
-                    discount = 50;
+                    console.log(options.currentDiscount);
+                    discount = 20;
                 }
 
                 if (currentGlass && coinNum > 0 && coinNum <= 20) {
