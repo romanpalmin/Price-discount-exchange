@@ -4,10 +4,10 @@
     "Name": "Овощные хрустящие слайсы с дрессингами",
     "ImageUrl": "/images/positions/hamburger.png",
     "DiscountWasChanged": false,
-    "CurrentDiscount": 28,
+    "CurrentDiscount": 2,
     "TotalItemsSold": 20,
-    "RemainToDiscount": 27,
-    "DisplayCoinsNow": 20,
+    "RemainToDiscount": 0,
+    "DisplayCoinsNow": 2,
     "DisplayCoinsOf": 20,
     "DisplayBadaBoom": false
   }
