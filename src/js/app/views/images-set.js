@@ -3,11 +3,13 @@ define([], function () {
         'url':[
             'css/images/sprites/b-b-100.png',
             'css/images/sprites/b-b-50.png',
+            'css/images/sprites/b-b-20.png',
             'css/images/sprites/b-g-20.png',
             'css/images/sprites/b-r-20.png',
             'css/images/sprites/b-y-20.png',
             'css/images/sprites/d-b-100.png',
             'css/images/sprites/d-b-50.png',
+            'css/images/sprites/d-b-20.png',
             'css/images/sprites/d-g-20.png',
             'css/images/sprites/d-r-20.png',
             'css/images/sprites/d-y-20.png',
@@ -93,6 +95,7 @@ define([], function () {
             'css/images/sprites/f-y-9.png',
             'css/images/sprites/s-b-100.png',
             'css/images/sprites/s-b-50.png',
+            'css/images/sprites/s-b-20.png',
             'css/images/sprites/s-g-20.png',
             'css/images/sprites/s-r-20.png',
             'css/images/sprites/s-y-20.png'

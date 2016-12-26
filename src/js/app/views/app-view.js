@@ -292,8 +292,7 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'co
                 var currentCol = 'col' + colId;
 
                 if (colId === 4) {
-                    console.log(options.currentDiscount);
-                    discount = 20;
+                    discount = options.currentDiscount;
                 }
 
                 if (currentGlass && coinNum > 0 && coinNum <= 20) {
@@ -317,18 +316,21 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'co
                     }, settings.timeout.speedDropping);
                 }
                 // проверяем, не пора ли туглить стаканы и крутилку скидки для акций
-                //if (colId !== 4) {
-                self.currentCoinsInGlass[currentCol] = coinNum;
-                if (isExplosive && !self.spinners[currentCol]) {
-                    // стартуем взрыв через showDiscountCoinAfterFilling/1000 секунд после падения
-                    setTimeout(function () {
-                        startBurst();
-                    }, settings.timeout.showDiscountCoinAfterFilling);
+                if (colId !== 4) {
+                    self.currentCoinsInGlass[currentCol] = coinNum;
+                    if (isExplosive && !self.spinners[currentCol]) {
+                        // стартуем взрыв через showDiscountCoinAfterFilling/1000 секунд после падения
+                        /*if (colId === 4 && (discount !== 20 || discount !== 50 || discount !== 100)){
+                         return;
+                         }*/
+                        setTimeout(function () {
+                            startBurst();
+                        }, settings.timeout.showDiscountCoinAfterFilling);
+                    }
+                    else {
+                        self.spinners[currentCol] = false;
+                    }
                 }
-                else {
-                    self.spinners[currentCol] = false;
-                }
-                //}
 
                 function startBurst() {
                     var burstIndex = 1;
@@ -353,6 +355,10 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'co
                     var spinnerMax = constants.FRAMES_IN_SPINNER;
                     self.spinners[currentCol] = true;
                     var spinnerTimer = setInterval(function () {
+                        /*                        if (discount !== 20 || discount !== 50 || discount || 100) {
+                         self.spinners[currentCol] = false;
+                         return;
+                         }*/
                         newClass = className + 's-' + letter + '-' + discount + '-' + spinnerIndex;
                         currentGlass.removeClass().addClass('changing-class').addClass(newClass);
                         if (!self.burst[currentCol] && !self.spinners[currentCol]) {
@@ -436,7 +442,8 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'co
                     currentCoinsInGlass: currentCoins,
                     coinNum: pretenderItem.currentCoin ? pretenderItem.currentCoin : 0,
                     currentGlass: currentCoinsForClass,
-                    isExplosive: pretenderItem.isExplosive
+                    isExplosive: pretenderItem.isExplosive,
+                    currentDiscount: pretenderItem.currentDiscount
                 };
                 if (options && options.coinNum >= 0 && isDropCoin) {
                     this.drawDroppingCoinInGlass(options, updateInfo);
@@ -542,12 +549,12 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'co
                                 $(self.blocks.frames.main + ',' + self.blocks.frames.currentLeader).fadeToggle('slow', 0);
                             }, settings.timeout.showCurrrentLeaderLayer);
                         }, settings.timeout.changeLayers);
-                        /*
-                        // раскомментировать для тестирования страницы текущего лидера
-                        function(){
-                            $(self.blocks.frames.main).hide();
-                            $(self.blocks.frames.currentLeader).show();
-                        }, settings.timeout.changeLayers);*/
+                    /*
+                     // раскомментировать для тестирования страницы текущего лидера
+                     function(){
+                     $(self.blocks.frames.main).hide();
+                     $(self.blocks.frames.currentLeader).show();
+                     }, settings.timeout.changeLayers);*/
                 }
 
 

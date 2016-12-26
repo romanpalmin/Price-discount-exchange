@@ -4,7 +4,7 @@ define([], function () {
         hasPreload: true,
         isNewPreloader: true,
         isChief: false,
-        isShowCurrentLeader: true,
+        isShowCurrentLeader: false,
         server: 'http://birzhaserv',
         username: 'DataExchange',
         password: '123456',
