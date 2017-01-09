@@ -16,4 +16,4 @@ gulp.task('develop', function () {
 
 gulp.task('compile', function () {
     runSequence('build', 'watch');
-});
+}); 
