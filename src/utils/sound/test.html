@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<span id="dummy"></span>
+<a href="#" onclick="playSound('URL to soundfile');">Click here to hear a sound</a>
+
+<p onmouseover="playSound('URL to soundfile');">Mouse over this text to hear a sound</p>
+
+
+<script language="javascript" type="text/javascript">
+    function playSound(soundfile) {
+        document.getElementById("dummy").innerHTML=
+                "<embed src=\""+soundfile+"\" hidden=\"true\" autostart=\"true\" loop=\"false\" />";
+    }
+</script>
+</body>
+</html>
