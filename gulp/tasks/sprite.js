@@ -105,7 +105,19 @@ var folders =
         'destroy/yellow/20/',
         'destroy/green/20/',
         'destroy/blue/50/'
-        */
+
+        
+        'price/250/'
+        'burgers/first/',
+        'burgers/second/'
+
+        'patches/qbbq/',
+        'patches/beer/',
+        'patches/factory/'
+        'patches/big/qbbq/',
+        'patches/big/beer/',
+        'patches/big/factory/'*/
+
         
     ];
 
