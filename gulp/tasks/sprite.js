@@ -118,6 +118,8 @@ var folders =
         'patches/big/beer/',
         'patches/big/factory/'*/
 
+        'price/sale/gold/'
+
         
     ];
 

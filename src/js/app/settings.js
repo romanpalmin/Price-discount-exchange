@@ -1,11 +1,11 @@
 define([], function () {
     return {
-        fromWs: false,
+        fromWs: true,
         hasPreload: true,
         isNewPreloader: true,
         isChief: false,
-        isShowCurrentLeader: false,
-        server: 'http://birzhaserv',
+        isShowCurrentLeader: true,
+        server: 'http://10.10.182.11',
         username: 'DataExchange',
         password: '123456',
         preloadTimes: 23,
@@ -17,7 +17,7 @@ define([], function () {
             showDiscountCoinAfterFilling: 1500,
             pauseBeforeShowReal: 6000,
             speedDropping: 70,
-            changeLayers: 20000,
+            changeLayers: 10000,
             showCurrrentLeaderLayer: 5000,
             gettingCurrentLeader: 60000
         },
@@ -28,8 +28,8 @@ define([], function () {
         },
 
         url: {
-            getCurrentActions: 'http://DataExchange:123456@birzhaserv/menu/hs/display/get-current-actions',
-            getSuperAction: 'http://DataExchange:123456@birzhaserv/menu/hs/display/get-super-action'
+            getCurrentActions: 'http://DataExchange:123456@10.10.182.11/menu/hs/display/get-current-actions',
+            getSuperAction: 'http://DataExchange:123456@10.10.182.11/menu/hs/display/get-super-action'
         }
     };
 });
