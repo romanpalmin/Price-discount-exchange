@@ -1,7 +1,7 @@
 define([], function () {
     return {
         fromWs: true,
-        hasPreload: true,
+        hasPreload: false,
         isNewPreloader: true,
         isChief: false,
         isShowCurrentLeader: true,
@@ -17,8 +17,8 @@ define([], function () {
             showDiscountCoinAfterFilling: 1500,
             pauseBeforeShowReal: 6000,
             speedDropping: 70,
-            changeLayers: 10000,
-            showCurrrentLeaderLayer: 5000,
+            changeLayers: 12000,
+            showCurrrentLeaderLayer: 5500,
             gettingCurrentLeader: 60000
         },
         steps: {

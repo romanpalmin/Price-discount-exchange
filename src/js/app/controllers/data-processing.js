@@ -11,6 +11,32 @@ define(['jquery', 'settings', 'position', 'utils'], function ($, settings, Posit
             }
         },
 
+        getDataFromJson: function (url, callback) {
+            var self = this;
+            $.ajax({
+
+                headers: {
+                    'password': settings.password,
+                    'login': settings.username
+                },
+                charset: 'ISO',
+                method: 'GET',
+                url: url,
+                contentType: "text/plain",
+                dataType: 'json'
+            })
+                .done(function (resp) {
+                        if (callback && typeof(callback) === "function") {
+                            callback(resp);
+                        }
+
+                })
+                .fail(function (jqxhr, textStatus, error) {
+                    var err = textStatus + ', ' + error;
+                    console.log("Request Failed: " + err + "," + jqxhr.responseText);
+                });
+        },
+
         getDataFromWsJson: function (url, callback) {
             var self = this;
             $.ajax({

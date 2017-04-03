@@ -11,8 +11,17 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'co
                 },
                 frames: {
                     main: '.pe-main-frame',
-                    currentLeader: '.pe-current-leader-frame'
+                   /* currentLeader: '.pe-current-leader-frame',*/
+                    currentLeader: '.frame-center'
+
                 }
+            },
+            svg: {
+                jsonfile: '',
+                fps: 24,
+                width: 1920,
+                height: 1080,
+                AJAX_req: ''
             },
 
             screens: {
@@ -90,6 +99,10 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'co
             init: function (curStep, isSequence) {
                 var self = this;
                 this.step = !curStep ? settings.steps.startStep : curStep;
+/*                process.getDataFromJson('data/svg/1.json', function(resp){
+                    console.log(resp);
+                    self.comp = resp;
+                });*/
                 if (isSequence) {
                     $(self.blocks.preloader.div).fadeIn('fast');
                     // Запускаем предзагрузчик, в зависимости от настроек, либо старую версию, либо новую
@@ -508,13 +521,14 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'co
                 }
             },
 
+            comp: {},
+
             getColumnId: function (item) {
                 var colId = $('[data-id=' + item.id + ']').attr('data-col-id');
                 return item.id && item.id !== 0 && item.id !== '0' ? colId : 0;
             },
             sequence: function () {
                 var self = this;
-                var currentLayer;
 
                 this.initData(self.actionType.currentAction);
                 this.initData(self.actionType.superAction);
@@ -536,27 +550,81 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'co
 
                 // показываем текущего лидера при включенном режиме
                 if (settings.isShowCurrentLeader) {
-                    // настройка интервалов получения текущего лидера
-                    this.intervalIds.getLeader = setInterval(function () {
-                        self.initData(self.actionType.currentLeader);
-                    }, settings.timeout.gettingCurrentLeader);
-
-                    // настройка интервалов смены слоев
+                    //$(self.blocks.frames.main).hide();
+                    //$(self.blocks.frames.currentLeader).show();
                     this.intervalIds.changeLayer = setInterval(
+
                         function () {
-                            $(self.blocks.frames.main + ',' + self.blocks.frames.currentLeader).fadeToggle('slow', 0);
+                            var container = $(".main-svg");
+                            container.append("<iframe class='frame' src='http://10.10.182.11/ept/svg/1.html' frameborder='0' marginwidth='0' marginheight='0' allowtransparency='false'></iframe>")
+                            console.log('Показываем iframe');
+                            $(self.blocks.frames.main).fadeOut('slow', 0);
+                            $(self.blocks.frames.currentLeader).fadeIn('slow', 0);
                             setTimeout(function () {
-                                $(self.blocks.frames.main + ',' + self.blocks.frames.currentLeader).fadeToggle('slow', 0);
+                                $(self.blocks.frames.main).fadeIn('slow', 0);
+                                $(self.blocks.frames.currentLeader).fadeOut('slow', 0);
+                                container.empty();
+                                console.log('Показываем фишки');
                             }, settings.timeout.showCurrrentLeaderLayer);
                         }, settings.timeout.changeLayers);
-                    /*
-                     // раскомментировать для тестирования страницы текущего лидера
-                     function(){
-                     $(self.blocks.frames.main).hide();
-                     $(self.blocks.frames.currentLeader).show();
-                     }, settings.timeout.changeLayers);*/
+                }
+            },
+
+            AJAX_JSON_Req: function (url) {
+                var self = this;
+                var container = document.getElementById("main-svg");
+                container.innerHTML = '';
+                console.log(self.comp);
+                if ( Object.keys(self.comp).length === 0){
+                    console.log('Объект пустой');
+                    this.svg.AJAX_req = new XMLHttpRequest();
+                    this.svg.AJAX_req.open("GET", url, true);
+                    this.svg.AJAX_req.setRequestHeader("Content-type", "application/json");
+
+                    this.svg.AJAX_req.onreadystatechange = handle_AJAX_Complete;
+                    this.svg.AJAX_req.send();
+
+                    function handle_AJAX_Complete() {
+                        console.log('Проверка');
+                        var container = document.getElementById("main-svg");
+                        container.innerHTML = '';
+                        if (self.svg.AJAX_req.readyState === 4 && self.svg.AJAX_req.status === 200) {
+                            var json = JSON.parse(self.svg.AJAX_req.responseText);
+                            console.log(json);
+
+
+                            self.comp = new SVGAnim(
+                                json,
+                                self.svg.width,
+                                self.svg.height,
+                                self.svg.fps
+                            );
+
+                            DrawSvg(self.comp);
+                        }
+                    }
+                }
+                else {
+                    console.log('Объект непустой, можно отрисовать');
+                    console.log(self.comp);
+                    DrawSvg(self.comp);
                 }
 
+
+                function DrawSvg(comp){
+                    var newDrawing = {};
+                    if ( Object.keys(self.comp).length !== 0) {
+                        console.log('Отрисовываем');
+                        newDrawing = new SVGAnim(
+                            comp,
+                            self.svg.width,
+                            self.svg.height,
+                            self.svg.fps
+                        );
+                        console.log(newDrawing.s);
+                        //container.appendChild(newDrawing.s.node);
+                    }
+                }
 
             },
 
@@ -566,5 +634,7 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'co
                 clearInterval(this.intervalIds.changeLayer);
 
             }
-        };
-    });
+        }
+            ;
+    })
+;
