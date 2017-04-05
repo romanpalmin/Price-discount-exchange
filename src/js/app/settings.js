@@ -1,7 +1,7 @@
 define([], function () {
     return {
         fromWs: true,
-        hasPreload: false,
+        hasPreload: true,
         isNewPreloader: true,
         isChief: false,
         isShowCurrentLeader: true,
