@@ -12,7 +12,7 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'co
                 frames: {
                     main: '.pe-main-frame',
                    /* currentLeader: '.pe-current-leader-frame',*/
-                    currentLeader: '.frame-center'
+                    currentLeader: '.inner-frame'
 
                 }
             },
@@ -550,19 +550,24 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'co
 
                 // показываем текущего лидера при включенном режиме
                 if (settings.isShowCurrentLeader) {
-                    //$(self.blocks.frames.main).hide();
-                    //$(self.blocks.frames.currentLeader).show();
-                    this.intervalIds.changeLayer = setInterval(
+                    /*var container = $(".inner-frame");
+                    $(self.blocks.frames.main).hide();
+                    $(self.blocks.frames.currentLeader).show();
+                    container.html("<iframe class='frame' src='http://10.10.182.11/ept/svg/1.html' width='1920'  height='1080' scrolling='no' frameborder='0' marginwidth='0' marginheight='0' allowtransparency='true'></iframe>");
+ */                   this.intervalIds.changeLayer = setInterval(
 
                         function () {
-                            var container = $(".main-svg");
-                            container.append("<iframe class='frame' src='http://10.10.182.11/ept/svg/1.html' frameborder='0' marginwidth='0' marginheight='0' allowtransparency='false'></iframe>")
+                            var container = $(".inner-frame");
+                            $(self.blocks.frames.currentLeader).css('opacity', '1');
+                            container.html("<iframe class='frame' src='http://10.10.182.11/ept/svg/1.html' width='1920'  height='1080' scrolling='no' frameborder='0' marginwidth='0' marginheight='0' allowtransparency='true'></iframe>");
                             console.log('Показываем iframe');
-                            $(self.blocks.frames.main).fadeOut('slow', 0);
                             $(self.blocks.frames.currentLeader).fadeIn('slow', 0);
+                            $(self.blocks.frames.main).fadeOut('slow', 0);
+
                             setTimeout(function () {
+                                $(self.blocks.frames.currentLeader).css('opacity', '0');
                                 $(self.blocks.frames.main).fadeIn('slow', 0);
-                                $(self.blocks.frames.currentLeader).fadeOut('slow', 0);
+                                //$(self.blocks.frames.currentLeader).fadeOut('slow', 0);
                                 container.empty();
                                 console.log('Показываем фишки');
                             }, settings.timeout.showCurrrentLeaderLayer);

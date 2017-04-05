@@ -11,7 +11,7 @@ define([], function () {
         this.currentDiscountSuperAction = (options.CurrentDiscount ? options.CurrentDiscount.toFixed(0) : 0) + '%';
         this.isExplosive = options.DisplayBadaBoom;
         this.restTime = options.RemainSecondsToFinish;
-        this.restTimeToString = this.restTime + ' сек.';
+        this.restTimeToString = this.restTime ? this.restTime + ' сек.' : '';
         this.nextPositionName = options.Name2 ? options.Name2 : '?';
     };
 });
