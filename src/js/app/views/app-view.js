@@ -550,6 +550,7 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'co
 
                 // показываем текущего лидера при включенном режиме
                 if (settings.isShowCurrentLeader) {
+                    var num = '1';
                     /*var container = $(".inner-frame");
                     $(self.blocks.frames.main).hide();
                     $(self.blocks.frames.currentLeader).show();
@@ -558,8 +559,9 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'co
 
                         function () {
                             var container = $(".inner-frame");
+
                             $(self.blocks.frames.currentLeader).css('opacity', '1');
-                            container.html("<iframe class='frame' src='http://10.10.182.11/ept/svg/1.html' width='1920'  height='1080' scrolling='no' frameborder='0' marginwidth='0' marginheight='0' allowtransparency='true'></iframe>");
+                            container.html("<iframe class='frame' src='http://10.10.182.11/ept/svg/"+num+".html' width='1920'  height='1080' scrolling='no' frameborder='0' marginwidth='0' marginheight='0' allowtransparency='true'></iframe>");
                             console.log('Показываем iframe');
                             $(self.blocks.frames.currentLeader).fadeIn('slow', 0);
                             $(self.blocks.frames.main).fadeOut('slow', 0);
@@ -570,6 +572,8 @@ define(['jquery', 'app', 'settings', 'data-processing', 'utils', 'coin-set', 'co
                                 //$(self.blocks.frames.currentLeader).fadeOut('slow', 0);
                                 container.empty();
                                 console.log('Показываем фишки');
+                                console.log('Текущее значение: ' + num);
+                                num = num === '1' ? '2' : '1';
                             }, settings.timeout.showCurrrentLeaderLayer);
                         }, settings.timeout.changeLayers);
                 }
